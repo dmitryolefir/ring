@@ -1,0 +1,106 @@
+.search-form {
+  @media all and (min-width: 1024px) {
+    @include flex();
+  }
+  &__left {
+    flex: auto;
+    position: relative;
+    @media all and (min-width: 1024px) {
+      @include flex();
+      padding-right: 20px;
+    }
+  }
+  &__right {
+    flex-shrink: 0;
+  }
+  &__input-wrap {
+    position: relative;
+    flex: auto;
+    @media all and (min-width: 1024px) {
+      margin-right: 20px;
+    }
+  }
+  &__autocomplete {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: $white;
+    border: 1px solid $green;
+    border-radius: 0 0 2px 2px;
+    margin-top: -2px;
+    z-index: 10;
+    display: none;
+  }
+  &__autocomplete-item {
+    border-bottom: 1px solid #EEEFF2;
+    padding: 7px 14px;
+    font-size: 12px;
+    cursor: pointer;
+    &:last-child {
+      border-bottom: none;
+    }
+    @media all and (min-width: 1024px) {
+      padding: 9px 18px;
+      font-size: 14px;
+    }
+  }
+  &__input {
+    @media all and (max-width: 1023px) {
+      padding-right: 45px;
+    }
+    @media all and (min-width: 1024px) {
+      font-weight: 500;
+      padding: 13px 16px;
+      height: 48px;
+    }
+  }
+  &__deep-search {
+    @media all and (max-width: 1023px) {
+      box-shadow: none;
+      background: none;
+      border: none;
+      padding: 0 13px 0 0;
+      margin-top: 20px;
+      position: relative;
+      &:after {
+        content: "";
+        width: 0;
+        height: 0;
+        display: block;
+        border-color: #2B2C2E transparent transparent transparent;
+        border-style: solid;
+        border-width: 4px 3px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -2px;
+      }
+    }
+    @media all and (min-width: 1024px) {
+      padding: 17px 35px;
+    }
+  }
+  &__search {
+    @media all and (max-width: 1023px) {
+      position: absolute;
+      right: 0;
+      top: 0;
+      text-indent: -100px;
+      overflow: hidden;
+      background: url('../img/icon/search-green.svg') center no-repeat;
+      padding: 0;
+      width: 32px;
+      height: 32px;
+      box-sizing: border-box;
+      box-shadow: none;
+      border: none;
+      &:before {
+        display: none;
+      }
+    }
+    @media all and (min-width: 1024px) {
+      flex-shrink: 0;
+    }
+  }
+}

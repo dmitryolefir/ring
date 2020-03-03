@@ -1,0 +1,18 @@
+здесь положить файл, в который будет все собираться. например main.scss  с таким содержимым:
+
+/*
+* Third Party
+*/
+@import "source/normalize";
+@import "source/owl.carousel.min";
+
+/*
+* Custom
+*/
+@import "partials/mixins";
+
+@import "partials/app";
+
+@import "partials/header";
+@import "partials/content";
+@import "partials/footer";

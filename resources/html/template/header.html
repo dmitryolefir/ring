@@ -1,0 +1,103 @@
+<div class="header">
+
+    <div class="header__inner">
+
+        <div class="header__column header__mobile">
+
+            <div class="mobile-menu-link">
+                <div class="mobile-menu-link__line"></div>
+                <div class="mobile-menu-link__line"></div>
+                <div class="mobile-menu-link__line"></div>
+            </div>
+
+            @@include('lang-switch.html', { "class": "header__lang-switch-mobile" })
+
+        </div>
+
+        <div class="header__column">
+
+            <div class="logo-block">
+                <a href="/" class="logo-block__link">
+                    <picture class="co-worker__img">
+                        <source media="(min-width: 1024px)" srcset="img/logo.svg">
+                        <img src="img/logo-mobile.svg">
+                    </picture>
+                </a>
+            </div>
+
+            <div class="header__menu main-menu">
+                <div class="main-menu__item">
+                    <a href="#" class="main-menu__link">Про проект</a>
+                </div>
+                <div class="main-menu__item">
+                    <a href="#" class="main-menu__link">Аналітика</a>
+                </div>
+                <div class="main-menu__item">
+                    <a href="#" class="main-menu__link">Відкритий API</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="header__column">
+
+            <div class="compare-block header__compare">
+                <div class="action-icon action-icon_dark compare-block__icon">
+                    <img src="img/icon/compare-black.svg" alt="" class="action-icon__img">
+                    <div class="action-icon__count">70+</div>
+                </div>
+            </div>
+
+            <div class="account-block header__account">
+                <img src="img/icon/account.svg" alt="" class="account-block__icon">
+            </div>
+
+            @@include('lang-switch.html', { "class": "header__lang-switch" })
+
+            <div class="header__support support-project-block">
+                <button class="n-btn support-project-block__btn">Підтримати проект</button>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="mobile-menu">
+
+        <div class="mobile-menu__close-btn"></div>
+
+        <div class="mobile-menu__inner">
+
+            <div class="mobile-menu__top">
+                <img src="/img/logo.svg" alt="" class="mobile-menu__logo">
+            </div>
+
+            <div class="mobile-menu__items">
+
+                <div class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="#">Відкритий Api</a>
+                </div>
+
+                <div class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="#">Про проект</a>
+                </div>
+
+                <div class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="#">Аналітика</a>
+                </div>
+
+            </div>
+
+            <div class="mobile-menu__description">Bihus.info об'єднує антикорупційні проекти, які створює ГО "ТОМ 14" та ГО
+                "Канцелярська сотня".
+            </div>
+
+            <button class="n-btn mobile-menu__donation">Підтримати проект</button>
+
+        </div>
+
+
+    </div>
+
+</div>                      
