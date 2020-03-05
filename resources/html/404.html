@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+@@include('template/head.html', {"title": "Bihus"})
+
+<body>
+
+<div class="page">
+
+    @@include('template/header.html')
+
+    <div class="content container">
+
+        <div class="page-404">
+
+            <div class="page-404__search">
+                @@include('template/search-form.html')
+            </div>
+
+            <h1 class="page-404__title">404. Сторінка не знайдена.</h1>
+
+            <div class="page-404__text">На жаль такої сторінки не існує. Але не засмучуйтесь, скористайтесь пошуком або
+                верхнім меню.
+            </div>
+
+            <div class="page-404__link-block">
+                <a class="page-404__home-link" href="/">На головну</a>
+            </div>
+
+            @@include('template/promo-block.html', { "class": "page-404__promo" })
+
+        </div>
+
+
+    </div>
+
+    @@include('template/footer.html')
+
+</div>
+
+
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

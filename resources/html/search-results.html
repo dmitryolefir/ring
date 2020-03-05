@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+@@include('template/head.html', { "title": "Bihus" })
+
+<body>
+
+<div class="page">
+
+    @@include('template/header.html')
+
+    <div class="content container">
+
+        <div class="search-page">
+
+            <div class="search-page__form-block">
+                @@include('template/search-form.html')
+            </div>
+
+            <div class="search-page__header">
+
+                <div class="search-page__result-name">Магамадова Танзіла Вахівна (177)</div>
+
+                <div class="search-page__monitoring monitoring-block">
+                    <div class="monitoring-block__title">Моніторити запит:</div>
+                    <div class="monitoring-block__btns">
+                        <button class="n-btn n-btn_gray monitoring-block__btn">E-mail</button>
+                        <button class="n-btn n-btn_gray monitoring-block__btn">RSS</button>
+                    </div>
+                </div>
+
+                <div class="search-page__sort">
+
+                    <div class="sort-block">
+
+                        <div class="sort-block__title">Сортувати по:</div>
+
+                        <div class="sort-block__select">
+
+                            <div class="n-select">
+                                <div class="n-select__selected">Дата додавання</div>
+                                <div class="n-select__items">
+                                    <div class="n-select__item">П.І.Б</div>
+                                    <div class="n-select__item n-select__item_active">Дата додавання</div>
+                                    <div class="n-select__item">Рік</div>
+                                    <div class="n-select__item">Кiлькiсть флагiв</div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="sort-block__icon sort-block__icon_desc"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="search-page__results-block">
+
+                @@include('template/search-card-with-counts.html', { "class": "search-page__result-card" })
+
+                @@include('template/search-card.html', { "class": "search-page__result-card" })
+
+                @@include('template/search-card.html', { "class": "search-page__result-card" })
+
+                @@include('template/promo-block.html', { "class": "search-page__promo" })
+
+                @@include('template/search-card.html', { "class": "search-page__result-card" })
+
+                @@include('template/search-card.html', { "class": "search-page__result-card" })
+
+                @@include('template/search-card.html', { "class": "search-page__result-card" })
+
+                @@include('template/search-card.html', { "class": "search-page__result-card" })
+
+            </div>
+
+            <div class="pager search-page__pager">
+                <div class="pager__item">
+                    <div class="pager__prev">
+                        <svg width="24" height="25"
+                             class="pager__arrow"
+                             viewBox="0 0 24 25"
+                             fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.99 13.0448L20 13.0448L20 11.0379L7.99 11.0379L7.99 8.02755L4 12.0414L7.99 16.0552L7.99 13.0448Z"
+                                  fill="#111111"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="pager__item">
+                    <span class="pager__link pager__link_active">1</span>
+                </div>
+                <div class="pager__item">
+                    <a href="#" class="pager__link">2</a>
+                </div>
+                <div class="pager__item">
+                    <a href="#" class="pager__link">3</a>
+                </div>
+                <div class="pager__item">
+                    <span class="pager__dots">
+                       <span class="pager__dot"></span>
+                       <span class="pager__dot"></span>
+                       <span class="pager__dot"></span>
+                    </span>
+                </div>
+                <div class="pager__item pager__item_desktop">
+                    <a href="#" class="pager__link">11</a>
+                </div>
+                <div class="pager__item">
+                    <a href="#" class="pager__link">12</a>
+                </div>
+                <div class="pager__item">
+                    <a href="#" class="pager__link">13</a>
+                </div>
+                <div class="pager__item">
+                    <div class="pager__next">
+                        <svg class="pager__arrow"
+                             width="24" height="25"
+                             viewBox="0 0 24 25"
+                             fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.01 11.0379H4V13.0449H16.01V16.0552L20 12.0414L16.01 8.02759V11.0379Z"
+                                  fill="#111111"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="advantages-block search-page__advantages">
+
+                <div class="advantages-block__items">
+
+                    <div class="advantages-block__item">
+                        <div class="advantages-block__item-title">Чат-боти</div>
+                        <div class="advantages-block__item-text">Ми створили кишенькових помічників — чат-ботів у
+                            популярних месенджерах
+                        </div>
+                        <div class="advantages-block__bots">
+                            <div class="advantages-block__bots-items">
+
+                                <a href="#" class="advantages-block__bot-link social-link">
+                                    <img src="img/bots/telegram.svg" alt="" class="social-link__icon">
+                                </a>
+
+                                <a href="#" class="advantages-block__bot-link social-link">
+                                    <img src="img/bots/messenger.svg" alt="" class="social-link__icon">
+                                </a>
+
+                                <a href="#" class="advantages-block__bot-link social-link">
+                                    <img src="img/bots/skype.svg" alt="" class="social-link__icon">
+                                </a>
+
+                            </div>
+
+                            <a href="#" class="advantages-block__instruction-link">Покрокова iнструкцiя</a>
+
+
+                        </div>
+                    </div>
+
+                    <div class="advantages-block__item">
+                        <div class="advantages-block__item-title">Порівняння</div>
+                        <div class="advantages-block__item-text">Додавайте декларантів
+                            у список порівнянь та дивіться аналіз за різними показниками
+                        </div>
+                    </div>
+
+                    <div class="advantages-block__item">
+                        <div class="advantages-block__item-title">Моніторинг</div>
+                        <div class="advantages-block__item-text">Слідкуйте за змінами чи появою нових документів по
+                            E-mail, RSS та у месенжерах
+                        </div>
+                    </div>
+
+                    <div class="advantages-block__item">
+                        <div class="advantages-block__item-title">Аналітика</div>
+                        <div class="advantages-block__item-text">Ми зробили круту аналітику
+                            і поділили ії на 8 розділів для вашої зручності
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    @@include('template/footer.html')
+
+</div>
+
+
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

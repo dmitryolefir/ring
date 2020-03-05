@@ -4,36 +4,48 @@
         <div class="search-card__name">Магамадова Танзіла Вахівна</div>
         <div class="search-card__position">2018, Кандидат на посаду</div>
 
-        <div class="search-card__actions">
+        <div class="search-card__actions-wrap">
 
-            @@include('action-icon.html', {
-            "class": "search-card__action",
-            "img" : "marker.svg",
-            "count" : 12,
-            "tooltip": "Список порівнянь"
-            })
+            <div class="search-card__actions">
 
-            @@include('action-icon.html', {
-            "class": "search-card__action",
-            "img" : "money.svg",
-            "count" : 5,
-            "tooltip": "Список порівнянь"
-            })
+                <div class="search-card__actions-inner">
 
-            @@include('action-icon.html', {
-            "class": "search-card__action",
-            "img" : "compare.svg",
-            "count" : 11,
-            "tooltip": "Список порівнянь"
-            })
+                    @@include('action-icon-count.html', {
+                    "class": "search-card__action",
+                    "img" : "marker.svg",
+                    "count" : "12",
+                    "tooltip": "Список порівнянь"
+                    })
 
-            @@include('action-icon.html', {
-            "class": "search-card__action",
-            "img" : "favourite.svg",
-            "count" : false,
-            "tooltip": "Список порівнянь"
-            })
+                    @@include('action-icon-count.html', {
+                    "class": "search-card__action",
+                    "img" : "money.svg",
+                    "count" : "5",
+                    "tooltip": "Список порівнянь"
+                    })
 
+                    @@include('action-icon-count.html', {
+                    "class": "search-card__action",
+                    "img" : "compare.svg",
+                    "count" : "11",
+                    "tooltip": "Список порівнянь"
+                    })
+
+                    @@include('action-icon.html', {
+                    "class": "search-card__action",
+                    "img" : "favourite.svg",
+                    "tooltip": "Список порівнянь"
+                    })
+
+                </div>
+
+            </div>
+
+            <div class="search-card__action-link">
+                <div class="search-card__action-link-dot"></div>
+                <div class="search-card__action-link-dot"></div>
+                <div class="search-card__action-link-dot"></div>
+            </div>
 
         </div>
 

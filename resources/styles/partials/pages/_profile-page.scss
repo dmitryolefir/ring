@@ -1,0 +1,21 @@
+.profile-page {
+  &__form-block {
+    margin-bottom: 50px;
+  }
+  &__top {
+    @include flex($align-items: center);
+    margin-bottom: 17px;
+  }
+  &__request-btn {
+    @media all and (max-width: 1023px) {
+      font-size: 10px;
+      text-transform: uppercase;
+      padding: 6px 9px;
+    }
+    @media all and (min-width: 1024px) {
+      font-size: 16px;
+      width: 176px;
+      padding: 15px 0;
+    }
+  }
+}

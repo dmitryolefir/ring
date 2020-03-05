@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+@@include('template/head.html', {"title": "Bihus"})
+
+<body>
+
+<div class="page">
+
+    @@include('template/header.html')
+
+    <div class="content container">
+
+        <div class="profile-page">
+
+            <div class="profile-page__form-block">
+                @@include('template/search-form.html')
+            </div>
+
+            <div class="profile-page__top">
+
+                <div class="tabs profile-page__tabs">
+                    <div class="tabs__item">
+                        <a href="profile-request.html" class="tabs__link">Мої запити</a>
+                    </div>
+                    <div class="tabs__item">
+                        <a href="profile-find.html" class="tabs__link tabs__link_active">Мої знахідки</a>
+                    </div>
+                </div>
+
+                <button class="n-btn profile-page__request-btn">Додати запити</button>
+
+            </div>
+
+            <div class="profile-page__tab-content">
+
+                @@include('template/search-card.html', { "class": "search-page__result-card" })
+
+                @@include('template/search-card.html', { "class": "search-page__result-card" })
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    @@include('template/footer.html')
+
+</div>
+
+
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

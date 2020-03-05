@@ -1,5 +1,5 @@
 'use strict';
-const siteName = 'bihus.test';
+const siteName = 'declarations.test';
 const scssFileName = 'style.scss';
 const jsFileName = 'scripts.js';
 const delFolders = 'template'; //если так записать folder/* то удалятся

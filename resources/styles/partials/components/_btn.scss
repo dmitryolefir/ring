@@ -36,6 +36,14 @@
       background: darken(#C4C7CC, 5%);;
     }
   }
+  &_gray-dark {
+    background: #898D93;
+    border: 1px solid rgba(17, 17, 17, 0.12);
+    box-shadow: none;
+    &:hover {
+      background: darken(#898D93, 5%);;
+    }
+  }
   &_ico {
     padding-top: 11px;
     padding-bottom: 11px;

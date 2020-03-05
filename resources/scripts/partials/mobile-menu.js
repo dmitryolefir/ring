@@ -2,6 +2,9 @@
 
   $(function() {
 
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+
     let menuBtn = $('.mobile-menu-link');
     let mobileMenu = $('.mobile-menu');
     let body = $('body');

@@ -1,0 +1,20 @@
+.tabs {
+  @include flex($justify-content: flex-start);
+  &__link {
+    font-size: 12px;
+    font-weight: 700;
+    color: $black;
+    &_active { color: $green; }
+    @media all and (min-width: 1024px) {
+      font-size: 16px;
+    }
+  }
+  &__item {
+    padding: 0 6px;
+    &:first-child { padding-left: 0; }
+    &:last-child { padding-right: 0; }
+    @media all and (min-width: 1024px) {
+      padding: 0 24px !important;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-<div class="deep-search">
+<div class="deep-search search-form__deep-search-block">
 
     <div class="deep-search__title">Я шукаю декларацію</div>
 
@@ -88,15 +88,18 @@
 
     </div>
 
-    <div class="deep-search__filter">
+    <div class="deep-search__filter filter__document-position">
 
-        <div class="deep-search__filter-title">Тип документу чи посади</div>
+        <div class="deep-search__filter-title">
+            <div class="desktop">Тип документу чи посади</div>
+            <div class="mobile">Тип документу</div>
+        </div>
 
         <div class="deep-search__filter-body">
 
             <div class="position-filter">
 
-                <div class="position-filter__param">
+                <div class="position-filter__param position-filter__document">
 
                     <div class="position-filter__param-title">Тип документу</div>
 
@@ -320,9 +323,338 @@
 
     <div class="deep-search__filter">
 
-        <div class="deep-search__filter-title">Рік</div>
+        <div class="deep-search__filter-title">
+            <div class="desktop">Регіон та область</div>
+            <div class="mobile">Регіон</div>
+        </div>
 
-        <div class="deep-search__filter-body">12121221</div>
+        <div class="deep-search__filter-body">
+
+            <div class="region-type-filter">
+
+                <div class="region-type-filter__title">Регіон</div>
+
+                <div class="region-type-filter__items">
+
+                    <div class="region-type-filter__item n-checkbox">
+                        <input type="checkbox"
+                               id="region-type-1"
+                               value="Регіон фактичного проживання"
+                               class="n-checkbox__input">
+                        <label for="region-type-1" class="n-checkbox__label">
+                            <span class="n-checkbox__label-box"></span>
+                            <span class="n-checkbox__label-text">Регіон фактичного проживання</span>
+                        </label>
+                    </div>
+
+                    <div class="region-type-filter__item n-checkbox">
+                        <input type="checkbox"
+                               id="region-type-2"
+                               value="Регіон реєстрації"
+                               class="n-checkbox__input">
+                        <label for="region-type-2" class="n-checkbox__label">
+                            <span class="n-checkbox__label-box"></span>
+                            <span class="n-checkbox__label-text">Регіон реєстрації</span>
+                        </label>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="region-filter">
+
+                <div class="region-filter__title">Область</div>
+
+                <div class="region-filter__items-wrap">
+
+                    <div class="region-filter__items">
+
+                        <div class="region-filter__item n-checkbox">
+                            <input type="checkbox"
+                                   id="region-1"
+                                   value="Київ"
+                                   class="n-checkbox__input">
+                            <label for="region-1" class="n-checkbox__label">
+                                <span class="n-checkbox__label-box"></span>
+                                <span class="n-checkbox__label-text">Київ</span>
+                            </label>
+                        </div>
+
+                        <div class="region-filter__item n-checkbox">
+                            <input type="checkbox"
+                                   id="region-2"
+                                   value="Вінницька"
+                                   class="n-checkbox__input">
+                            <label for="region-2" class="n-checkbox__label">
+                                <span class="n-checkbox__label-box"></span>
+                                <span class="n-checkbox__label-text">Вінницька</span>
+                            </label>
+                        </div>
+
+                        <div class="region-filter__item n-checkbox">
+                            <input type="checkbox"
+                                   id="region-3"
+                                   value="Дніпропетровська"
+                                   class="n-checkbox__input">
+                            <label for="region-3" class="n-checkbox__label">
+                                <span class="n-checkbox__label-box"></span>
+                                <span class="n-checkbox__label-text">Дніпропетровська</span>
+                            </label>
+                        </div>
+
+                        <div class="region-filter__item n-checkbox">
+                            <input type="checkbox"
+                                   id="region-4"
+                                   value="Донецька"
+                                   class="n-checkbox__input">
+                            <label for="region-4" class="n-checkbox__label">
+                                <span class="n-checkbox__label-box"></span>
+                                <span class="n-checkbox__label-text">Донецька</span>
+                            </label>
+                        </div>
+
+                        <div class="region-filter__item n-checkbox">
+                            <input type="checkbox"
+                                   id="region-5"
+                                   value="Житомирська"
+                                   class="n-checkbox__input">
+                            <label for="region-5" class="n-checkbox__label">
+                                <span class="n-checkbox__label-box"></span>
+                                <span class="n-checkbox__label-text">Житомирська</span>
+                            </label>
+                        </div>
+
+                        <div class="region-filter__item n-checkbox">
+                            <input type="checkbox"
+                                   id="region-6"
+                                   value="Закарпатська"
+                                   class="n-checkbox__input">
+                            <label for="region-6" class="n-checkbox__label">
+                                <span class="n-checkbox__label-box"></span>
+                                <span class="n-checkbox__label-text">Закарпатська</span>
+                            </label>
+                        </div>
+
+                        <div class="region-filter__item n-checkbox">
+                            <input type="checkbox"
+                                   id="region-7"
+                                   value="Запорізька"
+                                   class="n-checkbox__input">
+                            <label for="region-7" class="n-checkbox__label">
+                                <span class="n-checkbox__label-box"></span>
+                                <span class="n-checkbox__label-text">Запорізька</span>
+                            </label>
+                        </div>
+
+                        <div class="region-filter__item n-checkbox">
+                            <input type="checkbox"
+                                   id="region-8"
+                                   value=""
+                                   class="n-checkbox__input">
+                            <label for="region-8" class="n-checkbox__label">
+                                <span class="n-checkbox__label-box"></span>
+                                <span class="n-checkbox__label-text">Івано-Франківська</span>
+                            </label>
+                        </div>
+
+                        <div class="region-filter__item n-checkbox">
+                            <input type="checkbox"
+                                   id="region-9"
+                                   value="Київська"
+                                   class="n-checkbox__input">
+                            <label for="region-9" class="n-checkbox__label">
+                                <span class="n-checkbox__label-box"></span>
+                                <span class="n-checkbox__label-text">Київська</span>
+                            </label>
+                        </div>
+
+                        <div class="region-filter__item n-checkbox">
+                            <input type="checkbox"
+                                   id="region-10"
+                                   value="Кіровоградська"
+                                   class="n-checkbox__input">
+                            <label for="region-10" class="n-checkbox__label">
+                                <span class="n-checkbox__label-box"></span>
+                                <span class="n-checkbox__label-text">Кіровоградська</span>
+                            </label>
+                        </div>
+
+                        <div class="region-filter__item n-checkbox">
+                            <input type="checkbox"
+                                   id="region-11"
+                                   value="Луганська"
+                                   class="n-checkbox__input">
+                            <label for="region-11" class="n-checkbox__label">
+                                <span class="n-checkbox__label-box"></span>
+                                <span class="n-checkbox__label-text">Луганська</span>
+                            </label>
+                        </div>
+
+                        <div class="region-filter__item n-checkbox">
+                            <input type="checkbox"
+                                   id="region-12"
+                                   value="Львівська"
+                                   class="n-checkbox__input">
+                            <label for="region-12" class="n-checkbox__label">
+                                <span class="n-checkbox__label-box"></span>
+                                <span class="n-checkbox__label-text">Львівська</span>
+                            </label>
+                        </div>
+
+                        <div class="region-filter__item n-checkbox">
+                            <input type="checkbox"
+                                   id="region-13"
+                                   value="Миколаївська"
+                                   class="n-checkbox__input">
+                            <label for="region-13" class="n-checkbox__label">
+                                <span class="n-checkbox__label-box"></span>
+                                <span class="n-checkbox__label-text">Миколаївська</span>
+                            </label>
+                        </div>
+
+                        <div class="region-filter__item n-checkbox">
+                            <input type="checkbox"
+                                   id="region-14"
+                                   value="Одеська"
+                                   class="n-checkbox__input">
+                            <label for="region-14" class="n-checkbox__label">
+                                <span class="n-checkbox__label-box"></span>
+                                <span class="n-checkbox__label-text">Одеська</span>
+                            </label>
+                        </div>
+
+                        <div class="region-filter__item n-checkbox">
+                            <input type="checkbox"
+                                   id="region-15"
+                                   value="Полтавська"
+                                   class="n-checkbox__input">
+                            <label for="region-15" class="n-checkbox__label">
+                                <span class="n-checkbox__label-box"></span>
+                                <span class="n-checkbox__label-text">Полтавська</span>
+                            </label>
+                        </div>
+
+                        <div class="region-filter__item n-checkbox">
+                            <input type="checkbox"
+                                   id="region-16"
+                                   value="Рівненьська"
+                                   class="n-checkbox__input">
+                            <label for="region-16" class="n-checkbox__label">
+                                <span class="n-checkbox__label-box"></span>
+                                <span class="n-checkbox__label-text">Рівненьська</span>
+                            </label>
+                        </div>
+
+                        <div class="region-filter__item n-checkbox">
+                            <input type="checkbox"
+                                   id="region-17"
+                                   value="Сумська"
+                                   class="n-checkbox__input">
+                            <label for="region-17" class="n-checkbox__label">
+                                <span class="n-checkbox__label-box"></span>
+                                <span class="n-checkbox__label-text">Сумська</span>
+                            </label>
+                        </div>
+
+                        <div class="region-filter__item n-checkbox">
+                            <input type="checkbox"
+                                   id="region-18"
+                                   value="Сумська"
+                                   class="n-checkbox__input">
+                            <label for="region-18" class="n-checkbox__label">
+                                <span class="n-checkbox__label-box"></span>
+                                <span class="n-checkbox__label-text">Сумська</span>
+                            </label>
+                        </div>
+
+                        <div class="region-filter__item n-checkbox">
+                            <input type="checkbox"
+                                   id="region-19"
+                                   value="Харківська"
+                                   class="n-checkbox__input">
+                            <label for="region-19" class="n-checkbox__label">
+                                <span class="n-checkbox__label-box"></span>
+                                <span class="n-checkbox__label-text">Харківська</span>
+                            </label>
+                        </div>
+
+                        <div class="region-filter__item n-checkbox">
+                            <input type="checkbox"
+                                   id="region-20"
+                                   value="Херсонська"
+                                   class="n-checkbox__input">
+                            <label for="region-20" class="n-checkbox__label">
+                                <span class="n-checkbox__label-box"></span>
+                                <span class="n-checkbox__label-text">Херсонська</span>
+                            </label>
+                        </div>
+
+                        <div class="region-filter__item n-checkbox">
+                            <input type="checkbox"
+                                   id="region-21"
+                                   value="Хмельницька"
+                                   class="n-checkbox__input">
+                            <label for="region-21" class="n-checkbox__label">
+                                <span class="n-checkbox__label-box"></span>
+                                <span class="n-checkbox__label-text">Хмельницька</span>
+                            </label>
+                        </div>
+
+                        <div class="region-filter__item n-checkbox">
+                            <input type="checkbox"
+                                   id="region-22"
+                                   value="Черкаська"
+                                   class="n-checkbox__input">
+                            <label for="region-22" class="n-checkbox__label">
+                                <span class="n-checkbox__label-box"></span>
+                                <span class="n-checkbox__label-text">Черкаська</span>
+                            </label>
+                        </div>
+
+                        <div class="region-filter__item n-checkbox">
+                            <input type="checkbox"
+                                   id="region-23"
+                                   value="Чернівецька"
+                                   class="n-checkbox__input">
+                            <label for="region-23" class="n-checkbox__label">
+                                <span class="n-checkbox__label-box"></span>
+                                <span class="n-checkbox__label-text">Чернівецька</span>
+                            </label>
+                        </div>
+
+                        <div class="region-filter__item n-checkbox">
+                            <input type="checkbox"
+                                   id="region-24"
+                                   value="Чернігівська"
+                                   class="n-checkbox__input">
+                            <label for="region-24" class="n-checkbox__label">
+                                <span class="n-checkbox__label-box"></span>
+                                <span class="n-checkbox__label-text">Чернігівська</span>
+                            </label>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="deep-search__bottom">
+
+        <div class="deep-search__count-block">
+            <div class="deep-search__count-block-title">Кількість фільтрів:</div>
+            <div class="deep-search__count-block-count filter-count">0</div>
+        </div>
+
+        <button class="deep-search__btn deep-search__reset n-btn n-btn_gray">Скинути всі</button>
+
+        <button class="deep-search__btn n-btn">Застосувати</button>
 
     </div>
 

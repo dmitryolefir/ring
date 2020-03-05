@@ -1,5 +1,8 @@
 .project-description-block {
   max-width: 490px;
+  @media all and (min-width: 1024px) {
+    margin-bottom: -6px;
+  }
   &__logo {
     margin-bottom: 24px;
     display: block;
