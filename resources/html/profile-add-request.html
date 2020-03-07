@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="ua" class="popup-lock">
 
 @@include('template/head.html', {"title": "Bihus"})
 
@@ -28,9 +28,7 @@
                     </div>
                 </div>
 
-                <a class="n-btn profile-page__request-btn popup-btn"
-                   data-width="464px"
-                   href="/popup/add-request.html">Додати запити</a>
+                <button class="n-btn profile-page__request-btn">Додати запити</button>
 
             </div>
 
@@ -148,6 +146,22 @@
 
 
 <script src="js/scripts.js"></script>
+
+<div class="popup">
+
+    <div class="popup__wrap" style="width: 464px;">
+
+        <div class="popup__content" style="opacity: 1;">
+
+            <div class="popup__close close-btn"></div>
+
+            @@include('../../popup/add-request.html')
+
+        </div>
+
+    </div>
+
+</div>
 
 </body>
 </html>

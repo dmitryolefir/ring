@@ -1,0 +1,31 @@
+.api-block {
+  padding: 60px 16px 40px;
+  @media all and (min-width: 1024px) {
+    padding: 32px;
+  }
+  &__title {
+    font-size: 20px;
+    margin-top: 0;
+    line-height: 1;
+    @media all and (min-width: 1024px) {
+      font-size: 24px;
+    }
+  }
+  a {
+    color: $base;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.2;
+    display: inline-block;
+  }
+  &__small-table td{
+    @media all and (max-width: 1023px) {
+      font-size: 9px;
+      padding: 8px;
+      a {
+        font-weight: 400;
+        font-size: 9px;
+      }
+    }
+  }
+}

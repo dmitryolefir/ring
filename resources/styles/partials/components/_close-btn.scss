@@ -6,6 +6,7 @@
   height: 14px;
   position: relative;
   outline: none;
+  cursor: pointer;
   &:before, &:after {
     content: "";
     position: absolute;
@@ -21,5 +22,10 @@
   }
   &:after {
     transform: rotate(-45deg);
+  }
+  &:hover {
+    &:before, &:after {
+      background: $green;
+    }
   }
 }

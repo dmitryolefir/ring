@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="ua" class="popup-lock">
 
 <head>
     <title>Bihus</title>
@@ -160,9 +160,9 @@
 
     <div class="content container">
 
-        <div class="search-page">
+        <div class="profile-page">
 
-            <div class="search-page__form-block">
+            <div class="profile-page__form-block">
                 <form class="search-form">
 
     <div class="search-form__columns">
@@ -871,758 +871,118 @@
 </form>
             </div>
 
-            <div class="search-page__header">
+            <div class="profile-page__top">
 
-                <div class="search-page__result-name">Магамадова Танзіла Вахівна (177)</div>
-
-                <div class="search-page__monitoring monitoring-block">
-                    <div class="monitoring-block__title">Моніторити запит:</div>
-                    <div class="monitoring-block__btns">
-                        <button class="n-btn n-btn_gray monitoring-block__btn">E-mail</button>
-                        <button class="n-btn n-btn_gray monitoring-block__btn">RSS</button>
+                <div class="tabs profile-page__tabs">
+                    <div class="tabs__item">
+                        <a href="profile-request.html" class="tabs__link tabs__link_active">Мої запити</a>
+                    </div>
+                    <div class="tabs__item">
+                        <a href="profile-find.html" class="tabs__link">Мої знахідки</a>
                     </div>
                 </div>
 
-                <div class="search-page__sort">
+                <button class="n-btn profile-page__request-btn">Додати запити</button>
 
-                    <div class="sort-block">
+            </div>
 
-                        <div class="sort-block__title">Сортувати по:</div>
+            <div class="profile-page__tab-content">
 
-                        <div class="sort-block__select">
+                <div class="request-block">
 
-                            <div class="n-select">
-                                <div class="n-select__selected">Дата додавання</div>
-                                <div class="n-select__items">
-                                    <div class="n-select__item">П.І.Б</div>
-                                    <div class="n-select__item n-select__item_active">Дата додавання</div>
-                                    <div class="n-select__item">Рік</div>
-                                    <div class="n-select__item">Кiлькiсть флагiв</div>
+                    <div class="request-block__description">Щоб створити нове завдання нажмiть “Додати запити”, або
+                        спробуйте щось знайти та нажмiть “Монiторити запит” Також ви можете підписатись і отримувати
+                        сповіщення у ваш улюблений месенджер: Skype, Telegram та Facebook Messenger
+                    </div>
+
+                    <div class="request-block__list">
+
+                        <div class="request-block__list-header">
+                            <div class="request-block__list-title">Запит</div>
+                            <div class="request-block__list-title"></div>
+                            <div class="request-block__list-title">Знайдено</div>
+                            <div class="request-block__list-title">За тиждень</div>
+                            <div class="request-block__list-title">E-mail нагадування</div>
+                            <div class="request-block__list-title"></div>
+                        </div>
+
+                        <div class="request-block__list-item request-row">
+                            <div class="request-row__name">Магамадова Танзіла</div>
+                            <div class="request-row__rss">
+                                <button class="n-btn n-btn_gray request-row__rss-btn">RSS</button>
+                            </div>
+                            <div class="request-row__find">
+                                <div class="request-row__item-name">Знайдено</div>
+                                <div class="request-row__item-count">12</div>
+                            </div>
+                            <div class="request-row__week">
+                                <div class="request-row__item-name">За тиждень</div>
+                                <div class="request-row__item-count">12</div>
+                            </div>
+                            <div class="request-row__email">
+                                <div class="request-row__item-name">E-mail нагадування</div>
+                                <div class="email-notification">
+                                    <div class="email-notification__status">На паузі</div>
+                                    <div class="email-notification__icon email-notification__play"></div>
                                 </div>
                             </div>
-
-
-                        </div>
-
-                        <div class="sort-block__icon sort-block__icon_desc"></div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="search-page__results-block">
-
-                <div class="search-card search-page__result-card">
-
-    <div class="search-card__top">
-        <div class="search-card__name">Магамадова Танзіла Вахівна</div>
-        <div class="search-card__position">2018, Кандидат на посаду</div>
-
-        <div class="search-card__actions-wrap">
-
-            <div class="search-card__actions">
-
-                <div class="search-card__actions-inner">
-
-                    <div class="action-icon search-card__action">
-
-    <img src="img/icon/marker.svg" alt="" class="action-icon__img">
-
-    <div class="action-icon__count">12</div>
-
-    <div class="action-icon__tooltip">
-        <div class="action-icon__tooltip-text">Список порівнянь</div>
-    </div>
-
-</div>
-
-                    <div class="action-icon search-card__action">
-
-    <img src="img/icon/money.svg" alt="" class="action-icon__img">
-
-    <div class="action-icon__count">5</div>
-
-    <div class="action-icon__tooltip">
-        <div class="action-icon__tooltip-text">Список порівнянь</div>
-    </div>
-
-</div>
-
-                    <div class="action-icon search-card__action">
-
-    <img src="img/icon/compare.svg" alt="" class="action-icon__img">
-
-    <div class="action-icon__count">11</div>
-
-    <div class="action-icon__tooltip">
-        <div class="action-icon__tooltip-text">Список порівнянь</div>
-    </div>
-
-</div>
-
-                    <div class="action-icon search-card__action">
-
-    <img src="img/icon/favourite.svg" alt="" class="action-icon__img">
-
-    <div class="action-icon__tooltip">
-        <div class="action-icon__tooltip-text">Список порівнянь</div>
-    </div>
-
-</div>
-
-                </div>
-
-            </div>
-
-            <div class="search-card__action-link">
-                <div class="search-card__action-link-dot"></div>
-                <div class="search-card__action-link-dot"></div>
-                <div class="search-card__action-link-dot"></div>
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="search-card__items">
-        <div class="search-card__item">
-            <div class="search-card__item-name">Місце праці</div>
-            <div class="search-card__item-text">Харківська область, головне управління Пенсійного фонду
-                України в Харківській області
-            </div>
-        </div>
-        <div class="search-card__item">
-            <div class="search-card__item-name">Посада</div>
-            <div class="search-card__item-text">Головний спеціаліст відділу з питань призначення та
-                перерахунків пенсій № 8 управління застосування пенсійного фонду України в Харківскій
-                області
-            </div>
-        </div>
-    </div>
-
-
-</div>
-
-                <div class="search-card search-page__result-card">
-
-    <div class="search-card__top">
-        <div class="search-card__name">Магамадова Танзіла Вахівна</div>
-        <div class="search-card__position">2018, Кандидат на посаду</div>
-
-        <div class="search-card__actions-wrap">
-
-            <div class="search-card__actions">
-
-                <div class="search-card__actions-inner">
-
-                    <div class="action-icon search-card__action">
-
-    <img src="img/icon/marker.svg" alt="" class="action-icon__img">
-
-    <div class="action-icon__tooltip">
-        <div class="action-icon__tooltip-text">Список порівнянь</div>
-    </div>
-
-</div>
-
-                    <div class="action-icon search-card__action">
-
-    <img src="img/icon/money.svg" alt="" class="action-icon__img">
-
-    <div class="action-icon__tooltip">
-        <div class="action-icon__tooltip-text">Список порівнянь</div>
-    </div>
-
-</div>
-
-                    <div class="action-icon search-card__action">
-
-    <img src="img/icon/compare.svg" alt="" class="action-icon__img">
-
-    <div class="action-icon__tooltip">
-        <div class="action-icon__tooltip-text">Список порівнянь</div>
-    </div>
-
-</div>
-
-                    <div class="action-icon search-card__action">
-
-    <img src="img/icon/favourite.svg" alt="" class="action-icon__img">
-
-    <div class="action-icon__tooltip">
-        <div class="action-icon__tooltip-text">Список порівнянь</div>
-    </div>
-
-</div>
-
-                </div>
-
-            </div>
-
-            <div class="search-card__action-link">
-                <div class="search-card__action-link-dot"></div>
-                <div class="search-card__action-link-dot"></div>
-                <div class="search-card__action-link-dot"></div>
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="search-card__items">
-        <div class="search-card__item">
-            <div class="search-card__item-name">Місце праці</div>
-            <div class="search-card__item-text">Харківська область, головне управління Пенсійного фонду
-                України в Харківській області
-            </div>
-        </div>
-        <div class="search-card__item">
-            <div class="search-card__item-name">Посада</div>
-            <div class="search-card__item-text">Головний спеціаліст відділу з питань призначення та
-                перерахунків пенсій № 8 управління застосування пенсійного фонду України в Харківскій
-                області
-            </div>
-        </div>
-    </div>
-
-
-</div>
-
-                <div class="search-card search-page__result-card">
-
-    <div class="search-card__top">
-        <div class="search-card__name">Магамадова Танзіла Вахівна</div>
-        <div class="search-card__position">2018, Кандидат на посаду</div>
-
-        <div class="search-card__actions-wrap">
-
-            <div class="search-card__actions">
-
-                <div class="search-card__actions-inner">
-
-                    <div class="action-icon search-card__action">
-
-    <img src="img/icon/marker.svg" alt="" class="action-icon__img">
-
-    <div class="action-icon__tooltip">
-        <div class="action-icon__tooltip-text">Список порівнянь</div>
-    </div>
-
-</div>
-
-                    <div class="action-icon search-card__action">
-
-    <img src="img/icon/money.svg" alt="" class="action-icon__img">
-
-    <div class="action-icon__tooltip">
-        <div class="action-icon__tooltip-text">Список порівнянь</div>
-    </div>
-
-</div>
-
-                    <div class="action-icon search-card__action">
-
-    <img src="img/icon/compare.svg" alt="" class="action-icon__img">
-
-    <div class="action-icon__tooltip">
-        <div class="action-icon__tooltip-text">Список порівнянь</div>
-    </div>
-
-</div>
-
-                    <div class="action-icon search-card__action">
-
-    <img src="img/icon/favourite.svg" alt="" class="action-icon__img">
-
-    <div class="action-icon__tooltip">
-        <div class="action-icon__tooltip-text">Список порівнянь</div>
-    </div>
-
-</div>
-
-                </div>
-
-            </div>
-
-            <div class="search-card__action-link">
-                <div class="search-card__action-link-dot"></div>
-                <div class="search-card__action-link-dot"></div>
-                <div class="search-card__action-link-dot"></div>
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="search-card__items">
-        <div class="search-card__item">
-            <div class="search-card__item-name">Місце праці</div>
-            <div class="search-card__item-text">Харківська область, головне управління Пенсійного фонду
-                України в Харківській області
-            </div>
-        </div>
-        <div class="search-card__item">
-            <div class="search-card__item-name">Посада</div>
-            <div class="search-card__item-text">Головний спеціаліст відділу з питань призначення та
-                перерахунків пенсій № 8 управління застосування пенсійного фонду України в Харківскій
-                області
-            </div>
-        </div>
-    </div>
-
-
-</div>
-
-                <div class="promo-block search-page__promo">реклама или промо</div>
-
-                <div class="search-card search-page__result-card">
-
-    <div class="search-card__top">
-        <div class="search-card__name">Магамадова Танзіла Вахівна</div>
-        <div class="search-card__position">2018, Кандидат на посаду</div>
-
-        <div class="search-card__actions-wrap">
-
-            <div class="search-card__actions">
-
-                <div class="search-card__actions-inner">
-
-                    <div class="action-icon search-card__action">
-
-    <img src="img/icon/marker.svg" alt="" class="action-icon__img">
-
-    <div class="action-icon__tooltip">
-        <div class="action-icon__tooltip-text">Список порівнянь</div>
-    </div>
-
-</div>
-
-                    <div class="action-icon search-card__action">
-
-    <img src="img/icon/money.svg" alt="" class="action-icon__img">
-
-    <div class="action-icon__tooltip">
-        <div class="action-icon__tooltip-text">Список порівнянь</div>
-    </div>
-
-</div>
-
-                    <div class="action-icon search-card__action">
-
-    <img src="img/icon/compare.svg" alt="" class="action-icon__img">
-
-    <div class="action-icon__tooltip">
-        <div class="action-icon__tooltip-text">Список порівнянь</div>
-    </div>
-
-</div>
-
-                    <div class="action-icon search-card__action">
-
-    <img src="img/icon/favourite.svg" alt="" class="action-icon__img">
-
-    <div class="action-icon__tooltip">
-        <div class="action-icon__tooltip-text">Список порівнянь</div>
-    </div>
-
-</div>
-
-                </div>
-
-            </div>
-
-            <div class="search-card__action-link">
-                <div class="search-card__action-link-dot"></div>
-                <div class="search-card__action-link-dot"></div>
-                <div class="search-card__action-link-dot"></div>
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="search-card__items">
-        <div class="search-card__item">
-            <div class="search-card__item-name">Місце праці</div>
-            <div class="search-card__item-text">Харківська область, головне управління Пенсійного фонду
-                України в Харківській області
-            </div>
-        </div>
-        <div class="search-card__item">
-            <div class="search-card__item-name">Посада</div>
-            <div class="search-card__item-text">Головний спеціаліст відділу з питань призначення та
-                перерахунків пенсій № 8 управління застосування пенсійного фонду України в Харківскій
-                області
-            </div>
-        </div>
-    </div>
-
-
-</div>
-
-                <div class="search-card search-page__result-card">
-
-    <div class="search-card__top">
-        <div class="search-card__name">Магамадова Танзіла Вахівна</div>
-        <div class="search-card__position">2018, Кандидат на посаду</div>
-
-        <div class="search-card__actions-wrap">
-
-            <div class="search-card__actions">
-
-                <div class="search-card__actions-inner">
-
-                    <div class="action-icon search-card__action">
-
-    <img src="img/icon/marker.svg" alt="" class="action-icon__img">
-
-    <div class="action-icon__tooltip">
-        <div class="action-icon__tooltip-text">Список порівнянь</div>
-    </div>
-
-</div>
-
-                    <div class="action-icon search-card__action">
-
-    <img src="img/icon/money.svg" alt="" class="action-icon__img">
-
-    <div class="action-icon__tooltip">
-        <div class="action-icon__tooltip-text">Список порівнянь</div>
-    </div>
-
-</div>
-
-                    <div class="action-icon search-card__action">
-
-    <img src="img/icon/compare.svg" alt="" class="action-icon__img">
-
-    <div class="action-icon__tooltip">
-        <div class="action-icon__tooltip-text">Список порівнянь</div>
-    </div>
-
-</div>
-
-                    <div class="action-icon search-card__action">
-
-    <img src="img/icon/favourite.svg" alt="" class="action-icon__img">
-
-    <div class="action-icon__tooltip">
-        <div class="action-icon__tooltip-text">Список порівнянь</div>
-    </div>
-
-</div>
-
-                </div>
-
-            </div>
-
-            <div class="search-card__action-link">
-                <div class="search-card__action-link-dot"></div>
-                <div class="search-card__action-link-dot"></div>
-                <div class="search-card__action-link-dot"></div>
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="search-card__items">
-        <div class="search-card__item">
-            <div class="search-card__item-name">Місце праці</div>
-            <div class="search-card__item-text">Харківська область, головне управління Пенсійного фонду
-                України в Харківській області
-            </div>
-        </div>
-        <div class="search-card__item">
-            <div class="search-card__item-name">Посада</div>
-            <div class="search-card__item-text">Головний спеціаліст відділу з питань призначення та
-                перерахунків пенсій № 8 управління застосування пенсійного фонду України в Харківскій
-                області
-            </div>
-        </div>
-    </div>
-
-
-</div>
-
-                <div class="search-card search-page__result-card">
-
-    <div class="search-card__top">
-        <div class="search-card__name">Магамадова Танзіла Вахівна</div>
-        <div class="search-card__position">2018, Кандидат на посаду</div>
-
-        <div class="search-card__actions-wrap">
-
-            <div class="search-card__actions">
-
-                <div class="search-card__actions-inner">
-
-                    <div class="action-icon search-card__action">
-
-    <img src="img/icon/marker.svg" alt="" class="action-icon__img">
-
-    <div class="action-icon__tooltip">
-        <div class="action-icon__tooltip-text">Список порівнянь</div>
-    </div>
-
-</div>
-
-                    <div class="action-icon search-card__action">
-
-    <img src="img/icon/money.svg" alt="" class="action-icon__img">
-
-    <div class="action-icon__tooltip">
-        <div class="action-icon__tooltip-text">Список порівнянь</div>
-    </div>
-
-</div>
-
-                    <div class="action-icon search-card__action">
-
-    <img src="img/icon/compare.svg" alt="" class="action-icon__img">
-
-    <div class="action-icon__tooltip">
-        <div class="action-icon__tooltip-text">Список порівнянь</div>
-    </div>
-
-</div>
-
-                    <div class="action-icon search-card__action">
-
-    <img src="img/icon/favourite.svg" alt="" class="action-icon__img">
-
-    <div class="action-icon__tooltip">
-        <div class="action-icon__tooltip-text">Список порівнянь</div>
-    </div>
-
-</div>
-
-                </div>
-
-            </div>
-
-            <div class="search-card__action-link">
-                <div class="search-card__action-link-dot"></div>
-                <div class="search-card__action-link-dot"></div>
-                <div class="search-card__action-link-dot"></div>
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="search-card__items">
-        <div class="search-card__item">
-            <div class="search-card__item-name">Місце праці</div>
-            <div class="search-card__item-text">Харківська область, головне управління Пенсійного фонду
-                України в Харківській області
-            </div>
-        </div>
-        <div class="search-card__item">
-            <div class="search-card__item-name">Посада</div>
-            <div class="search-card__item-text">Головний спеціаліст відділу з питань призначення та
-                перерахунків пенсій № 8 управління застосування пенсійного фонду України в Харківскій
-                області
-            </div>
-        </div>
-    </div>
-
-
-</div>
-
-                <div class="search-card search-page__result-card">
-
-    <div class="search-card__top">
-        <div class="search-card__name">Магамадова Танзіла Вахівна</div>
-        <div class="search-card__position">2018, Кандидат на посаду</div>
-
-        <div class="search-card__actions-wrap">
-
-            <div class="search-card__actions">
-
-                <div class="search-card__actions-inner">
-
-                    <div class="action-icon search-card__action">
-
-    <img src="img/icon/marker.svg" alt="" class="action-icon__img">
-
-    <div class="action-icon__tooltip">
-        <div class="action-icon__tooltip-text">Список порівнянь</div>
-    </div>
-
-</div>
-
-                    <div class="action-icon search-card__action">
-
-    <img src="img/icon/money.svg" alt="" class="action-icon__img">
-
-    <div class="action-icon__tooltip">
-        <div class="action-icon__tooltip-text">Список порівнянь</div>
-    </div>
-
-</div>
-
-                    <div class="action-icon search-card__action">
-
-    <img src="img/icon/compare.svg" alt="" class="action-icon__img">
-
-    <div class="action-icon__tooltip">
-        <div class="action-icon__tooltip-text">Список порівнянь</div>
-    </div>
-
-</div>
-
-                    <div class="action-icon search-card__action">
-
-    <img src="img/icon/favourite.svg" alt="" class="action-icon__img">
-
-    <div class="action-icon__tooltip">
-        <div class="action-icon__tooltip-text">Список порівнянь</div>
-    </div>
-
-</div>
-
-                </div>
-
-            </div>
-
-            <div class="search-card__action-link">
-                <div class="search-card__action-link-dot"></div>
-                <div class="search-card__action-link-dot"></div>
-                <div class="search-card__action-link-dot"></div>
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="search-card__items">
-        <div class="search-card__item">
-            <div class="search-card__item-name">Місце праці</div>
-            <div class="search-card__item-text">Харківська область, головне управління Пенсійного фонду
-                України в Харківській області
-            </div>
-        </div>
-        <div class="search-card__item">
-            <div class="search-card__item-name">Посада</div>
-            <div class="search-card__item-text">Головний спеціаліст відділу з питань призначення та
-                перерахунків пенсій № 8 управління застосування пенсійного фонду України в Харківскій
-                області
-            </div>
-        </div>
-    </div>
-
-
-</div>
-
-            </div>
-
-            <div class="pager search-page__pager">
-                <div class="pager__item">
-                    <div class="pager__prev">
-                        <svg width="24" height="25"
-                             class="pager__arrow"
-                             viewBox="0 0 24 25"
-                             fill="none"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.99 13.0448L20 13.0448L20 11.0379L7.99 11.0379L7.99 8.02755L4 12.0414L7.99 16.0552L7.99 13.0448Z"
-                                  fill="#111111"/>
-                        </svg>
-                    </div>
-                </div>
-                <div class="pager__item">
-                    <span class="pager__link pager__link_active">1</span>
-                </div>
-                <div class="pager__item">
-                    <a href="#" class="pager__link">2</a>
-                </div>
-                <div class="pager__item">
-                    <a href="#" class="pager__link">3</a>
-                </div>
-                <div class="pager__item">
-                    <span class="pager__dots">
-                       <span class="pager__dot"></span>
-                       <span class="pager__dot"></span>
-                       <span class="pager__dot"></span>
-                    </span>
-                </div>
-                <div class="pager__item pager__item_desktop">
-                    <a href="#" class="pager__link">11</a>
-                </div>
-                <div class="pager__item">
-                    <a href="#" class="pager__link">12</a>
-                </div>
-                <div class="pager__item">
-                    <a href="#" class="pager__link">13</a>
-                </div>
-                <div class="pager__item">
-                    <div class="pager__next">
-                        <svg class="pager__arrow"
-                             width="24" height="25"
-                             viewBox="0 0 24 25"
-                             fill="none"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <path d="M16.01 11.0379H4V13.0449H16.01V16.0552L20 12.0414L16.01 8.02759V11.0379Z"
-                                  fill="#111111"/>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-
-            <div class="advantages-block search-page__advantages">
-
-                <div class="advantages-block__items">
-
-                    <div class="advantages-block__item">
-                        <div class="advantages-block__item-title">Чат-боти</div>
-                        <div class="advantages-block__item-text">Ми створили кишенькових помічників — чат-ботів у
-                            популярних месенджерах
-                        </div>
-                        <div class="advantages-block__bots">
-                            <div class="advantages-block__bots-items">
-
-                                <a href="#" class="advantages-block__bot-link social-link">
-                                    <img src="img/bots/telegram.svg" alt="" class="social-link__icon">
-                                </a>
-
-                                <a href="#" class="advantages-block__bot-link social-link">
-                                    <img src="img/bots/messenger.svg" alt="" class="social-link__icon">
-                                </a>
-
-                                <a href="#" class="advantages-block__bot-link social-link">
-                                    <img src="img/bots/skype.svg" alt="" class="social-link__icon">
-                                </a>
-
+                            <div class="request-row__close">
+                                <button class="close-btn"></button>
                             </div>
-
-                            <a href="#" class="advantages-block__instruction-link">Покрокова iнструкцiя</a>
-
-
                         </div>
+
+                        <div class="request-block__list-item request-row">
+                            <div class="request-row__name">Магамадова Танзіла</div>
+                            <div class="request-row__rss">
+                                <button class="n-btn n-btn_gray request-row__rss-btn">RSS</button>
+                            </div>
+                            <div class="request-row__find">
+                                <div class="request-row__item-name">Знайдено</div>
+                                <div class="request-row__item-count">12</div>
+                            </div>
+                            <div class="request-row__week">
+                                <div class="request-row__item-name">За тиждень</div>
+                                <div class="request-row__item-count">12</div>
+                            </div>
+                            <div class="request-row__email">
+                                <div class="request-row__item-name">E-mail нагадування</div>
+                                <div class="email-notification">
+                                    <div class="email-notification__status">На паузі</div>
+                                    <div class="email-notification__icon email-notification__play"></div>
+                                </div>
+                            </div>
+                            <div class="request-row__close">
+                                <button class="close-btn"></button>
+                            </div>
+                        </div>
+
+                        <div class="request-block__list-item request-row">
+                            <div class="request-row__name">Магамадова Танзіла</div>
+                            <div class="request-row__rss">
+                                <button class="n-btn n-btn_gray request-row__rss-btn">RSS</button>
+                            </div>
+                            <div class="request-row__find">
+                                <div class="request-row__item-name">Знайдено</div>
+                                <div class="request-row__item-count">12</div>
+                            </div>
+                            <div class="request-row__week">
+                                <div class="request-row__item-name">За тиждень</div>
+                                <div class="request-row__item-count">12</div>
+                            </div>
+                            <div class="request-row__email">
+                                <div class="request-row__item-name">E-mail нагадування</div>
+                                <div class="email-notification">
+                                    <div class="email-notification__status">В роботі</div>
+                                    <div class="email-notification__icon email-notification__pause"></div>
+                                </div>
+                            </div>
+                            <div class="request-row__close">
+                                <button class="close-btn"></button>
+                            </div>
+                        </div>
+
                     </div>
 
-                    <div class="advantages-block__item">
-                        <div class="advantages-block__item-title">Порівняння</div>
-                        <div class="advantages-block__item-text">Додавайте декларантів
-                            у список порівнянь та дивіться аналіз за різними показниками
-                        </div>
-                    </div>
-
-                    <div class="advantages-block__item">
-                        <div class="advantages-block__item-title">Моніторинг</div>
-                        <div class="advantages-block__item-text">Слідкуйте за змінами чи появою нових документів по
-                            E-mail, RSS та у месенжерах
-                        </div>
-                    </div>
-
-                    <div class="advantages-block__item">
-                        <div class="advantages-block__item-title">Аналітика</div>
-                        <div class="advantages-block__item-text">Ми зробили круту аналітику
-                            і поділили ії на 8 розділів для вашої зручності
-                        </div>
-                    </div>
 
                 </div>
 
@@ -1630,6 +990,7 @@
 
 
         </div>
+
 
     </div>
 
@@ -1772,6 +1133,57 @@
 
 
 <script src="js/scripts.js"></script>
+
+<div class="popup">
+
+    <div class="popup__wrap" style="width: 464px;">
+
+        <div class="popup__content" style="opacity: 1;">
+
+            <div class="popup__close close-btn"></div>
+
+            <div class="add-request-block">
+
+    <div class="add-request-block__title">Додати запити</div>
+
+    <div class="add-request-block__content">
+
+        <div class="add-request-block__text">Додавайте багато запитів вводячи їх з нового рядка. Тисніть кнопку
+            Enter для того щоб завершити введення та перейти до нового запиту. Активні запити виділяються
+            кольором,
+            їх можно редагувати та видаляти.
+        </div>
+
+        <div class="add-request-block__items">
+
+            <div class="add-request-block__item">Магомадова Танзiла Вахiвна</div>
+
+            <div class="add-request-block__item">Кличко</div>
+
+            <input type="text" value="Магомадова Танзiла Вах" class="add-request-block__input">
+
+        </div>
+
+        <div class="add-request-block__bottom">
+
+            <div class="add-request-block__count">
+                <div class="add-request-block__count-text">Кількість запитів:</div>
+                <div class="add-request-block__count-number">2</div>
+            </div>
+
+            <button class="n-btn add-request-block__btn">Додати</button>
+
+        </div>
+
+    </div>
+
+</div>
+
+        </div>
+
+    </div>
+
+</div>
 
 </body>
 </html>

@@ -8,6 +8,90 @@
 /*
  * Custom
  */
+(function ($) {
+
+  $(function () {
+
+    let body = $('body');
+    let html = $('html');
+
+    $('.popup-btn').on('click', function (e) {
+
+      e.preventDefault();
+
+      let $this = $(this);
+      let contentUrl = $this.attr('href');
+      let popupWidth = $this.data('width');
+
+      downloadContent(contentUrl, function (response) {
+        renderPopup(response, popupWidth);
+      });
+
+    });
+
+
+
+    function downloadContent(contentUrl, callback) {
+      jQuery.ajax({
+        url: contentUrl,
+        type: "get",
+        data: [],
+        success: function success(response, textStatus, jqXHR) {
+          callback(response);
+        } });
+    }
+
+
+
+    function renderPopup(content, popupWidth) {
+      downloadContent('/popup/popup.html', function (popup) {
+        popup = $(popup);
+        $('.popup__content', popup).append(content);
+        if(popupWidth) {
+          $('.popup__wrap', popup).css('width', popupWidth);
+        }
+        openPopup(popup);
+      });
+
+    }
+
+
+
+    function openPopup(popup) {
+
+      html.addClass('popup-lock');
+      body.append(popup);
+
+      $('.popup__content', popup).fadeTo(400, 1, function() {
+
+        $('.popup__close', popup).on('click', function (e) {
+          e.preventDefault();
+          closePopup(popup);
+        });
+
+        popup.on('click', function(e) {
+          if ( !$(e.target).parents('.popup__content').length ) {
+            closePopup(popup);
+          }
+        });
+
+      });
+
+    }
+
+
+
+    function closePopup(popup) {
+      $('.popup__content', popup).fadeTo(400, 0, function() {
+        popup.remove();
+        html.removeClass('popup-lock');
+      });
+    }
+
+
+  });
+
+})(jQuery);;
 (function($) {
 
   $(function() {
@@ -24,12 +108,22 @@
       mobileMenu.addClass('mobile-menu_open');
       body.addClass('menu-is-open');
     });
+    
+    $('.popup-btn', mobileMenu).on('click', function() {
+      setTimeout(function() {
+        closeMenu();
+      }, 300);
+    });
 
     $('.mobile-menu__close-btn', mobileMenu).on('click', function (e) {
       e.preventDefault();
+      closeMenu();
+    });
+
+    function closeMenu() {
       mobileMenu.removeClass('mobile-menu_open');
       body.removeClass('menu-is-open');
-    });
+    }
 
   });
 
@@ -247,6 +341,26 @@
     $(document).on('click', function(e){
       if ( !$(e.target).parents('.search-card__actions-wrap').length ) {
         $('.search-card__actions', searchCard).hide();
+      }
+    });
+
+  });
+
+})(jQuery);;
+(function($) {
+
+  $(function() {
+
+    let accountBlock = $('.account-block');
+
+    $('.account-block__icon', accountBlock).on('click', function() {
+      $('.account-block__dropdown', accountBlock).toggle();
+    });
+
+    /*Клик вне элемента*/
+    $(document).on('click', function(e){
+      if ( !$(e.target).parents('.account-block').length ) {
+        $('.account-block__dropdown', accountBlock).hide();
       }
     });
 
