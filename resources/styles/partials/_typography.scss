@@ -2,7 +2,7 @@ body {
   font-family: Inter, Verdana, Arial;
   font-size: 14px;
   font-weight: 400;
-  color: #111111;
+  color: $base;
   line-height: 1.5;
 }
 
@@ -61,5 +61,12 @@ li {
     height: 5px;
     background: $base;
     border-radius: 50%;
+  }
+}
+
+p {
+  img {
+    max-width: 100%;
+    height: auto;
   }
 }

@@ -142,13 +142,9 @@
   }
   &__count-block {
     margin-bottom: 25px;
-    @include flex($justify-content: flex-start, $align-items: center);
     @media all and (min-width: 1024px) {
       margin: 0 16px 0 0;
     }
-  }
-  &__count-block-count {
-    margin-left: 7px;
   }
   &__btn {
     text-transform: uppercase;

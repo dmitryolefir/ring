@@ -330,27 +330,6 @@
 
   $(function() {
 
-    let searchCard = $('.search-card');
-
-    $('.search-card__action-link', searchCard).on('click', function() {
-      let card = $(this).parents('.search-card');
-      $('.search-card__actions', card).toggle();
-    });
-
-    /*Клик вне элемента*/
-    $(document).on('click', function(e){
-      if ( !$(e.target).parents('.search-card__actions-wrap').length ) {
-        $('.search-card__actions', searchCard).hide();
-      }
-    });
-
-  });
-
-})(jQuery);;
-(function($) {
-
-  $(function() {
-
     let accountBlock = $('.account-block');
 
     $('.account-block__icon', accountBlock).on('click', function() {
@@ -362,6 +341,51 @@
       if ( !$(e.target).parents('.account-block').length ) {
         $('.account-block__dropdown', accountBlock).hide();
       }
+    });
+
+  });
+
+})(jQuery);;
+(function($) {
+
+  $(function() {
+
+    let cardActionBlock = $('.card-actions');
+
+    $('.card-actions__action-link', cardActionBlock).on('click', function() {
+      let parent = $(this).parents('.card-actions');
+      $('.card-actions__items', parent).toggle();
+    });
+
+    /*Клик вне элемента*/
+    $(document).on('click', function(e){
+      if ( !$(e.target).parents('.card-actions').length ) {
+        $('.card-actions__items', cardActionBlock).hide();
+      }
+    });
+
+  });
+
+})(jQuery);;
+(function($) {
+
+  $(function() {
+
+    $('.compare-card__dropdown').on('click', function() {
+      let $this = $(this);
+      $this.toggleClass('drop-down-btn_opened');
+      $this.parents('.compare-card').toggleClass('compare-card_opened');
+    });
+
+  });
+
+})(jQuery);;
+(function($) {
+
+  $(function() {
+
+    $('.compare-popup__open-link').on('click', function() {
+      $(this).parents('.compare-popup').find('.compare-card__dropdown').trigger('click');
     });
 
   });

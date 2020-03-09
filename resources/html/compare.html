@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+@@include('template/head.html', {"title": "Bihus"})
+
+<body>
+
+<div class="page">   
+
+    @@include('template/header.html')
+
+    <div class="content container">
+
+        <div class="compare-page">
+
+            <div class="compare-page__search">
+
+                @@include('template/search-form.html')
+
+            </div>
+
+            <div class="compare-page__header">
+
+                <a href="#" class="compare-page__help-link">Як порівнювати декларації?</a>
+
+                <h1 class="compare-page__title">Декларації що були використані для порівняння</h1>
+
+            </div>
+
+            <div class="compare-page__items">
+
+                <div class="compare-page__item">@@include('template/compare-card.html')</div>
+
+                <div class="compare-page__item">@@include('template/compare-card.html')</div>
+
+                <div class="compare-page__item">@@include('template/compare-card.html')</div>
+
+                <div class="compare-page__item">@@include('template/compare-card.html')</div>
+
+            </div>
+
+            <h2 class="compare-page__title">Доходи та грошові активи VS витрати та зобовязання</h2>
+
+            <div class="compare-page__chart">
+
+                <div class="chart-legend">
+
+                    <div class="chart-legend__item">
+                        <div class="chart-legend__item-color" style="background: #00bff2;"></div>
+                        <div class="chart-legend__item-name">Дохід</div>
+                    </div>
+
+                    <div class="chart-legend__item">
+                        <div class="chart-legend__item-color" style="background: #ed3024;"></div>
+                        <div class="chart-legend__item-name">Грошові активи</div>
+                    </div>
+
+                    <div class="chart-legend__item">
+                        <div class="chart-legend__item-color" style="background: #fb0;"></div>
+                        <div class="chart-legend__item-name">Фінансові зобов’язання</div>
+                    </div>
+
+                    <div class="chart-legend__item">
+                        <div class="chart-legend__item-color" style="background: #b3d245;"></div>
+                        <div class="chart-legend__item-name">Витрати</div>
+                    </div>
+
+                </div>
+
+                <img src="/img/chart.svg" class="compare-page__chart-img">
+
+            </div>
+
+            <div class="advantages-block compare-page__advantages">
+
+                <div class="advantages-block__items">
+
+                    <div class="advantages-block__item">
+                        <div class="advantages-block__item-title">Чат-боти</div>
+                        <div class="advantages-block__item-text">Ми створили кишенькових помічників — чат-ботів у
+                            популярних месенджерах
+                        </div>
+                        <div class="advantages-block__bots">
+                            <div class="advantages-block__bots-items">
+
+                                <a href="#" class="advantages-block__bot-link social-link">
+                                    <img src="img/bots/telegram.svg" alt="" class="social-link__icon">
+                                </a>
+
+                                <a href="#" class="advantages-block__bot-link social-link">
+                                    <img src="img/bots/messenger.svg" alt="" class="social-link__icon">
+                                </a>
+
+                                <a href="#" class="advantages-block__bot-link social-link">
+                                    <img src="img/bots/skype.svg" alt="" class="social-link__icon">
+                                </a>
+
+                            </div>
+
+                            <a href="#" class="advantages-block__instruction-link">Покрокова iнструкцiя</a>
+
+
+                        </div>
+                    </div>
+
+                    <div class="advantages-block__item">
+                        <div class="advantages-block__item-title">Порівняння</div>
+                        <div class="advantages-block__item-text">Додавайте декларантів
+                            у список порівнянь та дивіться аналіз за різними показниками
+                        </div>
+                    </div>
+
+                    <div class="advantages-block__item">
+                        <div class="advantages-block__item-title">Моніторинг</div>
+                        <div class="advantages-block__item-text">Слідкуйте за змінами чи появою нових документів по
+                            E-mail, RSS та у месенжерах
+                        </div>
+                    </div>
+
+                    <div class="advantages-block__item">
+                        <div class="advantages-block__item-title">Аналітика</div>
+                        <div class="advantages-block__item-text">Ми зробили круту аналітику
+                            і поділили ії на 8 розділів для вашої зручності
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    @@include('template/footer.html')
+
+</div>
+
+
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+@@include('template/head.html', {"title": "Bihus"})
+
+<body>
+
+<div class="page">
+
+    @@include('template/header.html')
+
+    <div class="content container">
+
+        <div class="analytics-page">
+
+            <div class="analytics-page__search">
+                @@include('template/search-form.html')
+            </div>
+
+            <div class="analytics-page__header">
+
+                <h1 class="analytics-page__title">Аналітика</h1>
+
+                <div class="analytics-page__select">
+
+                    <div class="n-select">
+                        <div class="n-select__selected">Інструкції та дані</div>
+                        <div class="n-select__items">
+                            <div class="n-select__item">Інструкція</div>
+                            <div class="n-select__item">Дані у СSV(більше мільйона рядків)</div>
+                            <div class="n-select__item">Опис формату даних</div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="analytics-page__tabs">
+
+                <div class="analytics-tabs">
+                    <div class="analytics-tabs__tab analytics-tabs__tab_active">
+                        Загальні дані</div>
+                    <div class="analytics-tabs__tab">
+                        <div class="analytics-tabs__tab-name">Доходи та<br>активи</div>
+                    </div>
+                    <div class="analytics-tabs__tab">
+                        <div class="analytics-tabs__tab-name">Зобовязання<br>та видатки</div>
+                    </div>
+                    <div class="analytics-tabs__tab">
+                        <div class="analytics-tabs__tab-name">Нерухомість</div>
+                    </div>
+                    <div class="analytics-tabs__tab">
+                        <div class="analytics-tabs__tab-name">Транспорт</div>
+                    </div>
+                    <div class="analytics-tabs__tab">
+                        <div class="analytics-tabs__tab-name">Ризик-аналіз</div>
+                    </div>
+                    <div class="analytics-tabs__tab">
+                        <div class="analytics-tabs__tab-name">Регіональний<br>зріз</div>
+                    </div>
+                    <div class="analytics-tabs__tab">
+                        <div class="analytics-tabs__tab-name">Список<br>декларантів</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="analytics-page__iframe">
+
+                <iframe src="frame.html" height="720" align="left" frameBorder="0"></iframe>
+
+            </div>
+
+            <div class="advantages-block analytics-page__advantages">
+
+                <div class="advantages-block__items">
+
+                    <div class="advantages-block__item">
+                        <div class="advantages-block__item-title">Чат-боти</div>
+                        <div class="advantages-block__item-text">Ми створили кишенькових помічників — чат-ботів у
+                            популярних месенджерах
+                        </div>
+                        <div class="advantages-block__bots">
+                            <div class="advantages-block__bots-items">
+
+                                <a href="#" class="advantages-block__bot-link social-link">
+                                    <img src="img/bots/telegram.svg" alt="" class="social-link__icon">
+                                </a>
+
+                                <a href="#" class="advantages-block__bot-link social-link">
+                                    <img src="img/bots/messenger.svg" alt="" class="social-link__icon">
+                                </a>
+
+                                <a href="#" class="advantages-block__bot-link social-link">
+                                    <img src="img/bots/skype.svg" alt="" class="social-link__icon">
+                                </a>
+
+                            </div>
+
+                            <a href="#" class="advantages-block__instruction-link">Покрокова iнструкцiя</a>
+
+
+                        </div>
+                    </div>
+
+                    <div class="advantages-block__item">
+                        <div class="advantages-block__item-title">Порівняння</div>
+                        <div class="advantages-block__item-text">Додавайте декларантів
+                            у список порівнянь та дивіться аналіз за різними показниками
+                        </div>
+                    </div>
+
+                    <div class="advantages-block__item">
+                        <div class="advantages-block__item-title">Моніторинг</div>
+                        <div class="advantages-block__item-text">Слідкуйте за змінами чи появою нових документів по
+                            E-mail, RSS та у месенжерах
+                        </div>
+                    </div>
+
+                    <div class="advantages-block__item">
+                        <div class="advantages-block__item-title">Аналітика</div>
+                        <div class="advantages-block__item-text">Ми зробили круту аналітику
+                            і поділили ії на 8 розділів для вашої зручності
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    @@include('template/footer.html')
+
+</div>
+
+
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

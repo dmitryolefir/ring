@@ -2,11 +2,16 @@
   position: relative;
   cursor: pointer;
   &:hover {
-    img {
-      opacity: 0.8;
+    path {
+      fill: #45968d;
     }
     .action-icon__tooltip {
       display: block;
+    }
+  }
+  &_red:hover {
+    path {
+      fill: #ce2a1f;
     }
   }
   &__img {
