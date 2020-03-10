@@ -40,7 +40,7 @@
 
     searchForm.on('change', '.n-checkbox__input', function() {
       let filterCount = $('.n-checkbox__input:checked', searchForm).length;
-      $('.deep-search__count-block-count', searchForm).text(filterCount);
+      $('.deep-search__count-block .filter-count', searchForm).text(filterCount);
       setCountFilterInBtn(filterCount);
 
       $('.deep-search__filter', searchForm).each(function() {
@@ -63,7 +63,7 @@
     $('.deep-search__reset', searchForm).on('click', function(e) {
       e.preventDefault();
       $('.n-checkbox__input', searchForm).prop('checked', false);
-      $('.deep-search__count-block-count', searchForm).text(0);
+      $('.deep-search__count-block .filter-count', searchForm).text(0);
       setCountFilterInBtn(0);
       $('.deep-search__filter-title .filter-count', searchForm).remove();
     });
@@ -92,7 +92,6 @@
     /*Rebuild filter Desktop - Mobile Start*/
 
     let view = getView();
-    console.log(view);
     if(view === 'mobile') {
       rebuildDesktopToMobile();
     }
@@ -118,7 +117,6 @@
     }
 
     function rebuildDesktopToMobile() {
-      console.log('rebuildDesktopToMobile');
       let documentFilter = $('.filter__document-position', searchForm);
 
       let positionFilter = documentFilter.clone();
@@ -133,7 +131,6 @@
     }
 
     function rebuildMobileToDesktop() {
-      console.log('rebuildMobileToDesktop');
       let documentFilter = $('.main-position-filter', searchForm);
       let positionFilter = $('.secondary-position-filter', searchForm);
       $('.position-filter__position', positionFilter).insertAfter($('.position-filter__document', documentFilter));

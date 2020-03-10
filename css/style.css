@@ -2946,7 +2946,7 @@ p img {
 }
 .popup__close {
   position: absolute;
-  top: 24px;
+  top: 23px;
   right: 24px;
 }
 
@@ -3093,7 +3093,7 @@ p img {
 }
 @media all and (min-width: 400px) {
   .add-request-block__title {
-    padding: 18px 24px;
+    padding: 21px 24px;
     font-size: 16px;
   }
 }

@@ -12,9 +12,10 @@
       let $this = $(this);
       let contentUrl = $this.attr('href');
       let popupWidth = $this.data('width');
+      let popupBtn = this;
 
       downloadContent(contentUrl, function (response) {
-        renderPopup(response, popupWidth);
+        renderPopup(response, popupBtn, popupWidth);
       });
 
     });
@@ -33,7 +34,7 @@
 
 
 
-    function renderPopup(content, popupWidth) {
+    function renderPopup(content, popupBtn, popupWidth) {
       downloadContent('/popup/popup.html', function (popup) {
         popup = $(popup);
         $('.popup__content', popup).append(content);
@@ -41,6 +42,8 @@
           $('.popup__wrap', popup).css('width', popupWidth);
         }
         openPopup(popup);
+        let event = new Event('popupLoad');
+        popupBtn.dispatchEvent(event);
       });
 
     }

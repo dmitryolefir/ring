@@ -22,9 +22,10 @@
       let $this = $(this);
       let contentUrl = $this.attr('href');
       let popupWidth = $this.data('width');
+      let popupBtn = this;
 
       downloadContent(contentUrl, function (response) {
-        renderPopup(response, popupWidth);
+        renderPopup(response, popupBtn, popupWidth);
       });
 
     });
@@ -43,7 +44,7 @@
 
 
 
-    function renderPopup(content, popupWidth) {
+    function renderPopup(content, popupBtn, popupWidth) {
       downloadContent('/popup/popup.html', function (popup) {
         popup = $(popup);
         $('.popup__content', popup).append(content);
@@ -51,6 +52,8 @@
           $('.popup__wrap', popup).css('width', popupWidth);
         }
         openPopup(popup);
+        let event = new Event('popupLoad');
+        popupBtn.dispatchEvent(event);
       });
 
     }
@@ -209,7 +212,7 @@
 
     searchForm.on('change', '.n-checkbox__input', function() {
       let filterCount = $('.n-checkbox__input:checked', searchForm).length;
-      $('.deep-search__count-block-count', searchForm).text(filterCount);
+      $('.deep-search__count-block .filter-count', searchForm).text(filterCount);
       setCountFilterInBtn(filterCount);
 
       $('.deep-search__filter', searchForm).each(function() {
@@ -232,7 +235,7 @@
     $('.deep-search__reset', searchForm).on('click', function(e) {
       e.preventDefault();
       $('.n-checkbox__input', searchForm).prop('checked', false);
-      $('.deep-search__count-block-count', searchForm).text(0);
+      $('.deep-search__count-block .filter-count', searchForm).text(0);
       setCountFilterInBtn(0);
       $('.deep-search__filter-title .filter-count', searchForm).remove();
     });
@@ -261,7 +264,6 @@
     /*Rebuild filter Desktop - Mobile Start*/
 
     let view = getView();
-    console.log(view);
     if(view === 'mobile') {
       rebuildDesktopToMobile();
     }
@@ -287,7 +289,6 @@
     }
 
     function rebuildDesktopToMobile() {
-      console.log('rebuildDesktopToMobile');
       let documentFilter = $('.filter__document-position', searchForm);
 
       let positionFilter = documentFilter.clone();
@@ -302,7 +303,6 @@
     }
 
     function rebuildMobileToDesktop() {
-      console.log('rebuildMobileToDesktop');
       let documentFilter = $('.main-position-filter', searchForm);
       let positionFilter = $('.secondary-position-filter', searchForm);
       $('.position-filter__position', positionFilter).insertAfter($('.position-filter__document', documentFilter));
@@ -387,6 +387,48 @@
     $('.compare-popup__open-link').on('click', function() {
       $(this).parents('.compare-popup').find('.compare-card__dropdown').trigger('click');
     });
+
+  });
+
+})(jQuery);;
+(function($) {
+
+  $(function() {
+
+    addEventOnRequestBlock();
+
+
+    let requestBtn = document.getElementsByClassName('profile-page__request-btn')[0];
+
+    if(requestBtn) {
+      requestBtn.addEventListener('popupLoad', function() {
+        addEventOnRequestBlock();
+      });
+    }
+
+
+    function addEventOnRequestBlock(){
+
+      let requestBlock = $('.add-request-block');
+
+      $('.add-request-block__input', requestBlock).keyup(function(e){
+        let requestVal = $(this).val();
+        if(e.keyCode === 13 && requestVal)
+        {
+          addRequest(requestVal);
+        }
+      });
+
+    }
+
+
+    function addRequest(request, requestBlock) {
+      request = '<div class="add-request-block__item">' + request + '</div>';
+      $('.add-request-block__items-inner', requestBlock).append(request);
+      $('.add-request-block__input', requestBlock).val('');
+      let requestCount = $('.add-request-block__item', requestBlock).length;
+      $('.add-request-block__count-number', requestBlock).text(requestCount);
+    }
 
   });
 

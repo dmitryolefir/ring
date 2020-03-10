@@ -14,3 +14,4 @@
 @@include('partials/card-actions.js');
 @@include('partials/compare-card.js');
 @@include('partials/compare-popup.js');
+@@include('partials/add-request.js');
