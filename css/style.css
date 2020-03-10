@@ -4178,6 +4178,7 @@ p img {
 }
 .analytics-page__iframe iframe {
   width: 100%;
+  border: none;
 }
 @media all and (min-width: 1024px) {
   .analytics-page__iframe {
