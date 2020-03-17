@@ -14,11 +14,15 @@
     cursor: pointer;
     @include flex($justify-content: center, $align-items: center);
     &:hover {
-      background: darken($white, 2%);
+      background: darken($white, 3%);
     }
     &_active {
       color: $white;
       background: $green;
+      &:hover {
+        background: $green;
+        cursor: default;
+      }
     }
   }
 

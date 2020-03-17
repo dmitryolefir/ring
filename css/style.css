@@ -1227,6 +1227,7 @@ p img {
   font-size: 13px;
   color: #000000;
   letter-spacing: 1px;
+  border-radius: 2px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1513,6 +1514,11 @@ p img {
   display: inline-block !important;
   margin-left: 7px;
 }
+@media all and (min-width: 1024px) {
+  .deep-search__filter-title .filter-count {
+    display: none !important;
+  }
+}
 .deep-search__filter-body {
   padding: 18px;
   border: 1px solid #EEEFF2;
@@ -1557,6 +1563,11 @@ p img {
 @media all and (min-width: 1024px) {
   .deep-search__count-block {
     margin: 0 16px 0 0;
+  }
+}
+@media all and (min-width: 1024px) {
+  .deep-search__reset {
+    background: #898D93;
   }
 }
 .deep-search__btn {
@@ -2118,7 +2129,6 @@ p img {
 }
 .account-block__dropdown-top {
   padding: 10px 16px;
-  border-bottom: 1px solid #EEEFF2;
 }
 .account-block__user-name {
   font-weight: 600;
@@ -2220,9 +2230,9 @@ p img {
     -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
             flex-wrap: nowrap;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
@@ -2252,6 +2262,7 @@ p img {
   -webkit-flex: auto;
       -ms-flex: auto;
           flex: auto;
+  max-width: 640px;
 }
 .search-card__items {
   padding: 0 16px;
@@ -2605,8 +2616,12 @@ p img {
   font-weight: 700;
   color: #000000;
 }
+.tabs__link:hover {
+  color: #56B8AD;
+}
 .tabs__link_active {
   color: #56B8AD;
+  cursor: default;
 }
 @media all and (min-width: 1024px) {
   .tabs__link {
@@ -3484,6 +3499,7 @@ p img {
   font-size: 12px;
   line-height: 1.2;
   display: inline-block;
+  text-decoration: underline;
 }
 @media all and (max-width: 1023px) {
   .api-block__small-table td {
@@ -3546,11 +3562,15 @@ p img {
           align-items: center;
 }
 .analytics-tabs__tab:hover {
-  background: #fafafa;
+  background: #f7f7f7;
 }
 .analytics-tabs__tab_active {
   color: #ffffff;
   background: #56B8AD;
+}
+.analytics-tabs__tab_active:hover {
+  background: #56B8AD;
+  cursor: default;
 }
 
 .chart-legend {

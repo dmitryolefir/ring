@@ -4,7 +4,13 @@
     font-size: 12px;
     font-weight: 700;
     color: $black;
-    &_active { color: $green; }
+    &:hover {
+      color: $green;
+    }
+    &_active {
+      color: $green;
+      cursor: default;
+    }
     @media all and (min-width: 1024px) {
       font-size: 16px;
     }
