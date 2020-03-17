@@ -42,8 +42,17 @@
           $('.popup__wrap', popup).css('width', popupWidth);
         }
         openPopup(popup);
-        let event = new Event('popupLoad');
-        popupBtn.dispatchEvent(event);
+        let eventName = 'popupLoad';
+        let event;
+        if (typeof(Event) === 'function') {
+          event = new Event(eventName);
+          popupBtn.dispatchEvent(event);
+        } else {
+          event = document.createEvent('Event');
+          event.initEvent("popupLoad", true, false);
+          popupBtn.dispatchEvent(event);
+        }
+
       });
 
     }

@@ -22,12 +22,14 @@
   font-weight: 700;
   font-style: normal;
 }
-@font-face {
-  font-family: "Formular";
-  src: local("Formular Regular"), local("Formular-Regular"), url("../fonts/formular/formular.woff2") format("woff2"), url("../fonts/formular/formular.woff") format("woff");
+/*@font-face {
+  font-family: 'Formular';
+  src: local('Formular Regular'), local('Formular-Regular'),
+  url('../fonts/formular/formular.woff2') format('woff2'),
+  url('../fonts/formular/formular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
-}
+}*/
 @font-face {
   font-family: "Formular";
   src: local("Formular Bold"), local("Formular-Regular"), url("../fonts/formular/formular-bold.woff2") format("woff2"), url("../fonts/formular/formular-bold.woff") format("woff");
@@ -812,12 +814,21 @@ p img {
 .logo-block__link, .logo-block__img {
   display: block;
 }
-.logo-block__img {
+.logo-block__img_desktop {
+  height: 40px;
+  display: none;
+}
+@media all and (min-width: 1024px) {
+  .logo-block__img_desktop {
+    display: block;
+  }
+}
+.logo-block__img_mobile {
   height: 28px;
 }
 @media all and (min-width: 1024px) {
-  .logo-block__img {
-    height: 40px;
+  .logo-block__img_mobile {
+    display: none;
   }
 }
 
@@ -3303,6 +3314,9 @@ p img {
             align-items: flex-start;
   }
 }
+.about-block__column_inner {
+  width: 100%;
+}
 .about-block__join-project {
   width: 100%;
   margin-top: 40px;
@@ -3415,12 +3429,8 @@ p img {
   font-size: 16px;
   padding: 9px 16px;
   height: 40px;
-  margin-top: 16px;
-}
-@media all and (min-width: 1024px) {
-  .donate-form__input {
-    margin: 0 0 0 8px;
-  }
+  box-sizing: border-box;
+  width: 100%;
 }
 .donate-form__text {
   position: relative;
@@ -3441,6 +3451,17 @@ p img {
 @media all and (min-width: 1024px) {
   .donate-form__checkbox {
     margin: 0;
+  }
+}
+.donate-form__input-wrap {
+  margin-top: 16px;
+  -webkit-flex: auto;
+      -ms-flex: auto;
+          flex: auto;
+}
+@media all and (min-width: 1024px) {
+  .donate-form__input-wrap {
+    margin: 0 0 0 8px;
   }
 }
 .donate-form .n-checkbox__label-box {
@@ -3950,7 +3971,7 @@ p img {
   background: #F7F9FA;
 }
 @media all and (min-width: 1024px) {
-  .main-page__top {
+  .main-page__top-wrap {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;

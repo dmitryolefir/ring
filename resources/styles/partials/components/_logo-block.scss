@@ -2,10 +2,17 @@
   &__link, &__img {
     display: block;
   }
-  &__img {
+  &__img_desktop {
+    height: 40px;
+    display: none;
+    @media all and (min-width: 1024px) {
+      display: block;
+    }
+  }
+  &__img_mobile {
     height: 28px;
     @media all and (min-width: 1024px) {
-      height: 40px;
+      display: none;
     }
   }
 }

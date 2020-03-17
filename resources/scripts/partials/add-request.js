@@ -26,6 +26,11 @@
         }
       });
 
+      $('.add-request-block__btn', requestBlock).on('click', function() {
+        let requestVal = $('.add-request-block__input', requestBlock).val();
+        addRequest(requestVal);
+      });
+
     }
 
 

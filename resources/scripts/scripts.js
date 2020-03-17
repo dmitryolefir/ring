@@ -18,3 +18,4 @@
 @@include('partials/sort-block.js');
 @@include('partials/analytics-tabs.js');
 @@include('partials/donate-form.js');
+@@include('partials/request-block.js');
