@@ -4,7 +4,7 @@
 
     let accountBlock = $('.account-block');
 
-    $('.account-block__icon', accountBlock).on('click', function() {
+    $('.account-block__login', accountBlock).on('click', function() {
       $('.account-block__dropdown', accountBlock).toggle();
     });
 

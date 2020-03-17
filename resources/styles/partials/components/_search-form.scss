@@ -43,6 +43,9 @@
     &:last-child {
       border-bottom: none;
     }
+    &:hover {
+      color: $green;
+    }
     @media all and (min-width: 1024px) {
       padding: 9px 18px;
       font-size: 14px;

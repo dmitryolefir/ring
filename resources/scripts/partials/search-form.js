@@ -19,12 +19,6 @@
       $('.deep-search').toggleClass('opened');
     });
 
-    $(document).on('click', function(e){
-      if ( !$(e.target).parents('.search-form').length ) {
-        $('.deep-search').removeClass('opened');
-      }
-    });
-
     /*Open/close Deep Search by click End*/
 
 

@@ -26,6 +26,26 @@
     font-weight: 700;
     font-size: 12px;
     display: none;
+    position: relative;
+    padding-right: 16px;
+    &:before {
+      content: "";
+      width: 0;
+      height: 0;
+      border-color: $base transparent transparent transparent;
+      border-width: 4px;
+      border-style: solid;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin-top: -2px;
+    }
+    &:hover {
+      color: $green;
+      &:before {
+        border-color: $green transparent transparent transparent;
+      }
+    }
     @media all and (min-width: 1024px) {
       display: block;
     }

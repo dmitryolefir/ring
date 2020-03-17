@@ -15,3 +15,6 @@
 @@include('partials/compare-card.js');
 @@include('partials/compare-popup.js');
 @@include('partials/add-request.js');
+@@include('partials/sort-block.js');
+@@include('partials/analytics-tabs.js');
+@@include('partials/donate-form.js');
