@@ -104,6 +104,17 @@ html, body {
   }
 }
 
+/**
+ * 1. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+  -ms-text-size-adjust: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 1 */
+}
+
 body {
   font-family: Inter, Verdana, Arial;
   font-size: 14px;
@@ -373,6 +384,7 @@ p img {
   border: 1px solid #C4C7CC;
   box-sizing: border-box;
   border-radius: 2px;
+  box-shadow: none;
 }
 .n-input:focus {
   border-color: #56B8AD;
@@ -395,6 +407,13 @@ p img {
 }
 .n-input:-moz-placeholder {
   color: #C4C7CC;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+textarea {
+  -webkit-appearance: none;
 }
 
 .n-radio, .n-checkbox {
@@ -3434,6 +3453,11 @@ p img {
   height: 40px;
   box-sizing: border-box;
   width: 100%;
+}
+@media all and (min-width: 1024px) {
+  .donate-form__input {
+    width: 139px;
+  }
 }
 .donate-form__text {
   position: relative;

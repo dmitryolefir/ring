@@ -72,9 +72,12 @@
         });
 
         popup.on('click', function(e) {
-          if ( !$(e.target).parents('.popup__content').length ) {
-            closePopup(popup);
+          if (window.matchMedia("(min-width: 1024px)").matches) {
+            if ( !$(e.target).parents('.popup__content').length ) {
+              closePopup(popup);
+            }
           }
+
         });
 
       });

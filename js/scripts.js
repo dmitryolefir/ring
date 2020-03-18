@@ -82,9 +82,12 @@
         });
 
         popup.on('click', function(e) {
-          if ( !$(e.target).parents('.popup__content').length ) {
-            closePopup(popup);
+          if (window.matchMedia("(min-width: 1024px)").matches) {
+            if ( !$(e.target).parents('.popup__content').length ) {
+              closePopup(popup);
+            }
           }
+
         });
 
       });
@@ -185,12 +188,21 @@
 
     let searchForm = $('.search-form');
 
+
+    $('.search-form__autocomplete-item', searchForm).on('click', function() {
+      $('.search-form__input', searchForm).val($(this).text().trim());
+      $('.search-form__autocomplete', searchForm).hide();
+    });
+
     $('.search-form__input', searchForm)
     .on('input', function() {
       $('.search-form__autocomplete', searchForm).show();
-    })
-    .on('focusout', function() {
-      $('.search-form__autocomplete', searchForm).hide();
+    });
+
+    $(document).on('click', function(e){
+      if ( !$(e.target).parents('.search-form__input-wrap').length ) {
+        $('.search-form__autocomplete', searchForm).hide();
+      }
     });
 
     /*Open/close Deep Search by click Start*/
@@ -432,7 +444,10 @@
 
       $('.add-request-block__btn', requestBlock).on('click', function() {
         let requestVal = $('.add-request-block__input', requestBlock).val();
-        addRequest(requestVal);
+        if(requestVal)
+        {
+          addRequest(requestVal);
+        }
       });
 
     }

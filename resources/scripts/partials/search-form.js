@@ -4,12 +4,21 @@
 
     let searchForm = $('.search-form');
 
+
+    $('.search-form__autocomplete-item', searchForm).on('click', function() {
+      $('.search-form__input', searchForm).val($(this).text().trim());
+      $('.search-form__autocomplete', searchForm).hide();
+    });
+
     $('.search-form__input', searchForm)
     .on('input', function() {
       $('.search-form__autocomplete', searchForm).show();
-    })
-    .on('focusout', function() {
-      $('.search-form__autocomplete', searchForm).hide();
+    });
+
+    $(document).on('click', function(e){
+      if ( !$(e.target).parents('.search-form__input-wrap').length ) {
+        $('.search-form__autocomplete', searchForm).hide();
+      }
     });
 
     /*Open/close Deep Search by click Start*/

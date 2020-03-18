@@ -56,6 +56,9 @@
     height: 40px;
     box-sizing: border-box;
     width: 100%;
+    @media all and (min-width: 1024px) {
+      width: 139px;
+    }
   }
   &__text {
     position: relative;

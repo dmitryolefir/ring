@@ -12,6 +12,7 @@
   border: 1px solid #C4C7CC;
   box-sizing: border-box;
   border-radius: 2px;
+  box-shadow: none;
   &:focus {
     border-color: $green;
   }
@@ -32,4 +33,11 @@
   &:-moz-placeholder {
     color: #C4C7CC;
   }
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+textarea {
+  -webkit-appearance: none;
 }
