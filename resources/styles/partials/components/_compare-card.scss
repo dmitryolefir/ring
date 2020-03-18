@@ -6,8 +6,10 @@
     .compare-card__items {
       display: block;
     }
-    .compare-card__position {
-      display: none;
+    @media all and (min-width: 1024px) {
+      .compare-card__position {
+        display: none;
+      }
     }
   }
   &__title {
@@ -76,5 +78,15 @@
 
   &__position {
     flex: auto;
+    @media all and (max-width: 1023px) {
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+
+  &__desktop {
+    @media all and (max-width: 1023px) {
+      display: none;
+    }
   }
 }

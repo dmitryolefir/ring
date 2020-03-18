@@ -24,6 +24,12 @@
       min-width: 230px;
       margin: 0;
     }
+    .n-select__items {
+      @media all and (min-width: 500px) and (max-width: 1215px) {
+        right: 0;
+        left: auto;
+      }
+    }
   }
   &__iframe {
     margin: 20px -16px 40px;
