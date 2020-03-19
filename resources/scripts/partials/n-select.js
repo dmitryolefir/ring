@@ -15,7 +15,8 @@
     });
 
     /*Клик вне списка*/
-    $(document).on('click', function(e){
+    let clickEvent = (('ontouchstart' in document.documentElement)?'touchstart':'click');
+    $(document).on(clickEvent, function(e){
       if ( !$(e.target).parents('.n-select').length ) {
         closeList(select);
       }

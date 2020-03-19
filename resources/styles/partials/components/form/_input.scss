@@ -13,6 +13,7 @@
   box-sizing: border-box;
   border-radius: 2px;
   box-shadow: none;
+  -webkit-appearance: none;
   &:focus {
     border-color: $green;
   }

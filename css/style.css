@@ -385,6 +385,7 @@ p img {
   box-sizing: border-box;
   border-radius: 2px;
   box-shadow: none;
+  -webkit-appearance: none;
 }
 .n-input:focus {
   border-color: #56B8AD;
@@ -2086,7 +2087,8 @@ textarea {
   .search-form__search {
     position: absolute;
     right: 0;
-    top: 0;
+    top: 50%;
+    margin-top: -16px;
     text-indent: -100px;
     overflow: hidden;
     background: url("../img/icon/search-green.svg") center no-repeat;

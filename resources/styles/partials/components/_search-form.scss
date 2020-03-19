@@ -99,7 +99,8 @@
     @media all and (max-width: 1023px) {
       position: absolute;
       right: 0;
-      top: 0;
+      top: 50%;
+      margin-top: -16px;
       text-indent: -100px;
       overflow: hidden;
       background: url('../img/icon/search-green.svg') center no-repeat;
