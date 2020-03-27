@@ -11,6 +11,7 @@
   }
   &__img_mobile {
     height: 28px;
+    display: block;
     @media all and (min-width: 1024px) {
       display: none;
     }

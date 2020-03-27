@@ -19,3 +19,5 @@
 @@include('partials/analytics-tabs.js');
 @@include('partials/donate-form.js');
 @@include('partials/request-block.js');
+@@include('partials/help-block.js');
+@@include('partials/declaration.js');

@@ -67,4 +67,42 @@
       background-image: url('../img/icon/search.svg');
     }
   }
+  &_compare {
+    padding: 10px 16px 10px 11px;
+    &:before {
+      width: 18px;
+      height: 18px;
+      margin-right: 7px;
+      background-image: url('../img/icon/compare-btn.svg');
+    }
+  }
+  &_find {
+    padding: 9px 16px 10px 10px;
+    &:before {
+      width: 20px;
+      height: 19px;
+      margin-right: 7px;
+      background-image: url('../img/icon/find-btn.svg');
+    }
+  }
+  &_contents {
+    padding: 10px 16px 10px 11px;
+    &:before {
+      width: 18px;
+      height: 18px;
+      margin-right: 12px;
+      background-image: url('../img/icon/contents.svg');
+    }
+  }
+  &_back {
+    padding: 10px 16px 10px 11px;
+    &:before {
+      width: 18px;
+      height: 18px;
+      margin-right: 12px;
+      background-image: url('../img/icon/back.svg');
+      position: relative;
+      top: -1px;
+    }
+  }
 }

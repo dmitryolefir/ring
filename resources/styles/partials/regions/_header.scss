@@ -3,7 +3,10 @@
     max-width: 1200px;
     margin: 0 auto;
     @include flex($align-items: center);
-    padding: 16px 20px;
+    padding: 10px 20px;
+    @media all and (min-width: 1024px) {
+      padding: 16px 20px;
+    }
   }
   &__column {
     @include flex($justify-content: flex-start, $align-items: center);

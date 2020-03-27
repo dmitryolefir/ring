@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <title>Електронні декларації чиновників та депутатів</title>
+
+    <meta name="description" content="тут будет description">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="icon/site.webmanifest">
+    <link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:locale" content="uk_UA">
+    <meta property="og:title" content="bihus. декларації">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://declarations.com.ua/">
+    <meta property="og:description" content="Електронні декларації чиновників та депутатів">
+    <meta property="og:site_name" content="Bihus">
+    <meta property="og:image" content="img/sharing.png">
+    <meta property="og:image:secure_url" content="img/sharing.png">
+    <meta property="og:image:alt" content="Електронні декларації чиновників та депутатів">
+
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="page">
+
+    <div class="header">
+
+    <div class="header__inner">
+
+        <div class="header__column header__mobile">
+
+            <div class="mobile-menu-link">
+                <div class="mobile-menu-link__line"></div>
+                <div class="mobile-menu-link__line"></div>
+                <div class="mobile-menu-link__line"></div>
+            </div>
+
+            <div class="lang-switch header__lang-switch-mobile">
+    <div class="lang-switch__selected">UA</div>
+</div>
+
+        </div>
+
+        <div class="header__column">
+
+            <div class="logo-block">
+                <a href="/" class="logo-block__link">
+                    <img class="logo-block__img_desktop" src="img/logo.svg" alt="Bihus logo">
+                    <img class="logo-block__img_mobile" src="img/logo-mobile.svg" alt="Bihus logo">
+                </a>
+            </div>
+
+            <div class="header__menu main-menu">
+                <div class="main-menu__item">
+                    <a href="popup/about.html" class="main-menu__link popup-btn">Про проект</a>
+                </div>
+                <div class="main-menu__item">
+                    <a href="analytics.html" class="main-menu__link">Аналітика</a>
+                </div>
+                <div class="main-menu__item">
+                    <a href="popup/api.html" class="main-menu__link popup-btn">Відкритий API</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="header__column">
+
+            <div class="compare-block header__compare">
+                <div class="action-icon action-icon_dark compare-block__icon">
+                    <img src="img/icon/compare-black.svg" alt="" class="action-icon__img">
+                    <div class="action-icon__count">70+</div>
+                </div>
+            </div>
+
+            <div class="account-block header__account">
+
+                
+                    <svg class="account-block__icon account-block__login" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 12C14.4862 12 16.5 9.98625 16.5 7.5C16.5 5.01375 14.4862 3 12 3C9.51375 3 7.5 5.01375 7.5 7.5C7.5 9.98625 9.51375 12 12 12ZM12 14.25C8.99625 14.25 3 15.7575 3 18.75V21H21V18.75C21 15.7575 15.0037 14.25 12 14.25Z"
+                          fill="#111111"/>
+                </svg>
+
+                    <div class="account-block__dropdown">
+
+                    <div class="account-block__dropdown-top">
+                        <div class="account-block__user-name">Pavel Asadchenkov</div>
+                        <div class="account-block__user-email">pavel.a@bachoodesign.com</div>
+                    </div>
+
+                    <div class="account-block__menu">
+                        <div class="account-block__menu-item">
+                            <a href="profile-request.html" class="account-block__menu-link">Мої запити</a>
+                        </div>
+                        <div class="account-block__menu-item">
+                            <a href="profile-find.html" class="account-block__menu-link">Мої знахідки</a>
+                        </div>
+                    </div>
+
+                    <div class="account-block__dropdown-bottom">
+
+                        <a href="#" class="account-block__logout">Вийти</a>
+
+                    </div>
+
+                </div>
+                
+                
+
+            </div>
+
+            <div class="lang-switch header__lang-switch">
+    <div class="lang-switch__selected">UA</div>
+</div>
+
+            <div class="header__support support-project-block">
+                <a class="n-btn support-project-block__btn popup-btn donation-btn"
+                   data-width="664px"
+                   href="popup/donate.html">Підтримати проект</a>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="mobile-menu">
+
+        <div class="mobile-menu__close-btn"></div>
+
+        <div class="mobile-menu__inner">
+
+            <div class="mobile-menu__top">
+                <img src="img/logo.svg" alt="Bihus logo" class="mobile-menu__logo">
+            </div>
+
+            <div class="mobile-menu__items">
+
+                <div class="mobile-menu__item">
+                    <a class="mobile-menu__link popup-btn" href="popup/api.html">Відкритий Api</a>
+                </div>
+
+                <div class="mobile-menu__item">
+                    <a class="mobile-menu__link popup-btn" href="popup/about.html">Про проект</a>
+                </div>
+
+                <div class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="analytics.html">Аналітика</a>
+                </div>
+
+            </div>
+
+            <div class="mobile-menu__description">Bihus.info об'єднує антикорупційні проекти, які створює ГО "ТОМ 14" та
+                ГО
+                "Канцелярська сотня".
+            </div>
+
+            <a class="n-btn mobile-menu__donation popup-btn donation-btn"
+               data-width="664px"
+               href="popup/donate.html">Підтримати проект</a>
+
+        </div>
+
+
+    </div>
+
+</div>                      
+
+    <div class="declaration-page">
+
+        <div class="declaration-page__navigation">
+            <button class="n-btn n-btn_ico n-btn_back declaration-page__back">Назад</button>
+
+            <div class="contents declaration-page__contents">
+                <button class="n-btn n-btn_ico n-btn_contents contents__open">Зміст</button>
+                <div class="contents__body">
+                    <div class="contents__header">
+                        <div class="contents__close">
+                            <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.01 3H0V5H12.01V8L16 4L12.01 0V3Z" fill="#56B8AD"/>
+                            </svg>
+                        </div>
+                        <div class="contents__title">Зміст</div>
+                    </div>
+                    <div class="contents__items"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content container">
+
+            <div class="declaration-card">
+
+                <div class="declaration-card__personal-info">
+
+                    <div class="personal-info">
+                        <div class="personal-info__top">
+                            <div class="personal-info__name">Магамадова Танзіла Вахівна</div>
+                            <div class="personal-info__position">2018, Кандидат на посаду</div>
+                        </div>
+                        <div class="personal-info__rows">
+                            <div class="personal-info__row">
+                                <div class="personal-info__item-name">Місце праці</div>
+                                <div class="personal-info__item-value">Харківська область, головне управління Пенсійного
+                                    фонду України в Харківській області
+                                </div>
+                            </div>
+                            <div class="personal-info__row">
+                                <div class="personal-info__item-name">Посада</div>
+                                <div class="personal-info__item-value">Головний спеціаліст відділу з питань призначення та
+                                    перерахунків пенсій № 8 управління застосування пенсійного фонду України в Харківскій
+                                    області
+                                </div>
+                            </div>
+                            <div class="personal-info__row">
+                                <div class="personal-info__item-name">Дата подачі</div>
+                                <div class="personal-info__item-value">03.04.2018</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="declaration-card__feature">
+                    <div class="declaration-card__feature-title">Особливості</div>
+                    <div class="declaration-card__feature-items">
+                        <div class="declaration-card__feature-item">Активи в 10+ разів перевищують доходи</div>
+                        <div class="declaration-card__feature-item">Не вказана вартість транспорту придбаного у поточному
+                            році
+                        </div>
+                        <div class="declaration-card__feature-item">Борги у 2+ разів перевищують активи та доходи</div>
+                        <div class="declaration-card__feature-item">Не вказана вартість нерухомості придбаної у поточному
+                            році
+                        </div>
+                        <div class="declaration-card__feature-item">Готівка понад 5 мільйонів гривень</div>
+                    </div>
+                </div>
+
+                <div class="declaration-card__charts">
+
+                    <div class="declaration-card__charts-title">Дaні за <b>2018</b> та динаміка змін за різні
+                        роки
+                    </div>
+
+                    <div class="declaration-card__charts-items">
+
+                        <div class="declaration-card__charts-item">
+
+                            <div class="dynamics-info">
+
+                                <div class="dynamics-info__top">
+                                    <div class="dynamics-info__left">
+                                        <div class="dynamics-info__title">Сума доходів декларанта</div>
+                                        <div class="dynamics-info__sum">2.356,234 грн</div>
+                                    </div>
+
+                                    <div class="dynamics-info__right">
+                                        <img src="img/dynamics-chart.svg" class="dynamics-info__chart">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="declaration-card__charts-item">
+
+                            <div class="dynamics-info">
+
+                                <div class="dynamics-info__top">
+                                    <div class="dynamics-info__left">
+                                        <div class="dynamics-info__title">Сума доходів членів родини</div>
+                                        <div class="dynamics-info__sum">343.345 грн</div>
+                                    </div>
+
+                                    <div class="dynamics-info__right">
+                                        <img src="img/dynamics-chart.svg" class="dynamics-info__chart">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="declaration-card__charts-item">
+
+                            <div class="dynamics-info">
+
+                                <div class="dynamics-info__top">
+                                    <div class="dynamics-info__left">
+                                        <div class="dynamics-info__title">Сума грошових активів</div>
+                                        <div class="dynamics-info__sum">7.000.000 грн</div>
+                                    </div>
+
+                                    <div class="dynamics-info__right">
+                                        <img src="img/dynamics-chart.svg" class="dynamics-info__chart">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="declaration-card__charts-item">
+
+                            <div class="dynamics-info">
+
+                                <div class="dynamics-info__top">
+                                    <div class="dynamics-info__left">
+                                        <div class="dynamics-info__title">Сума грошових активів родини</div>
+                                        <div class="dynamics-info__sum">999.999 грн</div>
+                                    </div>
+
+                                    <div class="dynamics-info__right">
+                                        <img src="img/dynamics-chart.svg" class="dynamics-info__chart">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="declaration-card__charts-item">
+
+                            <div class="dynamics-info">
+
+                                <div class="dynamics-info__top">
+                                    <div class="dynamics-info__left">
+                                        <div class="dynamics-info__title">земельні ділянки декларанта і родини</div>
+                                        <div class="dynamics-info__sum">3 га</div>
+                                    </div>
+
+                                    <div class="dynamics-info__right">
+                                        <img src="img/dynamics-chart.svg" class="dynamics-info__chart">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="declaration-card__charts-item">
+
+                            <div class="dynamics-info">
+
+                                <div class="dynamics-info__top">
+                                    <div class="dynamics-info__left">
+                                        <div class="dynamics-info__title">обєкти нерухомості декларанта і родини</div>
+                                        <div class="dynamics-info__sum">5</div>
+                                    </div>
+
+                                    <div class="dynamics-info__right">
+                                        <img src="img/dynamics-chart.svg" class="dynamics-info__chart">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="declaration-card__charts-item">
+
+                            <div class="dynamics-info">
+
+                                <div class="dynamics-info__top">
+                                    <div class="dynamics-info__left">
+
+                                        <div class="dynamics-info__title">авто декларанта і родини</div>
+
+                                        <div class="dynamics-info__sum">20</div>
+
+                                        <div class="dynamics-info__description dynamics-info__mobile"> Skoda Fabia, Skoda Octavia, Range Rover, Land
+                                            Cruiser, Skoda Fabia, Skoda Octavia, Range Rover, Land Cruiser, Skoda Fabia, Skoda
+                                            Octavia, Range Rover, Land Cruiser, Skoda Fabia, Skoda Octavia, Range Rover, Land
+                                            Cruiser, Skoda Fabia, Skoda Octavia, Range Rover
+                                        </div>
+
+                                    </div>
+
+                                    <div class="dynamics-info__right">
+                                        <img src="img/dynamics-chart.svg" class="dynamics-info__chart">
+                                    </div>
+                                </div>
+
+                                <div class="dynamics-info__bottom">
+                                    <div class="dynamics-info__description"> Skoda Fabia, Skoda Octavia, Range Rover, Land
+                                        Cruiser, Skoda Fabia, Skoda Octavia, Range Rover, Land Cruiser, Skoda Fabia, Skoda
+                                        Octavia, Range Rover, Land Cruiser, Skoda Fabia, Skoda Octavia, Range Rover, Land
+                                        Cruiser, Skoda Fabia, Skoda Octavia, Range Rover
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="declaration-card__actions">
+
+                    <div class="declaration-card__btns">
+                        <button class="n-btn n-btn_ico n-btn_compare declaration-card__btn">Додати у порівняння</button>
+                        <button class="n-btn n-btn_ico n-btn_find declaration-card__btn">Додати у знахідки</button>
+                    </div>
+
+                    <div class="declaration-card__monitoring monitoring-block">
+                        <div class="monitoring-block__title">Моніторити запит:</div>
+                        <div class="monitoring-block__btns">
+                            <button class="n-btn n-btn_gray monitoring-block__btn">E-mail</button>
+                            <button class="n-btn n-btn_gray monitoring-block__btn">RSS</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="declaration-card__tenders">
+                    <div class="tenders">
+
+                        <div class="tenders__top">
+                            <div class="tenders__top-inner">
+                                <div class="tenders__title">Виторг в тендерах компаній</div>
+                                <div class="tenders__description">100 094 300,51 грн. — в яких декларант є бенефіціаром</div>                                        </div>
+                        </div>
+
+                        <div class="tenders__body">
+
+                            <div class="tenders__years-wrap">
+                                <table class="tenders__years">
+                                    <thead>
+                                    <tr>
+                                        <th>Рік</th>
+                                        <th>Кількість виграних тендерів</th>
+                                        <th>Сума, грн</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>2019</td>
+                                        <td>22</td>
+                                        <td>2 065 805,60</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2018</td>
+                                        <td>40</td>
+                                        <td>7 898 798,21</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2017</td>
+                                        <td>38</td>
+                                        <td>84 837 863,70</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016</td>
+                                        <td>3</td>
+                                        <td>1 790 432,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2015</td>
+                                        <td>6</td>
+                                        <td>1 474 664,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2014</td>
+                                        <td>3</td>
+                                        <td>671 536,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2013</td>
+                                        <td>2</td>
+                                        <td>402 645,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2012</td>
+                                        <td>3</td>
+                                        <td>702 556,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2011</td>
+                                        <td>1</td>
+                                        <td>250 000,00</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="tenders__companies">
+                                <div class="tenders__companies-header">
+                                    <div class="tenders__companies-column">
+                                        <div class="tenders__companies-title">Компанія</div>
+                                    </div>
+                                    <div class="tenders__companies-column">
+                                        <div class="tenders__companies-title">Кількість виграних тендерів</div>
+                                    </div>
+                                    <div class="tenders__companies-column">
+                                        <div class="tenders__companies-title">Сума, грн</div>
+                                    </div>
+                                </div>
+
+                                <div class="tenders__companies-rows">
+                                    <div class="tenders__companies-row">
+                                        <div class="tenders__companies-column">
+                                            <div class="tenders__companies-mobile-title">Компанія</div>
+                                            ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ "БКМ-УКРАЇНА", ЄДРПОУ 41361608
+                                        </div>
+                                        <div class="tenders__companies-column">
+                                            <div class="tenders__companies-mobile-title">Кількість виграних тендерів</div>
+                                            17
+                                        </div>
+                                        <div class="tenders__companies-column">
+                                            <div class="tenders__companies-mobile-title">Сума</div>
+                                            2 065 805,60
+                                        </div>
+                                    </div>
+                                    <div class="tenders__companies-row">
+                                        <div class="tenders__companies-column">
+                                            <div class="tenders__companies-mobile-title">Компанія</div>
+                                            ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ "ПТАХОКОМПЛЕКС "ГУБИН", ЄДРПОУ 31603002
+                                        </div>
+                                        <div class="tenders__companies-column">
+                                            <div class="tenders__companies-mobile-title">Кількість виграних тендерів</div>
+                                            91
+                                        </div>
+                                        <div class="tenders__companies-column">
+                                            <div class="tenders__companies-mobile-title">Сума</div>
+                                            7 898 798,21
+                                        </div>
+                                    </div>
+                                    <div class="tenders__companies-row">
+                                        <div class="tenders__companies-column">
+                                            <div class="tenders__companies-mobile-title">Компанія</div>
+                                            Нововолинський м'ясокомбінат, ЄДРПОУ 41429133
+                                        </div>
+                                        <div class="tenders__companies-column">
+                                            <div class="tenders__companies-mobile-title">Кількість виграних тендерів</div>
+                                            6
+                                        </div>
+                                        <div class="tenders__companies-column">
+                                            <div class="tenders__companies-mobile-title">Сума</div>
+                                            84 837 863,70
+                                        </div>
+                                    </div>
+                                    <div class="tenders__companies-row">
+                                        <div class="tenders__companies-column">
+                                            <div class="tenders__companies-mobile-title">Компанія</div>
+                                            ТзОВ "Агротехніка", ЄДРПОУ 21750952
+                                        </div>
+                                        <div class="tenders__companies-column">
+                                            <div class="tenders__companies-mobile-title">Кількість виграних тендерів</div>
+                                            4
+                                        </div>
+                                        <div class="tenders__companies-column">
+                                            <div class="tenders__companies-mobile-title">Сума</div>
+                                            1 790 432,00
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="declaration-details" data-id="3"></div>
+
+        </div>
+
+    </div>
+    
+    <div class="footer">
+
+    <div class="container footer__inner">
+
+        <div class="footer__top">
+
+            <div class="project-menu">
+
+                <div class="project-menu__title">Проекти</div>
+
+                <div class="project-menu__items">
+                    <div class="project-menu__item">
+                        <a href="#" class="project-menu__link">декларації</a>
+                    </div>
+                    <div class="project-menu__item">
+                        <a href="#" class="project-menu__link">лабораторія</a>
+                    </div>
+                    <div class="project-menu__item">
+                        <a href="#" class="project-menu__link">котики</a>
+                    </div>
+                    <div class="project-menu__item">
+                        <a href="#" class="project-menu__link">тисни!</a>
+                    </div>
+                    <div class="project-menu__item">
+                        <a href="#" class="project-menu__link">ring</a>
+                    </div>
+                    <div class="project-menu__item">
+                        <a href="#" class="project-menu__link">підсумки дня</a>
+                    </div>
+                    <div class="project-menu__item">
+                        <a href="#" class="project-menu__link">наші гроші</a>
+                    </div>
+                    <div class="project-menu__item">
+                        <a href="#" class="project-menu__link">он воно як</a>
+                    </div>
+                    <div class="project-menu__item">
+                        <a href="#" class="project-menu__link">посіпаки</a>
+                    </div>
+                    <div class="project-menu__item">
+                        <a href="#" class="project-menu__link">посіпаки 2</a>
+                    </div>
+                    <div class="project-menu__item">
+                        <a href="#" class="project-menu__link">гра слів</a>
+                    </div>
+                    <div class="project-menu__item">
+                        <a href="#" class="project-menu__link">блоги</a>
+                    </div>
+                    <div class="project-menu__item">
+                        <a href="#" class="project-menu__link">nevid</a>
+                    </div>
+                    <div class="project-menu__item">
+                        <a href="#" class="project-menu__link">e.БТІ</a>
+                    </div>
+                    <div class="project-menu__item">
+                        <a href="#" class="project-menu__link">гарнахата</a>
+                    </div>
+                    <div class="project-menu__item">
+                        <a href="#" class="project-menu__link">свої люди</a>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="footer__medium">
+
+            <div class="project-description-block">
+                <img src="img/logo-white.svg" alt="Bihus logo" class="project-description-block__logo">
+                <div class="project-description-block__text">Bihus.info об'єднує антикорупційні проекти, які створює ГО
+                    "ТОМ 14" та ГО "Канцелярська сотня".
+                </div>
+            </div>
+
+            <div class="footer__subscription subscription-block">
+                <div class="subscription-block__title">Підписатися на розсилку</div>
+                <form class="subscription-block__form subscription-form">
+                    <div class="subscription-form__input-wrap">
+                        <input class="n-input subscription-form__input" placeholder="Введіть ваш e-mail">
+                    </div>
+                    <button class="n-btn subscription-form__btn">Підписатись</button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="footer__bottom">
+
+            <div class="social-block">
+
+                <div class="social-block__title">Ми у соц мережах</div>
+
+                <div class="social-block__items">
+
+                    <div class="social-block__item">
+                        <a href="#" class="social-block__link social-link">
+                            <img src="img/social/facebook-white.svg" alt="Facebook" class="social-link__icon">
+                            <span class="social-link__title">Facebook</span>
+                        </a>
+                    </div>
+
+                    <div class="social-block__item">
+                        <a href="#" class="social-block__link social-link">
+                            <img src="img/social/twitter-white.svg" alt="Twitter" class="social-link__icon">
+                            <span class="social-link__title">Twitter</span>
+                        </a>
+                    </div>
+
+                    <div class="social-block__item">
+                        <a href="#" class="social-block__link social-link">
+                            <img src="img/social/youtube-white.svg" alt="YouTube" class="social-link__icon">
+                            <span class="social-link__title">YouTube</span>
+                        </a>
+                    </div>
+
+                    <div class="social-block__item">
+                        <a href="#" class="social-block__link social-link">
+                            <img src="img/social/instagram-white.svg" alt="Instagram" class="social-link__icon">
+                            <span class="social-link__title">Instagram</span>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="copyright-block footer__copyright">Bihus.info © 2015 - 2019</div>
+
+        </div>
+
+
+    </div>
+</div>
+
+</div>
+
+
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
