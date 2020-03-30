@@ -4,6 +4,7 @@
     font-size: 12px;
     font-weight: 700;
     color: $black;
+    transition: color 0.3s linear;
     &:hover {
       color: $green;
     }

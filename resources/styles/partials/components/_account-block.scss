@@ -5,6 +5,9 @@
     cursor: pointer;
     width: 24px;
     height: 24px;
+    path {
+      transition: fill 0.3s linear;
+    }
     &:hover path{
       fill: $green;
     }
@@ -47,6 +50,7 @@
   &__menu-link, &__logout {
     color: $base;
     display: block;
+    transition: color 0.3s linear;
     &:hover {
       color: $green;
     }

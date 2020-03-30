@@ -40,6 +40,7 @@
     padding: 7px 14px;
     font-size: 12px;
     cursor: pointer;
+    transition: color 0.3s linear;
     &:last-child {
       border-bottom: none;
     }

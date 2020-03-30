@@ -1,6 +1,7 @@
 .social-link {
   color: $white;
   @include flex($justify-content: flex-start, $align-items: center);
+  transition: opacity 0.3s linear;
   &:hover {
     opacity: 0.8;
   }

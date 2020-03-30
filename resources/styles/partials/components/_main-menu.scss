@@ -9,6 +9,7 @@
     color: $base;
     opacity: 0.5;
     line-height: 20px;
+    transition: opacity 0.3s linear;
     &:hover {
       opacity: 0.8;
     }

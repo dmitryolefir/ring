@@ -41,6 +41,7 @@
     width: 50%;
     margin: 0 4px;
     white-space: nowrap;
+    transition: border-color 0.3s linear;
     &:hover, &.active {
       border: 2px solid $green;
       line-height: 36px;

@@ -60,6 +60,7 @@
     cursor: pointer;
     margin-bottom: 8px;
     font-weight: 500;
+    transition: color 0.3s linear;
     &:hover {
       color: #347D74;
     }

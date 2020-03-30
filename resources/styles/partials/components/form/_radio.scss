@@ -8,6 +8,7 @@
     position: relative;
     padding-left: 27px;
     display: block;
+    transition: color 0.3s linear;
     &:hover {
       color: $green;
     }
@@ -37,6 +38,7 @@
         background: url("/img/icon/checked.svg") center no-repeat;
         background-size: 100% 100%;
         opacity: 0;
+        transition: opacity 0.3s linear;
       }
     }
   }

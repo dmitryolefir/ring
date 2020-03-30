@@ -39,6 +39,7 @@
     padding: 4px 16px 4px 46px;
     position: relative;
     display: block;
+    transition: background-color 0.3s linear;
     &.empty {
       color: #898D93;
     }

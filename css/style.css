@@ -433,6 +433,7 @@ textarea {
   position: relative;
   padding-left: 27px;
   display: block;
+  transition: color 0.3s linear;
 }
 .n-radio__label:hover, .n-checkbox__label:hover {
   color: #56B8AD;
@@ -464,6 +465,7 @@ textarea {
   background: url("/img/icon/checked.svg") center no-repeat;
   background-size: 100% 100%;
   opacity: 0;
+  transition: opacity 0.3s linear;
 }
 .n-radio__input, .n-checkbox__input {
   position: absolute;
@@ -520,9 +522,6 @@ textarea {
 }
 .radio-box__item {
   margin-right: 27px;
-  /*@media all and (min-width: ) {
-
-  }*/
 }
 .radio-box__item:last-child {
   margin: 0;
@@ -637,6 +636,7 @@ textarea {
   box-shadow: 0 1px 2px rgba(7, 8, 10, 0.08);
   text-align: center;
   box-sizing: border-box;
+  transition: background-color 0.3s linear;
 }
 .n-btn:hover {
   background-color: #419a90;
@@ -730,11 +730,14 @@ textarea {
   position: relative;
   cursor: pointer;
 }
+.action-icon path {
+  transition: fill 0.3s linear;
+}
 .action-icon:hover path {
   fill: #45968d;
 }
 .action-icon:hover .action-icon__tooltip {
-  display: block;
+  opacity: 1;
 }
 .action-icon_red:hover path {
   fill: #ce2a1f;
@@ -757,7 +760,8 @@ textarea {
   background: #56B8AD;
 }
 .action-icon__tooltip {
-  display: none;
+  pointer-events: none;
+  opacity: 0;
   position: absolute;
   background: #ffffff;
   left: 50%;
@@ -774,6 +778,7 @@ textarea {
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   border-radius: 4px;
+  transition: opacity 0.3s linear;
 }
 .action-icon__tooltip:before {
   content: "";
@@ -860,6 +865,7 @@ textarea {
   color: #111111;
   opacity: 0.5;
   line-height: 20px;
+  transition: opacity 0.3s linear;
 }
 .main-menu__link:hover {
   opacity: 0.8;
@@ -925,6 +931,7 @@ textarea {
 .project-menu__link {
   color: #ffffff;
   font-size: 16px;
+  transition: opacity 0.3s linear;
 }
 .project-menu__link:hover {
   opacity: 0.8;
@@ -1031,6 +1038,7 @@ textarea {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  transition: opacity 0.3s linear;
 }
 .social-link:hover {
   opacity: 0.8;
@@ -2064,6 +2072,7 @@ textarea {
   padding: 7px 14px;
   font-size: 12px;
   cursor: pointer;
+  transition: color 0.3s linear;
 }
 .search-form__autocomplete-item:last-child {
   border-bottom: none;
@@ -2170,6 +2179,7 @@ textarea {
 
 .lang-switch {
   cursor: pointer;
+  transition: opacity 0.3s linear;
 }
 .lang-switch:hover {
   opacity: 0.8;
@@ -2189,6 +2199,9 @@ textarea {
   cursor: pointer;
   width: 24px;
   height: 24px;
+}
+.account-block__icon path {
+  transition: fill 0.3s linear;
 }
 .account-block__icon:hover path {
   fill: #56B8AD;
@@ -2233,6 +2246,7 @@ textarea {
 .account-block__menu-link, .account-block__logout {
   color: #111111;
   display: block;
+  transition: color 0.3s linear;
 }
 .account-block__menu-link:hover, .account-block__logout:hover {
   color: #56B8AD;
@@ -2695,6 +2709,7 @@ textarea {
   font-size: 12px;
   font-weight: 700;
   color: #000000;
+  transition: color 0.3s linear;
 }
 .tabs__link:hover {
   color: #56B8AD;
@@ -2957,6 +2972,7 @@ textarea {
   margin-top: -1px;
   height: 2px;
   background: #111111;
+  transition: background-color 0.3s linear;
 }
 .close-btn:before {
   -webkit-transform: rotate(45deg);
@@ -3279,6 +3295,7 @@ textarea {
   cursor: pointer;
   margin-bottom: 8px;
   font-weight: 500;
+  transition: color 0.3s linear;
 }
 .add-request-block__item:hover {
   color: #347D74;
@@ -3480,6 +3497,7 @@ textarea {
   width: 50%;
   margin: 0 4px;
   white-space: nowrap;
+  transition: border-color 0.3s linear;
 }
 .donate-form__price-btn:hover, .donate-form__price-btn.active {
   border: 2px solid #56B8AD;
@@ -3726,6 +3744,7 @@ textarea {
   text-align: center;
   line-height: 1.3;
   cursor: pointer;
+  transition: background-color 0.3s linear;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -4004,6 +4023,7 @@ textarea {
   display: none;
   position: relative;
   padding-right: 16px;
+  transition: color 0.3s linear;
 }
 .compare-popup__open-link:before {
   content: "";
@@ -4016,6 +4036,7 @@ textarea {
   right: 0;
   top: 50%;
   margin-top: -2px;
+  transition: border-color 0.3s linear;
 }
 .compare-popup__open-link:hover {
   color: #56B8AD;
@@ -4505,6 +4526,7 @@ textarea {
     padding: 20px 24px;
     cursor: pointer;
     margin: 0 -24px;
+    transition: background-color 0.3s linear;
   }
   .tenders__top:before {
     content: "";
@@ -4762,6 +4784,7 @@ textarea {
   padding: 4px 16px 4px 46px;
   position: relative;
   display: block;
+  transition: background-color 0.3s linear;
 }
 .contents__item.empty {
   color: #898D93;
@@ -4861,6 +4884,7 @@ textarea {
 @media all and (min-width: 1024px) {
   .nacp-section header {
     padding: 15px 24px;
+    transition: background-color 0.3s linear;
   }
   .nacp-section header:hover {
     background: #f2f2f2;
@@ -5359,6 +5383,10 @@ textarea {
   text-decoration: underline;
   display: inline-block;
   margin-bottom: 16px;
+  transition: color 0.3s linear;
+}
+.compare-page__help-link:hover {
+  color: #56B8AD;
 }
 @media all and (min-width: 1024px) {
   .compare-page__help-link {

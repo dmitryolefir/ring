@@ -9,6 +9,10 @@
     text-decoration: underline;
     display: inline-block;
     margin-bottom: 16px;
+    transition: color 0.3s linear;
+    &:hover {
+      color: $green;
+    }
     @media all and (min-width: 1024px) {
       margin: 0;
     }

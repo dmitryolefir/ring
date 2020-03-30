@@ -14,6 +14,7 @@
   &__link {
     color: $white;
     font-size: 16px;
+    transition: opacity 0.3s linear;
     &:hover {
       opacity: 0.8;
     }
