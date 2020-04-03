@@ -325,6 +325,13 @@ p img {
   }
 }
 
+.header.home {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
 @media all and (min-width: 1024px) {
   .header.home {
     background: transparent;
