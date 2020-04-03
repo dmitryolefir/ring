@@ -1,5 +1,9 @@
 $page-width: 1016px;
 
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -30,9 +34,9 @@ body.menu-is-open {
 
 .content {
   @include ext-background(#F7F9FA);
-  padding: 45px 16px 0;
+  padding: 0 0 45px;
   @media all and (min-width: 1024px) {
-    padding: 45px 20px 160px;
+    padding: 45px 0 160px;
   }
   &__main {
     padding-top: 0;

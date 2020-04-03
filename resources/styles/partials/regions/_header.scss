@@ -1,4 +1,15 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background: #EEEFF2;
+  @media all and (min-width: 1024px) {
+    background: #ffffff;
+    position: static;
+  }
+  
   &__inner {
     max-width: 1200px;
     margin: 0 auto;
@@ -17,7 +28,7 @@
     }
   }
   &__menu {
-    padding: 0 40px;
+    padding: 0 12px;
   }
   &__lang-switch {
     display: none;
@@ -45,5 +56,21 @@
     @media all and (min-width: 1024px) {
       display: none;
     }
+  }
+}
+.header.home {
+  //position: absolute;
+  //top: 0;
+  //left: 0;
+  //right: 0;
+  //z-index: 1;
+  @media all and (min-width: 1024px) {
+    background: transparent;
+  }
+  .logo-block {
+    display: none;
+  }
+  .main-menu__link {
+    color: rgba(255, 255, 255, 0.5);
   }
 }

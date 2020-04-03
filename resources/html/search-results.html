@@ -7,11 +7,11 @@
 
 <div class="page">
 
-    @@include('template/header.html', { "is_login": true })
+    @@include('template/header.html', { "page": "default" })
 
-    <div class="content container">
+    <div class="content">
 
-        <div class="search-page">
+        <div class="search-page container">
 
             <div class="search-page__form-block">
                 @@include('template/search-form.html')
@@ -19,13 +19,12 @@
 
             <div class="search-page__header">
 
-                <div class="search-page__result-name">Магамадова Танзіла Вахівна (177)</div>
-
-                <div class="search-page__monitoring monitoring-block">
-                    <div class="monitoring-block__title">Моніторити запит:</div>
-                    <div class="monitoring-block__btns">
-                        <button class="n-btn n-btn_gray monitoring-block__btn">E-mail</button>
-                        <button class="n-btn n-btn_gray monitoring-block__btn">RSS</button>
+                <div class="tabs profile-page__tabs">
+                    <div class="tabs__item tabs__item-active">
+                        <a href="#" class="tabs__link">Повний збіг (23)</a>
+                    </div>
+                    <div class="tabs__item">
+                        <a href="#" class="tabs__link">Неповний збіг (25)</a>
                     </div>
                 </div>
 
@@ -58,134 +57,111 @@
 
             </div>
 
+            <div class="search-page__tags">
+                <div class="search-page__tag search-page__tag--active search-page__tag--all">
+                    Всі (23)
+                </div>
+                <div class="search-page__tag">
+                    Декларації (11)
+                </div>
+                <div class="search-page__tag">
+                    Нерухомість (12)
+                </div>
+                <div class="search-page__tag">
+                    Ліцензії (13)
+                </div>
+                <div class="search-page__tag">
+                    Вибори (11)
+                </div>
+            </div>
+
+            <div class="search-page__cat search-page__cat--green">
+                <h2 class="search-page__cat-title">Нерухомість (11)</h2>
+                <div class="search-page__cat-line"></div>
+            </div>
+
             <div class="search-page__results-block">
 
-                @@include('template/search-card-with-counts.html', { "class": "search-page__result-card" })
+                @@include('template/search-card.html', { "class": "search-card--green" })
 
-                @@include('template/search-card.html', { "class": "search-page__result-card" })
+                @@include('template/search-card.html', { "class": "search-card--green" })
 
-                @@include('template/search-card.html', { "class": "search-page__result-card" })
+                @@include('template/search-card.html', { "class": "search-card--green" })
 
-                @@include('template/promo-block.html', { "class": "search-page__promo" })
+                @@include('template/search-card.html', { "class": "search-card--green" })
 
-                @@include('template/search-card.html', { "class": "search-page__result-card" })
+                @@include('template/search-card.html', { "class": "search-card--green" })
 
-                @@include('template/search-card.html', { "class": "search-page__result-card" })
-
-                @@include('template/search-card.html', { "class": "search-page__result-card" })
-
-                @@include('template/search-card.html', { "class": "search-page__result-card" })
+                @@include('template/search-card.html', { "class": "search-card--green" })
 
             </div>
 
-            <div class="pager search-page__pager">
-                <div class="pager__item">
-                    <div class="pager__prev">
-                        <svg width="24" height="25"
-                             class="pager__arrow"
-                             viewBox="0 0 24 25"
-                             fill="none"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.99 13.0448L20 13.0448L20 11.0379L7.99 11.0379L7.99 8.02755L4 12.0414L7.99 16.0552L7.99 13.0448Z"
-                                  fill="#111111"/>
-                        </svg>
-                    </div>
-                </div>
-                <div class="pager__item">
-                    <span class="pager__link pager__link_active">1</span>
-                </div>
-                <div class="pager__item">
-                    <a href="#" class="pager__link">2</a>
-                </div>
-                <div class="pager__item">
-                    <a href="#" class="pager__link">3</a>
-                </div>
-                <div class="pager__item">
-                    <span class="pager__dots">
-                       <span class="pager__dot"></span>
-                       <span class="pager__dot"></span>
-                       <span class="pager__dot"></span>
-                    </span>
-                </div>
-                <div class="pager__item pager__item_desktop">
-                    <a href="#" class="pager__link">11</a>
-                </div>
-                <div class="pager__item">
-                    <a href="#" class="pager__link">12</a>
-                </div>
-                <div class="pager__item">
-                    <a href="#" class="pager__link">13</a>
-                </div>
-                <div class="pager__item">
-                    <div class="pager__next">
-                        <svg class="pager__arrow"
-                             width="24" height="25"
-                             viewBox="0 0 24 25"
-                             fill="none"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <path d="M16.01 11.0379H4V13.0449H16.01V16.0552L20 12.0414L16.01 8.02759V11.0379Z"
-                                  fill="#111111"/>
-                        </svg>
-                    </div>
+            <div class="load-more-content" data-content="real-estate">
+                <div class="search-page__results-block">
+
+                    @@include('template/search-card.html', { "class": "search-card--green" })
+
+                    @@include('template/search-card.html', { "class": "search-card--green" })
+
+                    @@include('template/search-card.html', { "class": "search-card--green" })
+
+                    @@include('template/search-card.html', { "class": "search-card--green" })
+
+                    @@include('template/search-card.html', { "class": "search-card--green" })
+
+
                 </div>
             </div>
 
-            <div class="advantages-block search-page__advantages">
+            <button class="load-more" data-btn="real-estate">
+                Вся нерухомість
+            </button>
 
-                <div class="advantages-block__items">
+            @@include('template/promo-block.html', { "class": "search-page__promo" })
 
-                    <div class="advantages-block__item">
-                        <div class="advantages-block__item-title">Чат-боти</div>
-                        <div class="advantages-block__item-text">Ми створили кишенькових помічників — чат-ботів у
-                            популярних месенджерах
-                        </div>
-                        <div class="advantages-block__bots">
-                            <div class="advantages-block__bots-items">
+            <div class="search-page__cat search-page__cat--magento">
+                <h2 class="search-page__cat-title">Декларації (11)</h2>
+                <div class="search-page__cat-line"></div>
+            </div>
 
-                                <a href="#" class="advantages-block__bot-link social-link">
-                                    <img src="img/bots/telegram.svg" alt="" class="social-link__icon">
-                                </a>
+            <div class="search-page__results-block">
 
-                                <a href="#" class="advantages-block__bot-link social-link">
-                                    <img src="img/bots/messenger.svg" alt="" class="social-link__icon">
-                                </a>
+                @@include('template/search-card.html', { "class": "search-card--magento" })
 
-                                <a href="#" class="advantages-block__bot-link social-link">
-                                    <img src="img/bots/skype.svg" alt="" class="social-link__icon">
-                                </a>
+                @@include('template/search-card.html', { "class": "search-card--magento" })
 
-                            </div>
+                @@include('template/search-card.html', { "class": "search-card--magento" })
 
-                            <a href="#" class="advantages-block__instruction-link">Покрокова iнструкцiя</a>
+                @@include('template/search-card.html', { "class": "search-card--magento" })
 
+                @@include('template/search-card.html', { "class": "search-card--magento" })
 
-                        </div>
-                    </div>
-
-                    <div class="advantages-block__item">
-                        <div class="advantages-block__item-title">Порівняння</div>
-                        <div class="advantages-block__item-text">Додавайте декларантів
-                            у список порівнянь та дивіться аналіз за різними показниками
-                        </div>
-                    </div>
-
-                    <div class="advantages-block__item">
-                        <div class="advantages-block__item-title">Моніторинг</div>
-                        <div class="advantages-block__item-text">Слідкуйте за змінами чи появою нових документів по
-                            E-mail, RSS та у месенжерах
-                        </div>
-                    </div>
-
-                    <div class="advantages-block__item">
-                        <div class="advantages-block__item-title">Аналітика</div>
-                        <div class="advantages-block__item-text">Ми зробили круту аналітику
-                            і поділили ії на 8 розділів для вашої зручності
-                        </div>
-                    </div>
-
-                </div>
+                @@include('template/search-card.html', { "class": "search-card--magento" })
 
             </div>
+
+            <div class="load-more-content" data-content="declarations">
+                <div class="search-page__results-block">
+
+                    @@include('template/search-card.html', { "class": "search-card--magento" })
+
+                    @@include('template/search-card.html', { "class": "search-card--magento" })
+
+                    @@include('template/search-card.html', { "class": "search-card--magento" })
+
+                    @@include('template/search-card.html', { "class": "search-card--magento" })
+
+                    @@include('template/search-card.html', { "class": "search-card--magento" })
+
+                    @@include('template/search-card.html', { "class": "search-card--magento" })
+
+                </div>
+            </div>
+
+            <button class="load-more" data-btn="declarations">
+                Всі декларації
+            </button>
+
 
 
         </div>

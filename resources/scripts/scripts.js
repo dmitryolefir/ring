@@ -6,6 +6,7 @@
 /*
  * Custom
  */
+@@include('partials/collapse.js');
 @@include('partials/popup.js');
 @@include('partials/mobile-menu.js');
 @@include('partials/n-select.js');
@@ -21,3 +22,4 @@
 @@include('partials/request-block.js');
 @@include('partials/help-block.js');
 @@include('partials/declaration.js');
+@@include('partials/tabs.js');

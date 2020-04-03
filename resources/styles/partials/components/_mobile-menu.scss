@@ -1,3 +1,11 @@
+.mobile-search {
+  display: flex;
+  align-items: center;
+  @media all and (min-width: 1024px) {
+    display: none;
+  }
+}
+
 .mobile-menu {
   display: none;
   text-align: center;

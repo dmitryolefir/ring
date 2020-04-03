@@ -7,54 +7,60 @@
 
 <div class="page">
 
-    @@include('template/header.html', { "is_login": true })
+    @@include('template/header.html', { "page": "home" })
 
-    <div class="content container content__main">
+    <div class="content content__main">
 
         <div class="main-page">
 
-            <div class="main-page__top"> 
+            <div class="main-page__banner">
+                <div class="container">
+                    <div class="main-page__top">
 
-                <div class="main-page__top-wrap">   
+                        <div class="main-page__top-wrap">
 
-                    <div class="main-page__top-column">
+                            <div class="main-page__top-column">
 
-                        <div class="main-page__description">Ми знаходимо, розшифровуємо та публікуємо декларації
-                            чиновників
-                        </div>
-
-                        <h1 class="main-page__title">Викриваємо брехню про статки та майно</h1>
-
-                    </div>
-
-                    <div class="main-page__top-column">
-
-                        <div class="main-social-block">
-
-                            <div class="main-social-block__items">
-
-                                <div class="main-social-block__item">
-                                    <a href="#" class="main-social-block__link social-link">
-                                        <img src="img/social/facebook-black.svg" alt="facebook" class="social-link__icon">
-                                    </a>
+                                <div class="main-page__description">Лише офіційні дані, поглиблений пошук, зручний дизайн
                                 </div>
 
-                                <div class="main-social-block__item">
-                                    <a href="#" class="main-social-block__link social-link">
-                                        <img src="img/social/twitter-black.svg" alt="twitter" class="social-link__icon">
-                                    </a>
-                                </div>
+                                <h1 class="main-page__title">Пошук в державних реєстрах<br>
+                                    та проектах Канцелярської сотні</h1>
 
-                                <div class="main-social-block__item">
-                                    <a href="#" class="main-social-block__link social-link">
-                                        <img src="img/social/youtube-black.svg" alt="youtube" class="social-link__icon">
-                                    </a>
-                                </div>
+                            </div>
 
-                                <div class="main-social-block__item">
-                                    <a href="#" class="main-social-block__link social-link">
-                                        <img src="img/social/instagram-black.svg" alt="instagram" class="social-link__icon">
-                                    </a>
+                            <div class="main-page__top-column">
+
+                                <div class="main-social-block">
+
+                                    <div class="main-social-block__items">
+
+                                        <div class="main-social-block__item">
+                                            <a href="#" class="main-social-block__link social-link">
+                                                <img src="img/social/facebook-white.svg" alt="facebook" class="social-link__icon">
+                                            </a>
+                                        </div>
+
+                                        <div class="main-social-block__item">
+                                            <a href="#" class="main-social-block__link social-link">
+                                                <img src="img/social/twitter-white.svg" alt="twitter" class="social-link__icon">
+                                            </a>
+                                        </div>
+
+                                        <div class="main-social-block__item">
+                                            <a href="#" class="main-social-block__link social-link">
+                                                <img src="img/social/instagram-white.svg" alt="instagram" class="social-link__icon">
+                                            </a>
+                                        </div>
+
+                                        <div class="main-social-block__item">
+                                            <a href="#" class="main-social-block__link social-link">
+                                                <img src="img/social/youtube-white.svg" alt="youtube" class="social-link__icon">
+                                            </a>
+                                        </div>
+
+                                    </div>
+
                                 </div>
 
                             </div>
@@ -63,87 +69,82 @@
 
                     </div>
 
+                    <div class="main-page__search">
+
+                        @@include('template/search-form.html')
+
+                    </div>
                 </div>
-
             </div>
 
-            <div class="main-page__search">
+            <div class="container">
+                @@include('template/promo-block.html', { "class": "main-page__promo" })
 
-                @@include('template/search-form.html')
+                <div class="advantages-block main-page__advantages">
 
-            </div>
+                    <h2 class="advantages-block__title">Як користуватися пошуком?</h2>
 
-            @@include('template/promo-block.html', { "class": "main-page__promo" })
+                    <div class="advantages-block__items advantages-block__items_numeric">
 
-            <div class="advantages-block main-page__advantages">
-
-                <h2 class="advantages-block__title">Наші переваги</h2>
-
-                <div class="advantages-block__items advantages-block__items_numeric">
-
-                    <div class="advantages-block__item advantages-block__item_numeric">
-                        <div class="advantages-block__item-number">1</div>
-                        <div class="advantages-block__item-title">Порівняння</div>
-                        <div class="advantages-block__item-text advantages-block__item-text_numeric">Хочете дізнатися у
-                            кого більше грошей? Додавайте декларантів у список порівнянь та дивіться аналіз за різними
-                            показниками. Щоб почати порівнювати знайдіть декілька декларацій та натисніть "Додати у
-                            порівняння"
-                        </div>
-                    </div>
-
-                    <div class="advantages-block__item advantages-block__item_numeric">
-                        <div class="advantages-block__item-number">2</div>
-                        <div class="advantages-block__item-title">Моніторинг</div>
-                        <div class="advantages-block__item-text advantages-block__item-text_numeric">Слідкуйте за
-                            змінами чи появою нових документів за домогою нашого сервісу. Інформація буде надходити на
-                            E-mail або RSS. Щоб створити нове завдання спробуйте щось знайти, а потім нажміть
-                            "Моніторити запит".
-                        </div>
-                    </div>
-
-                    <div class="advantages-block__item advantages-block__item_numeric">
-                        <div class="advantages-block__item-number">3</div>
-                        <div class="advantages-block__item-title">Аналітика</div>
-                        <div class="advantages-block__item-text advantages-block__item-text_numeric">Для тих хто любить
-                            цифри та графіки ми зробили круту аналітику і поділили ії на 8 розділів для вашої зручності
-                            Для тих хто любить цифри та графіки ми зробили круту аналітику i поділили ії на 8 розділів
-                            для вашої зручності
-                        </div>
-                    </div>
-
-                    <div class="advantages-block__item advantages-block__item_numeric">
-                        <div class="advantages-block__item-number">4</div>
-                        <div class="advantages-block__item-title">Чат-боти</div>
-                        <div class="advantages-block__item-text advantages-block__item-text_numeric">Ми створили
-                            кишенькових помічників — чат-ботів у популярних месенджерах Telegram, Messenger та Skype.
-                            Щоб розпочати роботу з ботом, додайте його у контакти:
-                        </div>
-                        <div class="advantages-block__bots advantages-block__bots_numeric">
-                            <div class="advantages-block__bots-items">
-
-                                <a href="#" class="advantages-block__bot-link social-link">
-                                    <img src="img/bots/telegram.svg" alt="telegram" class="social-link__icon">
-                                </a>
-
-                                <a href="#" class="advantages-block__bot-link social-link">
-                                    <img src="img/bots/messenger.svg" alt="messenger" class="social-link__icon">
-                                </a>
-
-                                <a href="#" class="advantages-block__bot-link social-link">
-                                    <img src="img/bots/skype.svg" alt="skype" class="social-link__icon">
-                                </a>
-
+                        <div class="advantages-block__item advantages-block__item_numeric">
+                            <div class="advantages-block__item-number">1</div>
+                            <h3 class="advantages-block__item-title">Введіть запит</h3>
+                            <div class="advantages-block__item-text advantages-block__item-text_numeric">Відкрити головну сторінку, вбити пошуковий запит (ПІБ, назва компанії або
+                                організації,адреса), а за потреби – обрати джерела даних, де плануєте шукати (або просто шукати в усіх).
                             </div>
-
-                            <a href="#" class="advantages-block__instruction-link advantages-block__instruction-link_btn">Покрокова iнструкцiя</a>
-
-
                         </div>
-                    </div>
 
+                        <div class="advantages-block__item advantages-block__item_numeric">
+                            <div class="advantages-block__item-number">2</div>
+                            <h3 class="advantages-block__item-title">Перегляньте отримане</h3>
+                            <div class="advantages-block__item-text advantages-block__item-text_numeric">
+                                Потім – переглянути результати. Якщо нічого не знайшли, варто подивитися результати пошуку за неповним співпадінням.
+                            </div>
+                        </div>
+
+                        <div class="advantages-block__item advantages-block__item_numeric">
+                            <div class="advantages-block__item-number">3</div>
+                            <h3 class="advantages-block__item-title">Отримайте результат</h3>
+                            <div class="advantages-block__item-text advantages-block__item-text_numeric">Результати пошуку будуть у вигляді карток.
+                                Клікнувши на картку, ви отримаєте повний запис вашої знахідки (наприклад, уже готової до друку).
+                            </div>
+                        </div>
+
+                    </div>
 
                 </div>
 
+                <div class="advantages-block main-page__why-us">
+
+                    <h2 class="advantages-block__title">Чому саме ми?</h2>
+
+                    <div class="advantages-block__items">
+
+                        <div class="advantages-block__item">
+                            <img src="img/icon/advantage-search.svg" alt="search" class="advantages-block__item-image">
+                            <h3 class="advantages-block__item-title advantages-block__item-title--why-us">Підхід до справи</h3>
+                            <div class="advantages-block__item-text">В нашій базі даних ми зібрали для вас офіційні відкриті дані і зробили їх справді відкритими. Регулярно їх оновлюємо. Шукайте та знаходьте все все що вас зацікавить.
+                            </div>
+                        </div>
+
+                        <div class="advantages-block__item">
+                            <img src="img/icon/advantage-api.svg" alt="api" class="advantages-block__item-image">
+                            <h3 class="advantages-block__item-title advantages-block__item-title--why-us">Відкритість і доступність</h3>
+                            <div class="advantages-block__item-text">Усе безкоштовно. Жодних реєстрацій,  жодної капчі. Зручні таймлайни змін в компаніях — для всіх. Відкритий і безкоштовний АРІ для тих, хто знає, що з ним робити.
+                            </div>
+                        </div>
+
+                        <div class="advantages-block__item">
+                            <img src="img/icon/advantage-smart.svg" alt="smart" class="advantages-block__item-image">
+                            <h3 class="advantages-block__item-title advantages-block__item-title--why-us">Інтелект та гнучкість</h3>
+                            <div class="advantages-block__item-text">Поглиблений пошук. Враховані перейменування вулиць — шукайте так, як знаєте. Автодоповнення
+                                врахування помилок в прізвищах. Магія.
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
 
 

@@ -1,73 +1,79 @@
 .search-card {
-  background: $white;
+  background: #fafbfb;
   border: 1px solid #EEEFF2;
-  border-radius: 4px;
-  &__top {
-    padding: 10px 16px;
+  border-radius: 2px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
+  &__header {
+    padding: 12px 12px 8px;
+    background: #ffffff;
     border-bottom: 1px solid #EEEFF2;
-    position: relative;
-    @media all and (min-width: 1024px) {
-      @include flex($align-items: center);
-      padding: 10px 23px;
-    }
   }
-  &__name {
-    font-weight: 700;
-    @media all and (min-width: 1024px) {
-      font-size: 16px;
-    }
-  }
-  &__position {
-    font-size: 12px;
+  &__cat {
+    margin-bottom: 8px;
     font-weight: 500;
-    margin-top: 3px;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.005em;
+    color: $blue;
     @media all and (min-width: 1024px) {
-      font-size: 16px;
-      margin: 0;
+      font-size: 12px;
+      line-height: 16px;
     }
   }
-  &__item {
+  &__title {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 36px;
+    @media all and (min-width: 1024px) {
+      font-size: 14px;
+      line-height: 40px;
+    }
+  }
+  &__body {
+    padding: 16px 15px;
     border-bottom: 1px solid #EEEFF2;
-    padding: 12px 0;
-    &:last-child {
-      border-bottom: none;
-    }
-    @media all and (min-width: 1024px) {
-      @include flex($align-items: center, $justify-content: flex-start);
-    }
   }
-  &__item-name {
-    color: #898D93;
-    text-transform: uppercase;
-    font-size: 9px;
-    font-weight: 700;
-    flex: 30%;
-    max-width: 130px;
-    margin-bottom: 7px;
+  &__heading {
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 16px;
     letter-spacing: 0.25px;
-    @media all and (min-width: 1024px) {
-      margin: 0;
-      font-size: 11px;
-    }
+    text-transform: uppercase;
+    color: rgba(17, 17, 17, 0.24);
   }
-  &__item-text {
-    font-size: 12px;
+  &__heading-find {
+    margin-top: 20px;
+  }
+  &__find {
+    font-style: italic;
+    text-decoration: underline;
+  }
+  &__footer {
+    padding: 12px 15px;
+  }
+  &__link {
+    display: inline-flex;
+    align-items: center;
     font-weight: 500;
-    flex: auto;
-    max-width: 640px;
-  }
-  &__items {
-    padding: 0 16px;
-    @media all and (min-width: 1024px) {
-      padding: 0 23px;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.005em;
+    color: #939394;
+    &:hover {
+      opacity: 0.75;
+    }
+    svg {
+      margin-left: 7px;
     }
   }
-  &__actions {
-    @media all and (max-width: 1023px) {
-      position: absolute;
-      top: 50%;
-      margin-top: -10px;
-      right: 18px;
+  &--green {
+    .search-card__cat {
+      color: #56B8AD;
+    }
+  }
+  &--magento {
+    .search-card__cat {
+      color: #8D479A;
     }
   }
 }

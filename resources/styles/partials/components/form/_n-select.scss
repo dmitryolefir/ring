@@ -6,6 +6,7 @@
     white-space: nowrap;
     padding-right: 16px;
     position: relative;
+    cursor: pointer;
     &:before {
       content: "";
       width: 0;
@@ -19,25 +20,23 @@
       margin-top: -2px;
     }
     &_active:before {
-      border-color: transparent transparent $green transparent;
+      border-color: transparent transparent $blue transparent;
       margin-top: -6px;
     }
     @media all and (min-width: 1024px) {
-      font-size: 16px;
+      font-size: 12px;
       font-weight: 400;
       padding: 11px 34px 11px 16px;
       line-height: 1;
       background: $white;
       border-radius: 2px;
       border: 1px solid #EEEFF2;
-      cursor: pointer;
-      min-width: 180px;
       box-sizing: border-box;
       &:before {
         right: 16px;
       }
       &_active {
-        border-color: $green;
+        border-color: $blue;
       }
     }
   }
@@ -62,13 +61,13 @@
     padding: 3px 17px;
     font-weight: 500;
     &_active {
-      color: $green;
+      color: $blue;
     }
     &:hover {
       background: darken($white, 2%);;
     }
     @media all and (min-width: 1024px) {
-      font-size: 16px;
+      font-size: 12px;
       font-weight: 400;
       padding: 7px 17px;
     }

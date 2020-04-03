@@ -1,6 +1,10 @@
 .main-page {
+  &__banner {
+    background: url("../img/ring-banner.png") top no-repeat;
+    background-size: cover;
+  }
   &__description {
-    color: #898D93;
+    color: rgba(255, 255, 255, 0.44);
     font-size: 11px;
     font-weight: 700;
     text-transform: uppercase;
@@ -8,38 +12,52 @@
     @media all and (min-width: 1024px) {
       font-size: 13px;
       font-weight: 600;
+      margin-top: 34px;
     }
   }
   &__title {
+    color: #ffffff;
     font-size: 24px;
     line-height: 1.18;
     max-width: 760px;
+    margin-top: 10px;
+    margin-bottom: 23px;
     @media all and (min-width: 1024px) {
       font-size: 44px;
       font-family: Formular;
+      margin-bottom: 0;
     }
   }
   &__top {
-    padding: 40px 0;
+    padding: 112px 0 40px;
     @include ext-background(#F7F9FA);
   }
   &__top-wrap {
     @media all and (min-width: 1024px) {
       @include flex();
-      padding: 50px 0 40px;
+      padding: 35px 0 30px;
     }
   }
   &__promo {
     margin: 40px -16px 0;
     @media all and (min-width: 1024px) {
-      margin: 40px 0 0;
+      margin: 62px 0 0;
     }
   }
   &__search {
     @include ext-background(#F7F9FA);
-    padding-bottom: 50px;
+    padding-bottom: 58px;
+    margin-top: -85px;
+    @media all and (min-width: 1024px) {
+      margin-top: 0;
+    }
   }
   &__advantages {
-    max-width: 750px;
+    max-width: 666px;
+  }
+  &__why-us {
+    padding-top: 82px;
+    padding-bottom: 80px;
+    border-top: 1px solid rgba(196, 199, 204, 0.4);
   }
 }

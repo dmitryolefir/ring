@@ -1,4 +1,8 @@
 .deep-search {
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 1;
   background: $white;
   border: 1px solid rgba(17, 17, 17, 0.12);
   border-radius: 4px;
@@ -357,7 +361,7 @@
 
 .filter-count {
   color: $white;
-  background: $green;
+  background: $blue;
   border-radius: 50%;
   text-align: center;
   width: 24px;

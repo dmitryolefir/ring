@@ -1,5 +1,9 @@
 .search-form {
   position: relative;
+  padding-top: 85px;
+  @media all and (min-width: 1024px) {
+    padding-top: 0;
+  }
   &__columns {
     @media all and (min-width: 1024px) {
       @include flex();
@@ -29,7 +33,7 @@
     left: 0;
     right: 0;
     background: $white;
-    border: 1px solid $green;
+    border: 1px solid $blue;
     border-radius: 0 0 2px 2px;
     margin-top: -2px;
     z-index: 100;
@@ -45,10 +49,10 @@
       border-bottom: none;
     }
     &:hover {
-      color: $green;
+      color: $blue;
     }
     @media all and (min-width: 1024px) {
-      padding: 9px 18px;
+      padding: 11px 16px;
       font-size: 14px;
     }
   }
@@ -71,18 +75,23 @@
       }
     }
     @media all and (max-width: 1023px) {
+      //color: #FFFFFF;
       box-shadow: none;
       background: none;
       border: none;
       padding: 0 13px 0 0;
       margin-top: 20px;
       position: relative;
+      &:hover {
+        background: none;
+        opacity: 0.8;
+      }
       &:after {
         content: "";
         width: 0;
         height: 0;
         display: block;
-        border-color: #2B2C2E transparent transparent transparent;
+        border-color: #111111 transparent transparent transparent;
         border-style: solid;
         border-width: 4px 3px;
         position: absolute;
@@ -128,6 +137,70 @@
       right: 0;
       margin-top: 10px;
       z-index: 50;
+    }
+  }
+}
+.autocomplete {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 20px;
+  color: #898D93;
+  &__surname, &__address {
+    display: none;
+    @media all and (min-width: 1024px) {
+      display: inline;
+    }
+  }
+  &__personal {
+    b {
+      color: $black;
+    }
+  }
+  &__tags {
+    display: inline-flex;
+    align-items: center;
+  }
+  &__tag {
+    display: inline-block;
+    margin-left: 6px;
+    padding: 2px 4px;
+    border-radius: 2px;
+    background: $blue;
+    font-weight: 700;
+    font-size: 9px;
+    line-height: 12px;
+    letter-spacing: 0.25px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    &--magenta {
+      background: #8D479A;
+    }
+    &--orange {
+      background: #FFBB00;
+    }
+    &--green {
+      background: #B3D245;
+    }
+    &--wave {
+      background: #56B8AD;
+    }
+    &:first-child {
+      @media all and (max-width: 1023px) {
+        display: none;
+      }
+    }
+  }
+}
+.main-page__search {
+  .search-form {
+    &__deep-search {
+      @media all and (max-width: 1023px) {
+        color: #FFFFFF;
+        &:after {
+          border-color: #ffffff transparent transparent transparent;
+        }
+      }
     }
   }
 }

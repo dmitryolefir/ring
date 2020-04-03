@@ -1,5 +1,5 @@
 'use strict';
-const siteName = 'declarations.test';
+const siteName = 'localhost:8888';
 const scssFileName = 'style.scss';
 const jsFileName = 'scripts.js';
 const delFolders = 'template'; //если так записать folder/* то удалятся
@@ -168,9 +168,9 @@ export function browser_sync() {
     logPrefix: 'WSK',
     stream: true,
     port: 3000,
-    proxy: 'https://' + siteName,
+    proxy: 'http://' + siteName,
     socket: {
-      domain: 'https://' + siteName + ':3000',
+      domain: 'http://' + siteName + ':3000',
     },
     host: siteName,
     open: 'external',

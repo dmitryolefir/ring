@@ -5,23 +5,37 @@
     font-weight: 700;
     color: $black;
     transition: color 0.3s linear;
-    &:hover {
-      color: $green;
-    }
-    &_active {
-      color: $green;
-      cursor: default;
-    }
+    padding: 0 25px 0 0;
     @media all and (min-width: 1024px) {
+      padding: 0 24px !important;
       font-size: 16px;
+    }
+    &:hover {
+      color: $blue;
     }
   }
   &__item {
-    padding: 0 6px;
-    &:first-child { padding-left: 0; }
-    &:last-child { padding-right: 0; }
-    @media all and (min-width: 1024px) {
-      padding: 0 24px !important;
+    height: 100%;
+  }
+  &__item-active {
+    position: relative;
+    .tabs__link {
+      color: $blue;
+      cursor: default;
+    }
+    &:after {
+      @media all and (min-width: 1024px) {
+        content: '';
+        position: absolute;
+        bottom: -12px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 4px;
+        background: $blue;
+        border-radius: 2px 2px 0px 0px;
+      }
     }
   }
+
 }
