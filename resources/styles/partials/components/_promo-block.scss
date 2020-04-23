@@ -1,5 +1,5 @@
 .promo-block {
-  background: #EEEFF2;
+  background: #ffffff;
   height: 80px;
   font-size: 13px;
   color: $black;
@@ -8,6 +8,5 @@
   @include flex($justify-content: center, $align-items: center);
   @media all and (min-width: 1024px) {
     height: 200px;
-    background: #C4C4C4;
   }
 }

@@ -23,3 +23,16 @@
 @@include('partials/help-block.js');
 @@include('partials/declaration.js');
 @@include('partials/tabs.js');
+@@include('partials/hero-animation.js');
+
+var tower = @@include('animation/tower.json');
+
+var lottyContainer = document.querySelector('[data-lotty]');
+
+lottie.loadAnimation({
+	container: lottyContainer, // the dom element that will contain the animation
+	renderer: 'svg',
+	loop: true,
+	autoplay: true,
+	animationData: tower // the path to the animation json
+});

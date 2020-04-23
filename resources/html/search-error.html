@@ -17,66 +17,16 @@
                 @@include('template/search-form.html')
             </div>
 
-            <div class="search-page__no-result">На жаль по вашому запиту нічого не знайдено. Спробуйте&nbsp;ще.</div>
+            <div class="search-page__no-result">
+                <p>
+                    На жаль по вашому запиту нічого не знайдено.
+                    Спробуйте скористатися фунцією:
+                </p>
+                <a href="#" class="n-btn page-404__home-link page-404__home-link--white">Неповний збіг</a>
+            </div>
 
             @@include('template/promo-block.html', { "class": "search-page__promo" })
 
-            <div class="advantages-block search-page__advantages">
-
-                <div class="advantages-block__items">
-
-                    <div class="advantages-block__item">
-                        <div class="advantages-block__item-title">Чат-боти</div>
-                        <div class="advantages-block__item-text">Ми створили кишенькових помічників — чат-ботів у
-                            популярних месенджерах
-                        </div>
-                        <div class="advantages-block__bots">
-                            <div class="advantages-block__bots-items">
-
-                                <a href="#" class="advantages-block__bot-link social-link">
-                                    <img src="img/bots/telegram.svg" alt="" class="social-link__icon">
-                                </a>
-
-                                <a href="#" class="advantages-block__bot-link social-link">
-                                    <img src="img/bots/messenger.svg" alt="" class="social-link__icon">
-                                </a>
-
-                                <a href="#" class="advantages-block__bot-link social-link">
-                                    <img src="img/bots/skype.svg" alt="" class="social-link__icon">
-                                </a>
-
-                            </div>
-
-                            <a href="#" class="advantages-block__instruction-link">Покрокова iнструкцiя</a>
-
-
-                        </div>
-                    </div>
-
-                    <div class="advantages-block__item">
-                        <div class="advantages-block__item-title">Порівняння</div>
-                        <div class="advantages-block__item-text">Додавайте декларантів
-                            у список порівнянь та дивіться аналіз за різними показниками
-                        </div>
-                    </div>
-
-                    <div class="advantages-block__item">
-                        <div class="advantages-block__item-title">Моніторинг</div>
-                        <div class="advantages-block__item-text">Слідкуйте за змінами чи появою нових документів по
-                            E-mail, RSS та у месенжерах
-                        </div>
-                    </div>
-
-                    <div class="advantages-block__item">
-                        <div class="advantages-block__item-title">Аналітика</div>
-                        <div class="advantages-block__item-text">Ми зробили круту аналітику
-                            і поділили ії на 8 розділів для вашої зручності
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
 
         </div>
 

@@ -1,4 +1,8 @@
 .page-404 {
+  padding: 0 16px;
+  @media all and (min-width: 1024px) {
+    padding: 0;
+  }
   &__title {
     font-family: Formular;
     font-size: 20px;
@@ -32,6 +36,11 @@
       background-position: center;
       background-size: 100% auto;
       background-image: url('../img/icon/right-green.svg');
+    }
+  }
+  &__home-link--white {
+    &:after {
+      background-image: url('../img/icon/right-white.svg');
     }
   }
   &__promo {

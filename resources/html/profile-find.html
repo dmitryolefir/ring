@@ -11,41 +11,168 @@
 
     <div class="content container">
 
-        <div class="profile-page">
+        <div class="card-page">
 
-            <div class="profile-page__form-block">
-                @@include('template/search-form.html')
-            </div>
+            <a href="#" class="n-btn back-btn">
+                <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.99 5L16 5L16 3L3.99 3L3.99 1.04995e-06L6.03983e-07 4L3.99 8L3.99 5Z" fill="white"/>
+                </svg>
+                <span>Назад</span>
+            </a>
 
-            <div class="profile-page__top">
-
-                <div class="tabs profile-page__tabs">
-                    <div class="tabs__item">
-                        <a href="profile-request.html" class="tabs__link">Мої запити</a>
-                    </div>
-                    <div class="tabs__item">
-                        <a href="profile-find.html" class="tabs__link tabs__link_active">Мої знахідки</a>
+            <div class="full-card full-card__main">
+                <div class="full-card__header">
+                    <h1>ТОВ “МКР ОИЛ”</h1>
+                    <div class="full-card__print">
+                        <span>Друкувати</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.6663 5.33333H3.33301C2.22634 5.33333 1.33301 6.22667 1.33301 7.33333V11.3333H3.99967V14H11.9997V11.3333H14.6663V7.33333C14.6663 6.22667 13.773 5.33333 12.6663 5.33333ZM10.6663 12.6667H5.33301V9.33333H10.6663V12.6667ZM12.6663 8C12.2997 8 11.9997 7.7 11.9997 7.33333C11.9997 6.96667 12.2997 6.66667 12.6663 6.66667C13.033 6.66667 13.333 6.96667 13.333 7.33333C13.333 7.7 13.033 8 12.6663 8ZM11.9997 2H3.99967V4.66667H11.9997V2Z" fill="#111111"/>
+                        </svg>
                     </div>
                 </div>
+                <ul class="full-card__body">
+                    <li>
+                        <div class="full-card__heading">Назва</div>
+                        <div class="full-card__info"><u>Товариство з обмеженою відповідальністю “МКР ОИЛ”</u></div>
+                    </li>
+                    <li>
+                        <div class="full-card__heading">Номер</div>
+                        <div class="full-card__info">40065152</div>
+                    </li>
+                    <li>
+                        <div class="full-card__heading">Статус</div>
+                        <div class="full-card__info">зареєстровано</div>
+                    </li>
+                    <li>
+                        <div class="full-card__heading">Діяльність</div>
+                        <div class="full-card__info">Капітальний ремонт житлового будинку, оснащення інженерного вводу приладом обліку</div>
+                    </li>
+                    <li>
+                        <div class="full-card__heading">Місце/Адреса</div>
+                        <div class="full-card__info">92520, Луганська обл., Міловський район, село Морозівка, вулиця 50 років Жовтня</div>
+                    </li>
+                    <li>
+                        <div class="full-card__heading">Голова</div>
+                        <div class="full-card__info"><u>Криворучка Владислав Вікторович</u></div>
+                    </li>
+                    <li>
+                        <div class="full-card__heading">Засновник</div>
+                        <div class="full-card__info">
+                            <div class="full-card__row">
+                                <span>Криворучка Владислав Вікторович</span>
+                                <span>внесок до статутного фонду - 300000.00 грн</span>
+                            </div>
+                            <div class="full-card__row">
+                                <span>Льоушкін Геннадій Дмитрович</span>
+                                <span>внесок до статутного фонду - 300000.00 грн</span>
+                            </div>
+                        </div>
+                    </li>
 
-                <a class="n-btn profile-page__request-btn popup-btn"
-                   data-width="464px"
-                   href="popup/add-request.html">Додати запити</a>
-
+                </ul>
             </div>
 
-            <div class="profile-page__tab-content">
-
-                <div class="profile-page__result-cards">
-
-                    @@include('template/search-card.html', { "class": "profile-page__result-card" })
-
-                    @@include('template/search-card.html', { "class": "profile-page__result-card" })
-
+            <div class="full-card full-card__collapse">
+                <div class="full-card__header">
+                    <h2>Історія змін компанії</h2>
+                    <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 5L5 0L10 5H0Z" fill="#00BFF2"/>
+                    </svg>
                 </div>
+                <ul class="full-card__body">
+                    <li>
+                        <div class="full-card__years">16 липня 2019 р.—<br>
+                            22 червня 2016 р.</div>
+                        <div class="full-card__heading">Адреса</div>
+                        <div class="full-card__info">
+                            <div class="full-card__row full-card__move">
+                                <span>61033, Харківська обл., місто Харків, Київський район, ВУЛИЦЯ ШЕВЧЕНКА, будинок 233-Б</span>
+                                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.3413 3.16663H0.333008V4.83329H10.3413V7.33329L13.6663 3.99996L10.3413 0.666626V3.16663Z" fill="#111111"/>
+                                </svg>
+                                <span>61002, Харківська обл., місто Харків, Київський район, ВУЛИЦЯ МАРШАЛА БАЖАНОВА, будинок 21/23</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="full-card__years">13 червня 2016 р.—<br>
+                            18 квітня 2016 р.</div>
+                        <div class="full-card__heading">Адреса</div>
+                        <div class="full-card__info">
+                            <div class="full-card__row full-card__move">
+                                <span>61082, Харківська обл., місто Харків, Фрунзенський район, ПРОСПЕКТ МОСКОВСЬКИЙ, будинок 144, кімната 710</span>
+                                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.3413 3.16663H0.333008V4.83329H10.3413V7.33329L13.6663 3.99996L10.3413 0.666626V3.16663Z" fill="#111111"/>
+                                </svg>
+                                <span><u>61033, Харківська обл., місто Харків, Київський район, ВУЛИЦЯ ШЕВЧЕНКА, будинок 233-Б</u></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="full-card__heading">Назва</div>
+                        <div class="full-card__info">
+                            <div class="full-card__row full-card__move">
+                                <span>Товариство з обмеженою відповідальністю “МКР”</span>
+                                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.3413 3.16663H0.333008V4.83329H10.3413V7.33329L13.6663 3.99996L10.3413 0.666626V3.16663Z" fill="#111111"/>
+                                </svg>
+                                <span>Товариство з обмеженою відповідальністю “МКР ОИЛ”</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="full-card__opening">
+                        <div class="full-card__heading">Оновлено від</div>
+                        <div class="full-card__info">16 липня 2019 р.</div>
+                    </li>
 
+                </ul>
             </div>
 
+            <div class="full-card full-card__collapse">
+                <div class="full-card__header">
+                    <h2>Історія змін керівництва</h2>
+                    <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 5L5 0L10 5H0Z" fill="#00BFF2"/>
+                    </svg>
+                </div>
+                <ul class="full-card__body">
+                    <li>
+                        <div class="full-card__years">16 липня 2019 р.—<br>
+                            22 червня 2016 р.</div>
+                        <div class="full-card__heading">Засновник</div>
+                        <div class="full-card__info">
+                            <div class="full-card__row full-card__move full-card__move--smaller">
+                                <span>Криворучка Владислав Вікторович</span>
+                                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.3413 3.16663H0.333008V4.83329H10.3413V7.33329L13.6663 3.99996L10.3413 0.666626V3.16663Z" fill="#111111"/>
+                                </svg>
+                                <span><u>Льоушкін Геннадій Дмитрович</u></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="full-card__years">13 червня 2016 р.—<br>
+                            18 квітня 2016 р.</div>
+                        <div class="full-card__heading">Керівник</div>
+                        <div class="full-card__info">
+                            <div class="full-card__row full-card__move full-card__move--smaller">
+                                <span>Льоушкін Геннадій Дмитрович</span>
+                                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.3413 3.16663H0.333008V4.83329H10.3413V7.33329L13.6663 3.99996L10.3413 0.666626V3.16663Z" fill="#111111"/>
+                                </svg>
+                                <span>Криворучка Владислав Вікторович</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="full-card__opening">
+                        <div class="full-card__heading">Оновлено від</div>
+                        <div class="full-card__info">16 липня 2019 р.</div>
+                    </li>
+
+                </ul>
+            </div>
+
+            @@include('template/promo-block.html', { "class": "card-page__promo" })
 
         </div>
 

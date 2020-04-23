@@ -33,26 +33,28 @@
 
 
     /**/
-    searchForm.on('click', '.deep-search__filter-title', function() {
-      $(this).parents('.deep-search__filter').toggleClass('opened');
-    });
+    if ($(window).width() < 1024) {
+      searchForm.on('click', '.deep-search__filter-title', function() {
+        $(this).parents('.deep-search__filter').toggleClass('opened');
+      });
+    }
 
 
 
     /*Сounting selected filters Start*/
 
     searchForm.on('change', '.n-checkbox__input', function() {
-      let filterCount = $('.n-checkbox__input:checked', searchForm).length;
+      let filterCount = $('.n-checkbox__input:checked:not(.uncountable)', searchForm).length;
       $('.deep-search__count-block .filter-count', searchForm).text(filterCount);
       setCountFilterInBtn(filterCount);
 
       $('.deep-search__filter', searchForm).each(function() {
         let countSelectedFilter = $('.n-checkbox__input:checked', this).length;
         $('.filter-count', this).remove();
-        if(countSelectedFilter) {
-          let countBlock = '<div class="filter-count">' + countSelectedFilter + '</div>';
-          $('.deep-search__filter-title', this).append(countBlock);
-        }
+        // if(countSelectedFilter) {
+        //   let countBlock = '<div class="filter-count">' + countSelectedFilter + '</div>';
+        //   $('.deep-search__filter-title', this).append(countBlock);
+        // }
       });
 
     });
@@ -73,6 +75,33 @@
 
     /*Reset filter End*/
 
+    /*Select All*/
+
+    $('.n-checkbox__input#all', searchForm).on('change', function(e) {
+
+      if ($(this).is(':checked')) {
+        $('.n-checkbox__input:not(#all)', searchForm).prop('checked', true);
+      } else {
+        $('.n-checkbox__input:not(#all)', searchForm).prop('checked', false);
+      }
+    });
+
+    /*Select All*/
+
+    /*Select Column*/
+
+    $('.deep-search__column').on('change', function(e) {
+      const column = e.target.value;
+
+      if ($(this).is(':checked')) {
+        $('.' + column, searchForm).prop('checked', true);
+      } else {
+        $('.' + column, searchForm).prop('checked', false);
+      }
+
+    });
+
+    /*Select Column*/
 
 
     /*Region Mobile Select Start*/

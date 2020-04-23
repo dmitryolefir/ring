@@ -16,3 +16,11 @@ if (acc) {
 		})
 	}
 }
+
+$('.full-card__collapse').on('click', '.full-card__header', function() {
+	$(this).parents('.full-card').toggleClass('opened');
+});
+
+$('.full-card__print').on('click', function () {
+	window.print();
+});

@@ -1,7 +1,9 @@
 .main-page {
   &__banner {
-    background: url("../img/ring-banner.png") top no-repeat;
+    position: relative;
+    background: url("../img/hero.png") #1c5b83 top no-repeat;
     background-size: cover;
+    overflow: hidden;
   }
   &__description {
     color: rgba(255, 255, 255, 0.44);
@@ -30,7 +32,7 @@
   }
   &__top {
     padding: 112px 0 40px;
-    @include ext-background(#F7F9FA);
+    @include ext-background(#eeeff2);
   }
   &__top-wrap {
     @media all and (min-width: 1024px) {
@@ -45,7 +47,7 @@
     }
   }
   &__search {
-    @include ext-background(#F7F9FA);
+    @include ext-background(#eeeff2);
     padding-bottom: 58px;
     margin-top: -85px;
     @media all and (min-width: 1024px) {
@@ -60,4 +62,42 @@
     padding-bottom: 80px;
     border-top: 1px solid rgba(196, 199, 204, 0.4);
   }
+}
+
+.sauron {
+  position: absolute;
+  left: 0;
+  @media all and (min-width: 640px) {
+    top: 0;
+    width: calc(100% + 450px);
+  }
+  @media all and (min-width: 1024px) {
+    left: -110px;
+    bottom: 0;
+    width: calc(100% + 200px);
+  }
+  @media all and (min-width: 1300px) {
+    top: 0;
+  }
+  &__text {
+    display: none;
+    position: absolute;
+    top: 84px;
+    left: 95px;
+    color: #ffffff;
+    font-weight: 700;
+    @media all and (min-width: 1024px) {
+      display: block;
+    }
+  }
+  svg {
+    min-width: 380%;
+    @media all and (min-width: 640px) {
+      min-width: auto;
+    }
+  }
+}
+
+.position-relative {
+  position: relative;
 }

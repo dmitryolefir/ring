@@ -19,6 +19,8 @@ import fileinclude from 'gulp-file-include';
 import browserSync from 'browser-sync';
 import del from 'del';
 
+
+
 let os = require('os');
 os.tmpDir = os.tmpdir;
 
@@ -45,6 +47,9 @@ let assets_path = {
 
   html_source: 'resources/html/**',
   html_destination: './',
+
+    json_source: 'resources/scripts/animation/'
+
 };
 
 let paths = {
@@ -63,6 +68,9 @@ let paths = {
     src: basePaths.src + assets_path.html_source,
     dest: basePaths.dest + assets_path.html_destination,
   },
+    json: {
+        src: basePaths.src + assets_path.json_source,
+    }
 };
 
 let appFiles = {
@@ -111,7 +119,7 @@ export function styles_prod() {
 
 export function scripts() {
   return gulp.src(appFiles.scripts, {sourcemaps: false, allowEmpty: true}).
-      //pipe(babel()).
+      // pipe(babel()).
       pipe(fileinclude({
         prefix: '@@',
         basepath: '@file',
@@ -124,7 +132,7 @@ export function scripts() {
 
 export function scripts_prod() {
   return gulp.src(appFiles.scripts, {sourcemaps: true, allowEmpty: true}).
-      //pipe(babel()).
+      // pipe(babel()).
       pipe(fileinclude({
         prefix: '@@',
         basepath: '@file',
