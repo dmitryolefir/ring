@@ -71,12 +71,21 @@
     width: calc(100% + 450px);
   }
   @media all and (min-width: 1024px) {
+    height: auto;
     left: -110px;
     bottom: 0;
     width: calc(100% + 200px);
   }
   @media all and (min-width: 1300px) {
     top: 0;
+  }
+  &__wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
   }
   &__text {
     display: none;
