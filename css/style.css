@@ -5273,7 +5273,6 @@ textarea {
   position: relative;
   background: url("../img/hero.png") #1c5b83 top no-repeat;
   background-size: cover;
-  overflow: hidden;
 }
 .main-page__description {
   color: rgba(255, 255, 255, 0.44);
