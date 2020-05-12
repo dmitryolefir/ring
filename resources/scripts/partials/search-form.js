@@ -6,7 +6,8 @@
 
 
     $('.search-form__autocomplete-item', searchForm).on('click', function() {
-      $('.search-form__input', searchForm).val($(this).text().trim());
+
+      $('.search-form__input', searchForm).val($(this).text().replace(/\s{2,}/g,' ').trim());
       $('.search-form__autocomplete', searchForm).hide();
     });
 
@@ -92,6 +93,8 @@
 
     $('.deep-search__column').on('change', function(e) {
       const column = e.target.value;
+
+      console.log(column);
 
       if ($(this).is(':checked')) {
         $('.' + column, searchForm).prop('checked', true);
@@ -180,8 +183,17 @@
       }
       else {
         filterCountBlock.css('width', 0);
+        filterCountBlock.css('overflow', 'auto');
       }
     }
+
+    $('.mobile-search').click(function () {
+      const searchInput = document.querySelector('.search-form__input');
+      if (searchInput) {
+        console.log(searchInput);
+        searchInput.focus();
+      }
+    });
 
   });
 

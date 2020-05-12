@@ -9,28 +9,36 @@
     font-size: 11px;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.6px;
+    letter-spacing: 0.25px;
     @media all and (min-width: 1024px) {
       font-size: 13px;
       font-weight: 600;
       margin-top: 34px;
+      letter-spacing: 0.6px;
     }
   }
   &__title {
     color: #ffffff;
     font-size: 24px;
-    line-height: 1.18;
+    line-height: 1.33;
     max-width: 760px;
-    margin-top: 10px;
+    margin-top: 7px;
     margin-bottom: 23px;
     @media all and (min-width: 1024px) {
       font-size: 44px;
       font-family: Formular;
       margin-bottom: 0;
+      line-height: 1.18;
+      margin-top: 10px;
+    }
+    br {
+      @media all and (max-width: 1023px) {
+        display: none;
+      }
     }
   }
   &__top {
-    padding: 112px 0 40px;
+    padding: 88px 0 40px;
     @include ext-background(#eeeff2);
   }
   &__top-wrap {
@@ -41,25 +49,31 @@
   }
   &__promo {
     margin: 40px -16px 0;
+    background: #EEEFF2;
     @media all and (min-width: 1024px) {
       margin: 62px 0 0;
     }
   }
   &__search {
     @include ext-background(#eeeff2);
-    padding-bottom: 58px;
+    padding-bottom: 38px;
     margin-top: -85px;
     @media all and (min-width: 1024px) {
       margin-top: 0;
+      padding-bottom: 58px;
     }
   }
   &__advantages {
     max-width: 666px;
   }
   &__why-us {
-    padding-top: 82px;
-    padding-bottom: 80px;
+    padding-top: 40px;
+    padding-bottom: 35px;
     border-top: 1px solid rgba(196, 199, 204, 0.4);
+    @media all and (min-width: 1024px) {
+      padding-top: 82px;
+      padding-bottom: 80px;
+    }
   }
 }
 
@@ -86,16 +100,25 @@
     left: 0;
     right: 0;
     overflow: hidden;
+    @media all and (min-width: 1024px) {
+      overflow: inherit;
+    }
   }
   &__text {
     display: none;
     position: absolute;
-    top: 84px;
-    left: 95px;
+    top: 34px;
+    left: 0;
+    padding-top: 50px;
+    padding-left: 95px;
     color: #ffffff;
     font-weight: 700;
+    transition: opacity 0.35s ease;
     @media all and (min-width: 1024px) {
       display: block;
+    }
+    &:hover {
+      opacity: 0.7;
     }
   }
   svg {

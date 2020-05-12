@@ -1,5 +1,8 @@
 .subscription-block {
   max-width: 400px;
+  @media all and (min-width: 1024px) {
+    width: 400px;
+  }
   &__title {
     line-height: 1;
     color: #C9C9C9;

@@ -217,7 +217,8 @@ $('.full-card__print').on('click', function () {
 
 
     $('.search-form__autocomplete-item', searchForm).on('click', function() {
-      $('.search-form__input', searchForm).val($(this).text().trim());
+
+      $('.search-form__input', searchForm).val($(this).text().replace(/\s{2,}/g,' ').trim());
       $('.search-form__autocomplete', searchForm).hide();
     });
 
@@ -303,6 +304,8 @@ $('.full-card__print').on('click', function () {
 
     $('.deep-search__column').on('change', function(e) {
       const column = e.target.value;
+
+      console.log(column);
 
       if ($(this).is(':checked')) {
         $('.' + column, searchForm).prop('checked', true);
@@ -391,61 +394,22 @@ $('.full-card__print').on('click', function () {
       }
       else {
         filterCountBlock.css('width', 0);
+        filterCountBlock.css('overflow', 'auto');
       }
     }
 
-  });
-
-})(jQuery);;
-(function($) {
-
-  $(function() {
-
-    let accountBlock = $('.account-block');
-
-    $('.account-block__login', accountBlock).on('click', function() {
-      $('.account-block__dropdown', accountBlock).toggle();
-    });
-
-    /*Клик вне элемента*/
-    let clickEvent = (('ontouchstart' in document.documentElement)?'touchstart':'click');
-    $(document).on(clickEvent, function(e){
-      if ( !$(e.target).parents('.account-block').length ) {
-        $('.account-block__dropdown', accountBlock).hide();
+    $('.mobile-search').click(function () {
+      const searchInput = document.querySelector('.search-form__input');
+      if (searchInput) {
+        console.log(searchInput);
+        searchInput.focus();
       }
     });
 
   });
 
 })(jQuery);;
-(function($) {
 
-  $(function() {
-
-    let cardActionBlock = $('.card-actions');
-
-    $('.card-actions__action-link', cardActionBlock).on('click', function() {
-      let parent = $(this).parents('.card-actions');
-      $('.card-actions').not(parent).find('.card-actions__items').hide();
-      $('.card-actions__items', parent).toggle();
-    });
-
-    $('.card-actions__action').on('click', function() {
-      console.log('333');
-      $(this).parents('.card-actions').find('.card-actions__items').hide();
-    });
-
-    /*Клик вне элемента*/
-    let clickEvent = (('ontouchstart' in document.documentElement)?'touchstart':'click');
-    $(document).on(clickEvent, function(e){
-      if ( !$(e.target).parents('.card-actions').length ) {
-        $('.card-actions__items', cardActionBlock).hide();
-      }
-    });
-
-  });
-
-})(jQuery);;
 (function($) {
 
   $(function() {
@@ -459,130 +423,7 @@ $('.full-card__print').on('click', function () {
   });
 
 })(jQuery);;
-(function($) {
 
-  $(function() {
-
-    $('.compare-popup__open-link').on('click', function() {
-       let parent = $(this).parents('.compare-popup');
-      parent.find('.compare-card').addClass('compare-card_opened');
-      parent.find('.compare-card__dropdown').addClass('drop-down-btn_opened');
-    });
-
-  });
-
-})(jQuery);;
-(function($) {
-
-  $(function() {
-
-    addEventOnRequestBlock();
-
-
-    let requestBtn = document.getElementsByClassName('profile-page__request-btn')[0];
-
-    if(requestBtn) {
-      requestBtn.addEventListener('popupLoad', function() {
-        addEventOnRequestBlock();
-      });
-    }
-
-
-    function addEventOnRequestBlock(){
-
-      let requestBlock = $('.add-request-block');
-
-      $('.add-request-block__add-input', requestBlock).on('keyup', function(e){
-        console.log('add');
-        let requestVal = $(this).val();
-        if(e.keyCode === 13 && requestVal)
-        {
-          addRequest(requestVal);
-        }
-      });
-
-      $(requestBlock).on('click', '.add-request-block__item-text', function() {
-        let $this = $(this);
-        let parent = $this.parents('.add-request-block__item');
-        let input = renderEditInput($this.text());
-
-        resetRequest(requestBlock);
-
-        parent.append(input);
-        $this.hide();
-        $('.add-request-block__edit-input', parent).focus();
-
-        $('.add-request-block__edit-input', parent).on('keyup', function(e){
-           if(e.keyCode === 13)
-           {
-             editRequest($(this));
-             setCountRequest(requestBlock);
-           }
-        });
-
-      });
-
-      $('.add-request-block__btn', requestBlock).on('click', function() {
-        let editInput = $('.add-request-block__edit-input', requestBlock);
-        if(editInput.length) {
-          editRequest(editInput);
-          setCountRequest(requestBlock);
-        }
-        else {
-          let requestVal = $('.add-request-block__add-input', requestBlock).val();
-          if(requestVal)
-          {
-            addRequest(requestVal);
-          }
-        }
-      });
-
-    }
-
-    function renderEditInput(value){
-      let classes = 'add-request-block__input add-request-block__edit-input';
-      return '<input type="text" value="' + value + '" class="' + classes + '">';
-    }
-
-    function addRequest(request, requestBlock) {
-      request = '<div class="add-request-block__item-text">' + request + '</div>';
-      request = '<div class="add-request-block__item">' + request + '</div>';
-      $('.add-request-block__items-inner', requestBlock).append(request);
-      $('.add-request-block__input', requestBlock).val('');
-      setCountRequest(requestBlock);
-    }
-
-    function setCountRequest(requestBlock) {
-      let requestCount = $('.add-request-block__item', requestBlock).length;
-      $('.add-request-block__count-number', requestBlock).text(requestCount);
-    }
-    
-    function editRequest(editInput) {
-
-      let requestVal = editInput.val();
-      let requestRow = editInput.parents('.add-request-block__item');
-      let requestItemText = $('.add-request-block__item-text', requestRow);
-
-      if(requestVal) {
-        requestItemText.text(requestVal);
-        requestItemText.show();
-        editInput.remove();
-      }
-      else {
-        requestRow.remove();
-      }
-    }
-
-    function resetRequest(requestBlock) {
-      $('.add-request-block__item', requestBlock).each(function() {
-        $('.add-request-block__item-text', this).show();
-        $('.add-request-block__edit-input', this).remove();
-      });
-    }
-
-  });
-
-})(jQuery);;
 (function($) {
 
   $(function() {
@@ -645,198 +486,8 @@ $('.full-card__print').on('click', function () {
   });
 
 })(jQuery);;
-(function($) {
-
-  $(function() {
-
-    $('.request-row__close').on('click', function() {
-      $(this).parents('.request-row').remove();
-    });
-
-  });
-
-})(jQuery);;
-(function($) {
-
-  $(function() {
-
-    let helpBlock = $('.help-block');
-
-    
-
-  });
-
-})(jQuery);;
-(function($) {
-
-  $(function() {
-
-    let Contents = function (contentBlock) {
-
-      this.contents = $('.contents');
-
-      self = this;
-
-      generateContentsItems(contentBlock);
-      addEvents();
 
 
-      function generateContentsItems(contentBlock) {
-        setIdForTitles(contentBlock);
-        let links = '';
-        contentBlock.each(function() {
-          let $this = $(this);
-          let idBlock = '#' + $this.attr('id');
-          let linkClass = 'contents__item ' + $this.data('empty');
-          links += '<a class="' + linkClass + '" href="' + idBlock + '">' + $('h2', $this).html() + '</a>';
-        });
-        $('.contents__items', self.contents).append(links);
-      }
-
-      function setIdForTitles(contentBlock) {
-        let counter = 1;
-        contentBlock.each(function() {
-          $(this).attr('id', 'declaration-title-' + counter);
-          counter += 1;
-        });
-      }
-
-      function closeContents() {
-        self.contents.removeClass('opened');
-        $('html').removeClass('contents-lock');
-      }
-
-      function addEvents() {
-
-        $('.contents__close', self.contents).on('click', function() {
-          closeContents();
-        });
-
-        $('.contents__open', self.contents).on('click', function() {
-          self.contents.addClass('opened');
-          $('html').addClass('contents-lock');
-        });
-
-        $('.contents__item', self.contents).on('click', function(e) {
-          e.preventDefault();
-          let scrollBlock = $(this).attr('href');
-          scrollBlock = $(scrollBlock);
-          closeContents();
-          $('.nacp-section').removeClass('opened');
-          $('html, body').animate({
-            scrollTop: scrollBlock.offset().top
-          }, 1000, 'swing', function() {
-            scrollBlock.addClass('opened');
-          });
-        });
-
-      }
-
-    };
-
-
-    let declarationBlock = $('.declaration-details');
-
-    if(declarationBlock.length) {
-      let declarationId = declarationBlock.data('id');
-      downloadDeclarationContent(declarationId, function(declarationContent) {
-        declarationBlock.append(declarationContent);
-        prepareContent();
-        addEvents();
-        new Contents($('.nacp-section'));
-
-      });
-    }
-
-    function prepareContent(){
-
-      let declaration = $('.declaration-details');
-
-      declaration.contents().filter(function() {
-        return this.nodeType === 3; // get only the text nodes
-      })
-      .wrap( "<p></p>" );
-
-
-      $('header', declaration).each(function(){
-        $(this).nextUntil("header").addBack().wrapAll('<div class="nacp-section" />');
-      });
-
-
-      $('.nacp-section').each(function( index ) {
-
-        let $this = $(this);
-        let someInfo = $this.find('table, .personal-info, label');
-        let dataEmpty = someInfo.length ? 'full' : 'empty';
-
-        $this.find('header').children().not('h2').insertAfter($this.find('header'));
-        $this.children().not('header').wrapAll('<div class="body" />');
-        $this.attr('id', 'toc-id-' + index);
-        $this.attr('data-empty', dataEmpty);
-
-        if(index > 1 && index < 18) {
-          let $body = $this.find('.body');
-          $body.each(function() {
-            $(this).find('p').nextUntil('div').addBack().wrapAll('<div class="help-block__text" />');
-            $(this).find('.help-block__text').wrap('<div class="help-block"></div>');
-            let helpText = $(this).find('.help-block');
-            helpText.prepend(generateHelpBtn());
-          });
-        }
-
-      });
-
-
-    }
-
-    function addEvents(){
-
-      $('.help-block__btn').on('click', function() {
-        $(this).next('.help-block__text').toggle();
-      });
-
-      $('.nacp-section header').on('click', function() {
-        $(this).parents('.nacp-section').toggleClass('opened');
-      });
-
-    }
-
-
-    $('.tenders__top').on('click', function() {
-      if (window.matchMedia("(min-width: 1024px)").matches) {
-        $('.tenders').toggleClass('opened');
-      }
-    });
-
-    $('.tenders__description').on('click', function() {
-      if (!window.matchMedia("(min-width: 1024px)").matches) {
-        $('.tenders').toggleClass('opened');
-      }
-    });
-
-    function downloadDeclarationContent(declarationId, callback) {
-      let contentUrl = 'declaration/' + declarationId + '.html';
-      jQuery.ajax({
-        url: contentUrl,
-        type: "get",
-        data: [],
-        success: function success(response, textStatus, jqXHR) {
-          callback(response);
-        } });
-    }
-
-    function generateHelpBtn(){
-      let btn = '<div class="help-block__btn-dot"></div>';
-      let title = 'Пояснення щодо цього розділу декларації';
-      btn += '<div class="help-block__btn-dot"></div>';
-      btn += '<div class="help-block__btn-dot"></div>';
-      btn = '<div title="' + title + '" class="help-block__btn">' + btn + '</div>';
-      return btn;
-    }
-
-  });
-
-})(jQuery);;
 const tabs = document.querySelectorAll('.tabs__item'),
 	tabsWrap = document.querySelector('.profile-page__tabs');
 
@@ -874,10 +525,12 @@ var tower = {"v":"5.5.2","fr":30,"ip":0,"op":120,"w":2560,"h":992,"nm":"Tower so
 
 var lottyContainer = document.querySelector('[data-lotty]');
 
-lottie.loadAnimation({
-	container: lottyContainer, // the dom element that will contain the animation
-	renderer: 'svg',
-	loop: true,
-	autoplay: true,
-	animationData: tower // the path to the animation json
-});
+if (lottyContainer) {
+	lottie.loadAnimation({
+		container: lottyContainer, // the dom element that will contain the animation
+		renderer: 'svg',
+		loop: true,
+		autoplay: true,
+		animationData: tower // the path to the animation json
+	});
+}

@@ -38,8 +38,12 @@
 	font-size: 12px;
 	font-weight: 500;
 	cursor: pointer;
+	transition: opacity 0.35s ease;
 	@media all and (min-width: 640px) {
 	  padding: 0;
+	}
+	&:hover {
+	  opacity: 0.75;
 	}
 	svg {
 	  margin-left: 5px;
@@ -50,7 +54,7 @@
 	margin: 0;
 	list-style: none;
 	li {
-	  margin: 0 16px;
+	  margin: 0 24px;
 	  padding: 16px 0;
 	  border-top: 1px solid #EEEFF2;
 	  border-bottom: 1px solid #EEEFF2;
@@ -78,7 +82,6 @@
 	line-height: 16px;
 	letter-spacing: 0.25px;
 	color: #898D93;
-	cursor: pointer;
 	@media all and (min-width: 1024px) {
 	  width: 240px;
 	  font-size: 11px;
@@ -108,6 +111,9 @@
   }
   &__main {
 	margin-bottom: 32px;
+	.full-card__header {
+	  cursor: auto;
+	}
   }
   &__years {
 	width: 100%;
@@ -166,7 +172,6 @@
 	}
 	.full-card__heading {
 	  width: 150px;
-	  cursor: pointer;
 	}
 	.full-card__body {
 	  display: none;

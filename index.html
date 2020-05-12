@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="uk">   
 
 <head>
     <title>Електронні декларації чиновників та депутатів</title>
@@ -31,7 +31,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body>                 
 
 <div class="page">
 
@@ -52,7 +52,11 @@
         <div class="header__column">
             <div class="logo-block">
                 <a href="/" class="logo-block__link">
-                    <img class="logo-block__img_desktop" src="img/logo.svg" alt="Bihus logo">
+                    <svg class="logo-block__img_desktop" width="158" height="40" viewBox="0 0 158 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M39 20C39 30.4934 30.4934 39 20 39C9.50659 39 1 30.4934 1 20C1 9.50659 9.50659 1 20 1C30.4934 1 39 9.50659 39 20Z" stroke="#00BFF2" stroke-width="2"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 20V30H22.6667L26 26.6667V16.6667H19.3333V13.3333H26L22.6667 10H16V16.6667L19.3333 20H22.6667V26.6667H19.3333V20H16Z" fill="#111111"/>
+                        <path d="M63.06 15.82C61.76 15.82 60.8 16.22 60.22 17H59.74V15.82H57.56V26H59.82V21.24C59.82 19.1 60.94 17.92 63 17.92H63.92V15.82H63.06ZM68.3566 11.46H66.0366V13.64H68.3566V11.46ZM66.0566 15.82V26H68.3166V15.82H66.0566ZM80.9058 19.64C80.9058 17.08 79.5658 15.56 77.0858 15.56C75.7458 15.56 74.7658 15.98 74.1458 16.8H73.6658V15.82H71.4858V26H73.7458V20.56C73.7458 19.74 73.9858 19.04 74.4658 18.46C74.9658 17.88 75.6058 17.58 76.3858 17.58C77.8858 17.58 78.6458 18.42 78.6458 20.08V26H80.9058V19.64ZM91.1681 16.8H90.6881C90.0881 15.98 89.1081 15.56 87.7681 15.56C86.4281 15.56 85.3281 16.04 84.5081 17.02C83.6881 17.98 83.2881 19.22 83.2881 20.74C83.2881 22.26 83.6881 23.5 84.5081 24.46C85.3281 25.42 86.4081 25.9 87.7681 25.9C89.0681 25.9 90.0281 25.48 90.6081 24.66H91.0881V25.34C91.0881 27.32 90.1881 28.32 88.3881 28.32C86.9281 28.32 86.0881 27.84 85.9081 26.9H83.6681C83.9081 28.98 85.7081 30.18 88.4281 30.18C89.9281 30.18 91.1081 29.76 92.0081 28.92C92.9081 28.08 93.3481 26.94 93.3481 25.5V15.82H91.1681V16.8ZM88.3281 23.98C86.5881 23.98 85.5481 22.68 85.5481 20.74C85.5481 18.8 86.5881 17.48 88.3281 17.48C90.1481 17.48 91.1681 18.88 91.1681 20.74C91.1681 22.58 90.1481 23.98 88.3281 23.98Z" fill="#111111"/>
+                    </svg>
                     <img class="logo-block__img_mobile" src="img/logo-mobile.svg" alt="Bihus logo">
                 </a>
             </div>
@@ -62,10 +66,10 @@
 
             <div class="header__menu main-menu">
                 <div class="main-menu__item">
-                    <a href="popup/api.html" class="main-menu__link popup-btn">Відкритий API</a>
+                    <a href="/api.html" class="main-menu__link popup-btn">Відкритий API</a>
                 </div>
                 <div class="main-menu__item">
-                    <a href="analytics.html" class="main-menu__link">Новини</a>
+                    <a href="/" class="main-menu__link">Новини</a>
                 </div>
             </div>
 
@@ -92,9 +96,9 @@
 
         <div class="mobile-menu__inner">
 
-            <div class="mobile-menu__top">
+            <a href="/" class="mobile-menu__top">
                 <img src="img/logo.svg" alt="Bihus logo" class="mobile-menu__logo">
-            </div>
+            </a>
 
             <div class="mobile-menu__items">
 
@@ -103,23 +107,21 @@
                 </div>
 
                 <div class="mobile-menu__item">
-                    <a class="mobile-menu__link popup-btn" href="popup/about.html">Про проект</a>
-                </div>
-
-                <div class="mobile-menu__item">
-                    <a class="mobile-menu__link" href="analytics.html">Аналітика</a>
+                    <a class="mobile-menu__link popup-btn" href="/">Новини</a>
                 </div>
 
             </div>
 
-            <div class="mobile-menu__description">Bihus.info об'єднує антикорупційні проекти, які створює ГО "ТОМ 14" та
-                ГО
-                "Канцелярська сотня".
-            </div>
+            <div>
+                <div class="mobile-menu__description">Bihus.info об'єднує антикорупційні проекти, які створює ГО "ТОМ 14" та
+                    ГО
+                    "Канцелярська сотня".
+                </div>
 
-            <a class="n-btn mobile-menu__donation popup-btn donation-btn"
-               data-width="664px"
-               href="popup/donate.html">Підтримати проект</a>
+                <a class="n-btn mobile-menu__donation popup-btn donation-btn"
+                   data-width="664px"
+                   href="popup/donate.html">Підтримати проект</a>
+            </div>
 
         </div>
 
@@ -138,7 +140,7 @@
                         <div class="sauron" data-lotty></div>
                     </div>
                     <div class="main-page__top">
-                        <div class="sauron__text">
+                        <a href="/" class="sauron__text">
                             <svg width="44" height="23" viewBox="0 0 44 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M6.76202 5.35684C5.16372 5.35684 3.98344 5.84829 3.27036 6.80662H2.68022V5.35684H0V17.8643H2.77858V12.016C2.77858 9.38675 4.15557 7.93697 6.68825 7.93697H7.81935V5.35684H6.76202Z" fill="white"/>
                                 <path d="M13.2739 0H10.4216V2.67842H13.2739V0ZM10.4462 5.35684V17.8643H13.2247V5.35684H10.4462Z" fill="white"/>
@@ -146,7 +148,7 @@
                                 <path d="M41.3198 6.5609H40.7296C39.992 5.55342 38.7871 5.03739 37.1396 5.03739C35.4922 5.03739 34.1397 5.62714 33.1316 6.8312C32.1234 8.01068 31.6317 9.53419 31.6317 11.4017C31.6317 13.2692 32.1234 14.7927 33.1316 15.9722C34.1397 17.1517 35.4676 17.7415 37.1396 17.7415C38.7379 17.7415 39.9182 17.2254 40.6313 16.2179H41.2214V17.0534C41.2214 19.4861 40.1149 20.7147 37.9019 20.7147C36.1069 20.7147 35.0741 20.125 34.8528 18.9701H32.0989C32.3939 21.5256 34.6069 23 37.9511 23C39.7953 23 41.246 22.484 42.3525 21.4519C43.459 20.4199 44 19.0192 44 17.25V5.35684H41.3198V6.5609ZM37.8281 15.3825C35.6889 15.3825 34.4102 13.7853 34.4102 11.4017C34.4102 9.01816 35.6889 7.39637 37.8281 7.39637C40.0657 7.39637 41.3198 9.11645 41.3198 11.4017C41.3198 13.6624 40.0657 15.3825 37.8281 15.3825Z" fill="white"/>
                             </svg>
 
-                        </div>
+                        </a>
 
                         <div class="main-page__top-wrap">
 
@@ -211,8 +213,9 @@
             <div class="search-form__input-wrap">
 
                 <input type="text"
+                       tabindex="1"
                        class="n-input search-form__input"
-                       placeholder="Приклад пошуку: Айварас Абромавичус; Cуддя; Хмельницька область">
+                       placeholder="Наприклад: Рошен, Ромашко Роман Петрович, ПП 'РОМДІРОМ', 37504544">
 
                 <div class="search-form__autocomplete">
                     <div class="search-form__autocomplete-item">
@@ -288,7 +291,7 @@
 
         <div class="search-form__right">
             <button class="n-btn n-btn_white search-form__deep-search">
-                Джерела пошуку<span class="search-form__deep-search-count filter-count" style="width: 0;">10</span>
+                Джерела пошуку<span class="search-form__deep-search-count filter-count" style="width: 0;"></span>
             </button>
         </div>
 
@@ -360,7 +363,7 @@
                         </div>
 
                         <div class="filter-year__item n-checkbox">
-                            <input type="checkbox" id="declaration5" name="donation" value="declaration5" class="n-checkbox__input">
+                            <input type="checkbox" id="declaration5" name="donation" value="declaration5" class="n-checkbox__input declaration">
                             <label for="declaration5" class="n-checkbox__label">
                                 <span class="n-checkbox__label-box"></span>
                                 <span class="n-checkbox__label-text">Єдиний державний реєстр(ЄДР)</span>
@@ -368,7 +371,7 @@
                         </div>
 
                         <div class="filter-year__item n-checkbox">
-                            <input type="checkbox" id="declaration6" name="donation" value="declaration6" class="n-checkbox__input">
+                            <input type="checkbox" id="declaration6" name="donation" value="declaration6" class="n-checkbox__input declaration">
                             <label for="declaration6" class="n-checkbox__label">
                                 <span class="n-checkbox__label-box"></span>
                                 <span class="n-checkbox__label-text">Єдиний державний реєстр(ЄДР)</span>
@@ -730,7 +733,7 @@
                 <div class="subscription-block__title">Підписатися на розсилку</div>
                 <form class="subscription-block__form subscription-form">
                     <div class="subscription-form__input-wrap">
-                        <input class="n-input subscription-form__input" placeholder="Введіть ваш e-mail">
+                        <input required class="n-input subscription-form__input" placeholder="Введіть ваш e-mail">
                     </div>
                     <button class="n-btn subscription-form__btn">Підписатись</button>
                 </form>
